@@ -1,1 +1,1077 @@
-[{"id":"b209822d.9e674","type":"tab","label":"Bootup tasks","disabled":false,"info":""},{"id":"c70403e1.fef6","type":"tab","label":"Telegram","disabled":false,"info":""},{"id":"3c99e478.ab352c","type":"group","z":"c70403e1.fef6","style":{"stroke":"#999999","stroke-opacity":"1","fill":"none","fill-opacity":"1","label":true,"label-position":"nw","color":"#a4a4a4"},"nodes":["b9177371.4ece68","ae4f77c8.74204","ca9bca9a.5e9c3","def72da8.aa8c6","24d98b2.b6993f4"],"x":54,"y":959,"w":1112,"h":149.5},{"id":"8999c1e2.ee75b","type":"group","z":"c70403e1.fef6","style":{"stroke":"#999999","stroke-opacity":"1","fill":"none","fill-opacity":"1","label":true,"label-position":"nw","color":"#a4a4a4"},"nodes":["e5a97be2.5b8958","da0bd6e0.596e88","317f98f6.700b1","68efbb04.cab494"],"x":54,"y":199,"w":632,"h":142},{"id":"5d240556.262b84","type":"group","z":"c70403e1.fef6","style":{"stroke":"#999999","stroke-opacity":"1","fill":"none","fill-opacity":"1","label":true,"label-position":"nw","color":"#a4a4a4"},"nodes":["f8cf3b90.295fb8","beafa108.ff0d","29f89bd1.4d1bd4","854cf920.80e668"],"x":54,"y":39,"w":592,"h":142},{"id":"fa9d12fd.befec8","type":"group","z":"c70403e1.fef6","style":{"stroke":"#999999","stroke-opacity":"1","fill":"none","fill-opacity":"1","label":true,"label-position":"nw","color":"#a4a4a4"},"nodes":["c43dff8b.85166","6d8fd408.9585fc","c0ac7d62.1e39d","9f1aa022.d91c28","e4595fa3.a4388","ca31e383.6e78c8","bcf40f19.5dc808","ad8cd822.dff9f8","340c7452.cde394","19e89484.507533"],"x":54,"y":719,"w":1512,"h":229.5},{"id":"72b7ae42.0b82d","type":"group","z":"c70403e1.fef6","style":{"stroke":"#999999","stroke-opacity":"1","fill":"none","fill-opacity":"1","label":true,"label-position":"nw","color":"#a4a4a4"},"nodes":["65e4a33f.7768ac","d3d5ceab.85a72","40a24888.9072a8","9711b5d7.3215d","3738d33c.cb5054","463077fd.6a2e7"],"x":54,"y":359,"w":892,"h":182},{"id":"d90db005.43c49","type":"group","z":"c70403e1.fef6","style":{"stroke":"#999999","stroke-opacity":"1","fill":"none","fill-opacity":"1","label":true,"label-position":"nw","color":"#a4a4a4"},"nodes":["96a43a70.4e70d8","b3ce35b8.9039d","7eac2e98.f92a1","c84aa19c.8a36f8","2ac76708.01729"],"x":54,"y":559,"w":1052,"h":142},{"id":"1fe8870c.af7949","type":"group","z":"b209822d.9e674","style":{"stroke":"#999999","stroke-opacity":"1","fill":"none","fill-opacity":"1","label":true,"label-position":"nw","color":"#a4a4a4"},"nodes":["40ee18a5.154a38","2f984eaf.bf7712","30b6bad6.19c126"],"x":14,"y":79,"w":712,"h":149.5},{"id":"97ae63e9.cc241","type":"group","z":"c70403e1.fef6","style":{"stroke":"#999999","stroke-opacity":"1","fill":"none","fill-opacity":"1","label":true,"label-position":"nw","color":"#a4a4a4"},"nodes":["24e21dff.e3722a","9f3d98c9.fe6ff","b09a5047.993d98","8100ef8e.d2454","abc2dafa.0bc67"],"x":54,"y":1119,"w":1052,"h":142},{"id":"a0955a5d.7bc6a","type":"group","z":"c70403e1.fef6","style":{"stroke":"#999999","stroke-opacity":"1","fill":"none","fill-opacity":"1","label":true,"label-position":"nw","color":"#a4a4a4"},"nodes":["6174f95.7f64508","31bd66ed.17842a","f54140e1.6a4f08","394a954a.72c522","61ee887.5562078","c26484e4.d1d038"],"x":54,"y":1279,"w":1052,"h":182},{"id":"a9ab64c9.53007","type":"ui_tab","name":"Home","icon":"dashboard","disabled":false,"hidden":false},{"id":"c0391f6c.552ff","type":"ui_base","theme":{"name":"theme-light","lightTheme":{"default":"#0094CE","baseColor":"#0094CE","baseFont":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif","edited":false},"darkTheme":{"default":"#097479","baseColor":"#097479","baseFont":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif","edited":false},"customTheme":{"name":"Untitled Theme 1","default":"#4B7930","baseColor":"#4B7930","baseFont":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"},"themeState":{"base-color":{"default":"#0094CE","value":"#0094CE","edited":false},"page-titlebar-backgroundColor":{"value":"#0094CE","edited":false},"page-backgroundColor":{"value":"#fafafa","edited":false},"page-sidebar-backgroundColor":{"value":"#ffffff","edited":false},"group-textColor":{"value":"#1bbfff","edited":false},"group-borderColor":{"value":"#ffffff","edited":false},"group-backgroundColor":{"value":"#ffffff","edited":false},"widget-textColor":{"value":"#111111","edited":false},"widget-backgroundColor":{"value":"#0094ce","edited":false},"widget-borderColor":{"value":"#ffffff","edited":false},"base-font":{"value":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"}},"angularTheme":{"primary":"indigo","accents":"blue","warn":"red","background":"grey"}},"site":{"name":"Node-RED Dashboard","hideToolbar":"false","allowSwipe":"false","lockMenu":"false","allowTempTheme":"true","dateFormat":"DD/MM/YYYY","sizes":{"sx":48,"sy":48,"gx":6,"gy":6,"cx":6,"cy":6,"px":0,"py":0}}},{"id":"ee877576.e7497","type":"ui_group","name":"Default","tab":"a9ab64c9.53007","order":1,"disp":true,"width":"6","collapse":false},{"id":"a0af63cb.cfd18","type":"telegrambot-config","botname":"HarrysBrewBot","usernames":"","chatIds":"","pollInterval":"1000"},{"id":"40ee18a5.154a38","type":"inject","z":"b209822d.9e674","g":"1fe8870c.af7949","name":"Trigger Once At Startup","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":true,"onceDelay":"2","topic":"","payload":"","payloadType":"date","x":170,"y":180,"wires":[["2f984eaf.bf7712"]]},{"id":"2f984eaf.bf7712","type":"exec","z":"b209822d.9e674","g":"1fe8870c.af7949","command":"bash startChromium.sh","addpay":true,"append":"","useSpawn":"false","timer":"","oldrc":false,"name":"Start Chromium If It Is Not Running","x":460,"y":180,"wires":[[],[],[]]},{"id":"30b6bad6.19c126","type":"comment","z":"b209822d.9e674","g":"1fe8870c.af7949","name":"Start the dashboard on the HDMI output when booted up ________________________________","info":"","x":380,"y":120,"wires":[]},{"id":"9f1aa022.d91c28","type":"telegrambot-command","z":"c70403e1.fef6","g":"fa9d12fd.befec8","name":"/open_tunnel","bot":"a0af63cb.cfd18","command":"\\/*open_tunnel","commandType":"re","commandCase":true,"x":190,"y":820,"wires":[["6d8fd408.9585fc"]]},{"id":"f8cf3b90.295fb8","type":"telegrambot-command","z":"c70403e1.fef6","g":"5d240556.262b84","name":"/help","bot":"a0af63cb.cfd18","command":"/help","commandType":"str","commandCase":false,"x":150,"y":140,"wires":[["854cf920.80e668"]]},{"id":"beafa108.ff0d","type":"telegrambot-notify","z":"c70403e1.fef6","g":"5d240556.262b84","name":"Tell User what bot can do","bot":"a0af63cb.cfd18","chatId":"","message":"","parseMode":"","x":510,"y":140,"wires":[]},{"id":"bcf40f19.5dc808","type":"debug","z":"c70403e1.fef6","g":"fa9d12fd.befec8","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":1210,"y":840,"wires":[]},{"id":"29f89bd1.4d1bd4","type":"comment","z":"c70403e1.fef6","g":"5d240556.262b84","name":"Answer Help command ________________________________","info":"","x":300,"y":80,"wires":[]},{"id":"e5a97be2.5b8958","type":"comment","z":"c70403e1.fef6","g":"8999c1e2.ee75b","name":"Answer Start command ________________________________","info":"","x":300,"y":240,"wires":[]},{"id":"da0bd6e0.596e88","type":"telegrambot-notify","z":"c70403e1.fef6","g":"8999c1e2.ee75b","name":"Tell User what bot can do","bot":"a0af63cb.cfd18","chatId":"","message":"","parseMode":"","x":550,"y":300,"wires":[]},{"id":"317f98f6.700b1","type":"telegrambot-command","z":"c70403e1.fef6","g":"8999c1e2.ee75b","name":"/start","bot":"a0af63cb.cfd18","command":"/start","commandType":"str","commandCase":false,"x":150,"y":300,"wires":[["68efbb04.cab494"]]},{"id":"68efbb04.cab494","type":"template","z":"c70403e1.fef6","g":"8999c1e2.ee75b","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"plain","template":"Hey! Im Harrys brew bot! I can help you by running commands when you are away from home. I can also give you updates on how things are going.\n\nHave fun! 👍\n\nAsk for /help to see what I can do.","output":"str","x":300,"y":300,"wires":[["da0bd6e0.596e88"]]},{"id":"854cf920.80e668","type":"template","z":"c70403e1.fef6","g":"5d240556.262b84","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"plain","template":"/start - Start conversation with me\n/help - Ask me what I can do\n/warm_up - Ill warm up the water for you while you’re away\n/stop - Emergency stop. will stop all outputs to pumps and heaters\n/open_tunnel - Start ssh tunnel for remote access to node red when away from the home\n/close_all_tunnels - Stop all tunnel connections\n/shut_down - Shut me down so you can properly remove power","output":"str","x":300,"y":140,"wires":[["beafa108.ff0d"]]},{"id":"19e89484.507533","type":"comment","z":"c70403e1.fef6","g":"fa9d12fd.befec8","name":"Answer Open Tunnel command ________________________________","info":"","x":320,"y":760,"wires":[]},{"id":"6d8fd408.9585fc","type":"function","z":"c70403e1.fef6","g":"fa9d12fd.befec8","name":"Check if msg has parameters","func":"var requestParameters = null;\nvar parametersExist = null;\n\n// split the msg parts\nvar msgParts = msg.payload.split(\" \");\n\n// check how many parts there are\nif (msgParts.length > 1) {\n    // there is more than one. Send the first one it found\n    parametersExist = {payload: msgParts[1], telegram: msg.telegram};\n} else {\n    // there was no parameter\n    // Ask user for more information\n    requestParameters = {payload: true, telegram: msg.telegram};\n}\n\nreturn [requestParameters, parametersExist]","outputs":2,"noerr":0,"initialize":"","finalize":"","x":420,"y":820,"wires":[["e4595fa3.a4388"],["c43dff8b.85166"]]},{"id":"e4595fa3.a4388","type":"template","z":"c70403e1.fef6","g":"fa9d12fd.befec8","name":"No parameters","field":"payload","fieldType":"msg","format":"handlebars","syntax":"plain","template":"What IP should I connect to? Please tell me by running the command again, with the IP as the next word\neg: /open_tunnel 1.2.3.4","output":"str","x":700,"y":820,"wires":[["ad8cd822.dff9f8"]]},{"id":"ad8cd822.dff9f8","type":"telegrambot-notify","z":"c70403e1.fef6","g":"fa9d12fd.befec8","name":"Ask the user to provide an IP address","bot":"a0af63cb.cfd18","chatId":"","message":"","parseMode":"","x":990,"y":820,"wires":[]},{"id":"c43dff8b.85166","type":"function","z":"c70403e1.fef6","g":"fa9d12fd.befec8","name":"Create tunnel command","func":"var ip = msg.payload\n\nif (!(/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(ip))) {\n    // thats not a valid IP\n    return;\n}\n\nmsg.destinationIp = ip;\n// msg.payload = \"bash startTunnel.sh\";\nmsg.payload = \"ssh -f -N -T -o StrictHostKeyChecking=no -i ~/.ssh/harrys-brew-bot-aws-key.pem -R 18800:localhost:1880 ec2-user@\" + ip\n// msg.payload = \"ssh -N -T -o StrictHostKeyChecking=no -i ~/.ssh/harrys-brew-bot-aws-key.pem -R 18800:localhost:1880 ec2-user@\" + ip\n\nreturn msg;\n","outputs":1,"noerr":0,"initialize":"","finalize":"","x":730,"y":900,"wires":[["c0ac7d62.1e39d"]]},{"id":"c0ac7d62.1e39d","type":"exec","z":"c70403e1.fef6","g":"fa9d12fd.befec8","command":"","addpay":true,"append":"","useSpawn":"true","timer":"10","oldrc":false,"name":"Start SSH","x":960,"y":900,"wires":[["ca31e383.6e78c8","bcf40f19.5dc808"],["bcf40f19.5dc808","ca31e383.6e78c8"],["bcf40f19.5dc808","ca31e383.6e78c8"]]},{"id":"b9177371.4ece68","type":"exec","z":"c70403e1.fef6","g":"3c99e478.ab352c","command":"ps -lef|grep ssh|awk '{print $4}'|xargs kill","addpay":false,"append":"","useSpawn":"false","timer":"","oldrc":false,"name":"Kill SSH","x":460,"y":1060,"wires":[["ca9bca9a.5e9c3"],[],[]]},{"id":"ca31e383.6e78c8","type":"function","z":"c70403e1.fef6","g":"fa9d12fd.befec8","name":"Set feedback message","func":"var feedback = \"\";\n\nif(msg.payload && msg.payload.code && msg.payload.code == 0) {\n    feedback = \"SSH tunnel is ready for use. Run \\r\\n\" + \"ssh -i harrys-brew-bot-aws-key.pem -T -N -L 18801:localhost:18800 -v ec2-user@\" + msg.destinationIp + \"\\r\\nTo connect.\"\n} else if(msg.payload && msg.payload.signal && msg.payload.signal == \"SIGTERM\") {\n    feedback = \"Something went wrong. possibly a timeout. Is the IP address correct?\"\n} else {\n    feedback = msg.payload;\n}\n\nmsg.payload = \"SSH tunnel attempted. Details: \\r\\n\" + feedback\n\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":1180,"y":900,"wires":[["340c7452.cde394","bcf40f19.5dc808"]]},{"id":"ca9bca9a.5e9c3","type":"function","z":"c70403e1.fef6","g":"3c99e478.ab352c","name":"Set feedback message","func":"msg.payload = \"The SSH connections have been terminated. Details: \" + msg.rc.message\n\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":700,"y":1060,"wires":[["def72da8.aa8c6"]]},{"id":"340c7452.cde394","type":"telegrambot-notify","z":"c70403e1.fef6","g":"fa9d12fd.befec8","name":"Tell user tunnel is ready","bot":"a0af63cb.cfd18","chatId":"","message":"","parseMode":"","x":1430,"y":900,"wires":[]},{"id":"24d98b2.b6993f4","type":"comment","z":"c70403e1.fef6","g":"3c99e478.ab352c","name":"Answer Close all tunnels command ________________________________","info":"","x":330,"y":1000,"wires":[]},{"id":"ae4f77c8.74204","type":"telegrambot-command","z":"c70403e1.fef6","g":"3c99e478.ab352c","name":"/close_all_tunnels","bot":"a0af63cb.cfd18","command":"/close_all_tunnels","commandType":"str","commandCase":false,"x":210,"y":1060,"wires":[["b9177371.4ece68"]]},{"id":"def72da8.aa8c6","type":"telegrambot-notify","z":"c70403e1.fef6","g":"3c99e478.ab352c","name":"Tell user tunnels are closed","bot":"a0af63cb.cfd18","chatId":"","message":"","parseMode":"","x":1020,"y":1060,"wires":[]},{"id":"65e4a33f.7768ac","type":"comment","z":"c70403e1.fef6","g":"72b7ae42.0b82d","name":"Answer Stop command ________________________________","info":"","x":300,"y":400,"wires":[]},{"id":"d3d5ceab.85a72","type":"telegrambot-notify","z":"c70403e1.fef6","g":"72b7ae42.0b82d","name":"Tell user we have stopped output","bot":"a0af63cb.cfd18","chatId":"","message":"","parseMode":"","x":580,"y":460,"wires":[]},{"id":"40a24888.9072a8","type":"telegrambot-command","z":"c70403e1.fef6","g":"72b7ae42.0b82d","name":"/stop","bot":"a0af63cb.cfd18","command":"/stop","commandType":"str","commandCase":false,"x":150,"y":460,"wires":[["9711b5d7.3215d","3738d33c.cb5054"]]},{"id":"9711b5d7.3215d","type":"template","z":"c70403e1.fef6","g":"72b7ae42.0b82d","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"plain","template":"Outputs have been stopped. 🛑\n\nTo reset the outputs, do it at the brew dashboard.\n\nHope everything is ok!","output":"str","x":320,"y":460,"wires":[["d3d5ceab.85a72"]]},{"id":"3738d33c.cb5054","type":"link out","z":"c70403e1.fef6","g":"72b7ae42.0b82d","name":"Emergency stop - Disable outputs","links":[],"x":380,"y":500,"wires":[],"l":true},{"id":"96a43a70.4e70d8","type":"comment","z":"c70403e1.fef6","g":"d90db005.43c49","name":"Answer Warm up command ________________________________","info":"","x":310,"y":600,"wires":[]},{"id":"b3ce35b8.9039d","type":"telegrambot-notify","z":"c70403e1.fef6","g":"d90db005.43c49","name":"Tell user we have stopped output","bot":"a0af63cb.cfd18","chatId":"","message":"","parseMode":"","x":580,"y":660,"wires":[]},{"id":"7eac2e98.f92a1","type":"telegrambot-command","z":"c70403e1.fef6","g":"d90db005.43c49","name":"/warm_up","bot":"a0af63cb.cfd18","command":"/warm_up","commandType":"str","commandCase":false,"x":160,"y":660,"wires":[["c84aa19c.8a36f8"]]},{"id":"c84aa19c.8a36f8","type":"template","z":"c70403e1.fef6","g":"d90db005.43c49","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"plain","template":"No worries. Im warming the water up for you now. 👍\n\nIf you want an update on the tempurature, just ask for a /water_temperature_status\n\n-- By the way. This doesnt actually do anyhting. Make sure you fix this once you wire it all up!","output":"str","x":320,"y":660,"wires":[["b3ce35b8.9039d"]]},{"id":"2ac76708.01729","type":"comment","z":"c70403e1.fef6","g":"d90db005.43c49","name":"TO DO: Actually start the warm program","info":"","x":920,"y":600,"wires":[]},{"id":"24e21dff.e3722a","type":"comment","z":"c70403e1.fef6","g":"97ae63e9.cc241","name":"Answer Warm up command ________________________________","info":"","x":310,"y":1160,"wires":[]},{"id":"9f3d98c9.fe6ff","type":"telegrambot-notify","z":"c70403e1.fef6","g":"97ae63e9.cc241","name":"Tell user we have stopped output","bot":"a0af63cb.cfd18","chatId":"","message":"","parseMode":"","x":580,"y":1220,"wires":[]},{"id":"b09a5047.993d98","type":"telegrambot-command","z":"c70403e1.fef6","g":"97ae63e9.cc241","name":"/warm_up","bot":"a0af63cb.cfd18","command":"/warm_up","commandType":"str","commandCase":false,"x":160,"y":1220,"wires":[["8100ef8e.d2454"]]},{"id":"8100ef8e.d2454","type":"template","z":"c70403e1.fef6","g":"97ae63e9.cc241","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"plain","template":"No worries. Im warming the water up for you now. 👍\n\nIf you want an update on the tempurature, just ask for a /water_temperature_status\n\n-- By the way. This doesnt actually do anyhting. Make sure you fix this once you wire it all up!","output":"str","x":320,"y":1220,"wires":[["9f3d98c9.fe6ff"]]},{"id":"abc2dafa.0bc67","type":"comment","z":"c70403e1.fef6","g":"97ae63e9.cc241","name":"TO DO: Actually start the warm program","info":"","x":920,"y":1160,"wires":[]},{"id":"6174f95.7f64508","type":"comment","z":"c70403e1.fef6","g":"a0955a5d.7bc6a","name":"Answer Shut down command ________________________________","info":"","x":320,"y":1320,"wires":[]},{"id":"31bd66ed.17842a","type":"telegrambot-notify","z":"c70403e1.fef6","g":"a0955a5d.7bc6a","name":"Tell user we are shutting down","bot":"a0af63cb.cfd18","chatId":"","message":"","parseMode":"","x":570,"y":1380,"wires":[]},{"id":"f54140e1.6a4f08","type":"telegrambot-command","z":"c70403e1.fef6","g":"a0955a5d.7bc6a","name":"/shut_down","bot":"a0af63cb.cfd18","command":"/shut_down","commandType":"str","commandCase":false,"x":170,"y":1380,"wires":[["394a954a.72c522","c26484e4.d1d038"]]},{"id":"394a954a.72c522","type":"template","z":"c70403e1.fef6","g":"a0955a5d.7bc6a","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"plain","template":"Bye bye! Shutting the Pi down now.\n\nPower it back up if you want me to be able to talk again!","output":"str","x":360,"y":1380,"wires":[["31bd66ed.17842a"]]},{"id":"61ee887.5562078","type":"comment","z":"c70403e1.fef6","g":"a0955a5d.7bc6a","name":"TO DO: Actually start the warm program","info":"","x":920,"y":1320,"wires":[]},{"id":"463077fd.6a2e7","type":"comment","z":"c70403e1.fef6","g":"72b7ae42.0b82d","name":"TO DO: Actually enable the emergency stop","info":"","x":750,"y":400,"wires":[]},{"id":"c26484e4.d1d038","type":"delay","z":"c70403e1.fef6","g":"a0955a5d.7bc6a","name":"","pauseType":"delay","timeout":"3","timeoutUnits":"seconds","rate":"1","nbRateUnits":"1","rateUnits":"second","randomFirst":"1","randomLast":"5","randomUnits":"seconds","drop":false,"x":360,"y":1420,"wires":[[]]}]
+[
+    {
+        "id": "b209822d.9e674",
+        "type": "tab",
+        "label": "Bootup tasks",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c70403e1.fef6",
+        "type": "tab",
+        "label": "Telegram",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3c99e478.ab352c",
+        "type": "group",
+        "z": "c70403e1.fef6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b9177371.4ece68",
+            "ae4f77c8.74204",
+            "ca9bca9a.5e9c3",
+            "def72da8.aa8c6",
+            "24d98b2.b6993f4"
+        ],
+        "x": 54,
+        "y": 959,
+        "w": 1112,
+        "h": 149.5
+    },
+    {
+        "id": "8999c1e2.ee75b",
+        "type": "group",
+        "z": "c70403e1.fef6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "e5a97be2.5b8958",
+            "da0bd6e0.596e88",
+            "317f98f6.700b1",
+            "68efbb04.cab494"
+        ],
+        "x": 54,
+        "y": 199,
+        "w": 632,
+        "h": 142
+    },
+    {
+        "id": "5d240556.262b84",
+        "type": "group",
+        "z": "c70403e1.fef6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "f8cf3b90.295fb8",
+            "beafa108.ff0d",
+            "29f89bd1.4d1bd4",
+            "854cf920.80e668"
+        ],
+        "x": 54,
+        "y": 39,
+        "w": 592,
+        "h": 142
+    },
+    {
+        "id": "fa9d12fd.befec8",
+        "type": "group",
+        "z": "c70403e1.fef6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c43dff8b.85166",
+            "6d8fd408.9585fc",
+            "c0ac7d62.1e39d",
+            "9f1aa022.d91c28",
+            "e4595fa3.a4388",
+            "ca31e383.6e78c8",
+            "bcf40f19.5dc808",
+            "ad8cd822.dff9f8",
+            "340c7452.cde394",
+            "19e89484.507533"
+        ],
+        "x": 54,
+        "y": 719,
+        "w": 1512,
+        "h": 229.5
+    },
+    {
+        "id": "72b7ae42.0b82d",
+        "type": "group",
+        "z": "c70403e1.fef6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "65e4a33f.7768ac",
+            "d3d5ceab.85a72",
+            "40a24888.9072a8",
+            "9711b5d7.3215d",
+            "3738d33c.cb5054",
+            "463077fd.6a2e7"
+        ],
+        "x": 54,
+        "y": 359,
+        "w": 892,
+        "h": 182
+    },
+    {
+        "id": "d90db005.43c49",
+        "type": "group",
+        "z": "c70403e1.fef6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "96a43a70.4e70d8",
+            "b3ce35b8.9039d",
+            "7eac2e98.f92a1",
+            "c84aa19c.8a36f8",
+            "2ac76708.01729"
+        ],
+        "x": 54,
+        "y": 559,
+        "w": 1052,
+        "h": 142
+    },
+    {
+        "id": "1fe8870c.af7949",
+        "type": "group",
+        "z": "b209822d.9e674",
+        "name": "Start the dashboard on the HDMI output when booted up",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "40ee18a5.154a38",
+            "2f984eaf.bf7712"
+        ],
+        "x": 74,
+        "y": 71.5,
+        "w": 612,
+        "h": 97
+    },
+    {
+        "id": "a0955a5d.7bc6a",
+        "type": "group",
+        "z": "c70403e1.fef6",
+        "name": "Answer Shut down command ________________________________",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "31bd66ed.17842a",
+            "f54140e1.6a4f08",
+            "394a954a.72c522",
+            "c26484e4.d1d038",
+            "b6ab5272.dd7888",
+            "1f9ff3d8.063844",
+            "de015364.e3aed8"
+        ],
+        "x": 54,
+        "y": 1139,
+        "w": 1192,
+        "h": 142
+    },
+    {
+        "id": "a9ab64c9.53007",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c0391f6c.552ff",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ee877576.e7497",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "a9ab64c9.53007",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a0af63cb.cfd18",
+        "type": "telegrambot-config",
+        "botname": "HarrysBrewBot",
+        "usernames": "",
+        "chatIds": "",
+        "pollInterval": "1000"
+    },
+    {
+        "id": "40ee18a5.154a38",
+        "type": "inject",
+        "z": "b209822d.9e674",
+        "g": "1fe8870c.af7949",
+        "name": "Trigger Once At Startup",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 120,
+        "wires": [
+            [
+                "2f984eaf.bf7712"
+            ]
+        ]
+    },
+    {
+        "id": "2f984eaf.bf7712",
+        "type": "exec",
+        "z": "b209822d.9e674",
+        "g": "1fe8870c.af7949",
+        "command": "bash startChromium.sh",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Start Chromium If It Is Not Running",
+        "x": 520,
+        "y": 120,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9f1aa022.d91c28",
+        "type": "telegrambot-command",
+        "z": "c70403e1.fef6",
+        "g": "fa9d12fd.befec8",
+        "name": "/open_tunnel",
+        "bot": "a0af63cb.cfd18",
+        "command": "\\/*open_tunnel",
+        "commandType": "re",
+        "commandCase": true,
+        "x": 190,
+        "y": 820,
+        "wires": [
+            [
+                "6d8fd408.9585fc"
+            ]
+        ]
+    },
+    {
+        "id": "f8cf3b90.295fb8",
+        "type": "telegrambot-command",
+        "z": "c70403e1.fef6",
+        "g": "5d240556.262b84",
+        "name": "/help",
+        "bot": "a0af63cb.cfd18",
+        "command": "/help",
+        "commandType": "str",
+        "commandCase": false,
+        "x": 150,
+        "y": 140,
+        "wires": [
+            [
+                "854cf920.80e668"
+            ]
+        ]
+    },
+    {
+        "id": "beafa108.ff0d",
+        "type": "telegrambot-notify",
+        "z": "c70403e1.fef6",
+        "g": "5d240556.262b84",
+        "name": "Tell User what bot can do",
+        "bot": "a0af63cb.cfd18",
+        "chatId": "",
+        "message": "",
+        "parseMode": "",
+        "x": 510,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "bcf40f19.5dc808",
+        "type": "debug",
+        "z": "c70403e1.fef6",
+        "g": "fa9d12fd.befec8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1210,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "29f89bd1.4d1bd4",
+        "type": "comment",
+        "z": "c70403e1.fef6",
+        "g": "5d240556.262b84",
+        "name": "Answer Help command ________________________________",
+        "info": "",
+        "x": 300,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "e5a97be2.5b8958",
+        "type": "comment",
+        "z": "c70403e1.fef6",
+        "g": "8999c1e2.ee75b",
+        "name": "Answer Start command ________________________________",
+        "info": "",
+        "x": 300,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "da0bd6e0.596e88",
+        "type": "telegrambot-notify",
+        "z": "c70403e1.fef6",
+        "g": "8999c1e2.ee75b",
+        "name": "Tell User what bot can do",
+        "bot": "a0af63cb.cfd18",
+        "chatId": "",
+        "message": "",
+        "parseMode": "",
+        "x": 550,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "317f98f6.700b1",
+        "type": "telegrambot-command",
+        "z": "c70403e1.fef6",
+        "g": "8999c1e2.ee75b",
+        "name": "/start",
+        "bot": "a0af63cb.cfd18",
+        "command": "/start",
+        "commandType": "str",
+        "commandCase": false,
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "68efbb04.cab494"
+            ]
+        ]
+    },
+    {
+        "id": "68efbb04.cab494",
+        "type": "template",
+        "z": "c70403e1.fef6",
+        "g": "8999c1e2.ee75b",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "plain",
+        "template": "Hey! Im Harrys brew bot! I can help you by running commands when you are away from home. I can also give you updates on how things are going.\n\nHave fun! 👍\n\nAsk for /help to see what I can do.",
+        "output": "str",
+        "x": 300,
+        "y": 300,
+        "wires": [
+            [
+                "da0bd6e0.596e88"
+            ]
+        ]
+    },
+    {
+        "id": "854cf920.80e668",
+        "type": "template",
+        "z": "c70403e1.fef6",
+        "g": "5d240556.262b84",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "plain",
+        "template": "/start - Start conversation with me\n/help - Ask me what I can do\n/warm_up - Ill warm up the water for you while you’re away\n/stop - Emergency stop. will stop all outputs to pumps and heaters\n/open_tunnel - Start ssh tunnel for remote access to node red when away from the home\n/close_all_tunnels - Stop all tunnel connections\n/shut_down - Shut me down so you can properly remove power",
+        "output": "str",
+        "x": 300,
+        "y": 140,
+        "wires": [
+            [
+                "beafa108.ff0d"
+            ]
+        ]
+    },
+    {
+        "id": "19e89484.507533",
+        "type": "comment",
+        "z": "c70403e1.fef6",
+        "g": "fa9d12fd.befec8",
+        "name": "Answer Open Tunnel command ________________________________",
+        "info": "",
+        "x": 320,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "6d8fd408.9585fc",
+        "type": "function",
+        "z": "c70403e1.fef6",
+        "g": "fa9d12fd.befec8",
+        "name": "Check if msg has parameters",
+        "func": "var requestParameters = null;\nvar parametersExist = null;\n\n// split the msg parts\nvar msgParts = msg.payload.split(\" \");\n\n// check how many parts there are\nif (msgParts.length > 1) {\n    // there is more than one. Send the first one it found\n    parametersExist = {payload: msgParts[1], telegram: msg.telegram};\n} else {\n    // there was no parameter\n    // Ask user for more information\n    requestParameters = {payload: true, telegram: msg.telegram};\n}\n\nreturn [requestParameters, parametersExist]",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 420,
+        "y": 820,
+        "wires": [
+            [
+                "e4595fa3.a4388"
+            ],
+            [
+                "c43dff8b.85166"
+            ]
+        ]
+    },
+    {
+        "id": "e4595fa3.a4388",
+        "type": "template",
+        "z": "c70403e1.fef6",
+        "g": "fa9d12fd.befec8",
+        "name": "No parameters",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "plain",
+        "template": "What IP should I connect to? Please tell me by running the command again, with the IP as the next word\neg: /open_tunnel 1.2.3.4",
+        "output": "str",
+        "x": 700,
+        "y": 820,
+        "wires": [
+            [
+                "ad8cd822.dff9f8"
+            ]
+        ]
+    },
+    {
+        "id": "ad8cd822.dff9f8",
+        "type": "telegrambot-notify",
+        "z": "c70403e1.fef6",
+        "g": "fa9d12fd.befec8",
+        "name": "Ask the user to provide an IP address",
+        "bot": "a0af63cb.cfd18",
+        "chatId": "",
+        "message": "",
+        "parseMode": "",
+        "x": 990,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "c43dff8b.85166",
+        "type": "function",
+        "z": "c70403e1.fef6",
+        "g": "fa9d12fd.befec8",
+        "name": "Create tunnel command",
+        "func": "var ip = msg.payload\n\nif (!(/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(ip))) {\n    // thats not a valid IP\n    return;\n}\n\nmsg.destinationIp = ip;\n// msg.payload = \"bash startTunnel.sh\";\nmsg.payload = \"ssh -f -N -T -o StrictHostKeyChecking=no -i ~/.ssh/harrys-brew-bot-aws-key.pem -R 18800:localhost:1880 ec2-user@\" + ip\n// msg.payload = \"ssh -N -T -o StrictHostKeyChecking=no -i ~/.ssh/harrys-brew-bot-aws-key.pem -R 18800:localhost:1880 ec2-user@\" + ip\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 730,
+        "y": 900,
+        "wires": [
+            [
+                "c0ac7d62.1e39d"
+            ]
+        ]
+    },
+    {
+        "id": "c0ac7d62.1e39d",
+        "type": "exec",
+        "z": "c70403e1.fef6",
+        "g": "fa9d12fd.befec8",
+        "command": "",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "true",
+        "timer": "10",
+        "oldrc": false,
+        "name": "Start SSH",
+        "x": 960,
+        "y": 900,
+        "wires": [
+            [
+                "ca31e383.6e78c8",
+                "bcf40f19.5dc808"
+            ],
+            [
+                "bcf40f19.5dc808",
+                "ca31e383.6e78c8"
+            ],
+            [
+                "bcf40f19.5dc808",
+                "ca31e383.6e78c8"
+            ]
+        ]
+    },
+    {
+        "id": "b9177371.4ece68",
+        "type": "exec",
+        "z": "c70403e1.fef6",
+        "g": "3c99e478.ab352c",
+        "command": "ps -lef|grep ssh|awk '{print $4}'|xargs kill",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Kill SSH",
+        "x": 460,
+        "y": 1060,
+        "wires": [
+            [
+                "ca9bca9a.5e9c3"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ca31e383.6e78c8",
+        "type": "function",
+        "z": "c70403e1.fef6",
+        "g": "fa9d12fd.befec8",
+        "name": "Set feedback message",
+        "func": "var feedback = \"\";\n\nif(msg.payload && msg.payload.code && msg.payload.code == 0) {\n    feedback = \"SSH tunnel is ready for use. Run \\r\\n\" + \"ssh -i harrys-brew-bot-aws-key.pem -T -N -L 18801:localhost:18800 -v ec2-user@\" + msg.destinationIp + \"\\r\\nTo connect.\"\n} else if(msg.payload && msg.payload.signal && msg.payload.signal == \"SIGTERM\") {\n    feedback = \"Something went wrong. possibly a timeout. Is the IP address correct?\"\n} else {\n    feedback = msg.payload;\n}\n\nmsg.payload = \"SSH tunnel attempted. Details: \\r\\n\" + feedback\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1180,
+        "y": 900,
+        "wires": [
+            [
+                "340c7452.cde394",
+                "bcf40f19.5dc808"
+            ]
+        ]
+    },
+    {
+        "id": "ca9bca9a.5e9c3",
+        "type": "function",
+        "z": "c70403e1.fef6",
+        "g": "3c99e478.ab352c",
+        "name": "Set feedback message",
+        "func": "msg.payload = \"The SSH connections have been terminated. Details: \" + msg.rc.message\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 700,
+        "y": 1060,
+        "wires": [
+            [
+                "def72da8.aa8c6"
+            ]
+        ]
+    },
+    {
+        "id": "340c7452.cde394",
+        "type": "telegrambot-notify",
+        "z": "c70403e1.fef6",
+        "g": "fa9d12fd.befec8",
+        "name": "Tell user tunnel is ready",
+        "bot": "a0af63cb.cfd18",
+        "chatId": "",
+        "message": "",
+        "parseMode": "",
+        "x": 1430,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "24d98b2.b6993f4",
+        "type": "comment",
+        "z": "c70403e1.fef6",
+        "g": "3c99e478.ab352c",
+        "name": "Answer Close all tunnels command ________________________________",
+        "info": "",
+        "x": 330,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "ae4f77c8.74204",
+        "type": "telegrambot-command",
+        "z": "c70403e1.fef6",
+        "g": "3c99e478.ab352c",
+        "name": "/close_all_tunnels",
+        "bot": "a0af63cb.cfd18",
+        "command": "/close_all_tunnels",
+        "commandType": "str",
+        "commandCase": false,
+        "x": 210,
+        "y": 1060,
+        "wires": [
+            [
+                "b9177371.4ece68"
+            ]
+        ]
+    },
+    {
+        "id": "def72da8.aa8c6",
+        "type": "telegrambot-notify",
+        "z": "c70403e1.fef6",
+        "g": "3c99e478.ab352c",
+        "name": "Tell user tunnels are closed",
+        "bot": "a0af63cb.cfd18",
+        "chatId": "",
+        "message": "",
+        "parseMode": "",
+        "x": 1020,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "65e4a33f.7768ac",
+        "type": "comment",
+        "z": "c70403e1.fef6",
+        "g": "72b7ae42.0b82d",
+        "name": "Answer Stop command ________________________________",
+        "info": "",
+        "x": 300,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d3d5ceab.85a72",
+        "type": "telegrambot-notify",
+        "z": "c70403e1.fef6",
+        "g": "72b7ae42.0b82d",
+        "name": "Tell user we have stopped output",
+        "bot": "a0af63cb.cfd18",
+        "chatId": "",
+        "message": "",
+        "parseMode": "",
+        "x": 580,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "40a24888.9072a8",
+        "type": "telegrambot-command",
+        "z": "c70403e1.fef6",
+        "g": "72b7ae42.0b82d",
+        "name": "/stop",
+        "bot": "a0af63cb.cfd18",
+        "command": "/stop",
+        "commandType": "str",
+        "commandCase": false,
+        "x": 150,
+        "y": 460,
+        "wires": [
+            [
+                "9711b5d7.3215d",
+                "3738d33c.cb5054"
+            ]
+        ]
+    },
+    {
+        "id": "9711b5d7.3215d",
+        "type": "template",
+        "z": "c70403e1.fef6",
+        "g": "72b7ae42.0b82d",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "plain",
+        "template": "Outputs have been stopped. 🛑\n\nTo reset the outputs, do it at the brew dashboard.\n\nHope everything is ok!",
+        "output": "str",
+        "x": 320,
+        "y": 460,
+        "wires": [
+            [
+                "d3d5ceab.85a72"
+            ]
+        ]
+    },
+    {
+        "id": "3738d33c.cb5054",
+        "type": "link out",
+        "z": "c70403e1.fef6",
+        "g": "72b7ae42.0b82d",
+        "name": "Emergency stop - Disable outputs",
+        "links": [],
+        "x": 380,
+        "y": 500,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "96a43a70.4e70d8",
+        "type": "comment",
+        "z": "c70403e1.fef6",
+        "g": "d90db005.43c49",
+        "name": "Answer Warm up command ________________________________",
+        "info": "",
+        "x": 310,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "b3ce35b8.9039d",
+        "type": "telegrambot-notify",
+        "z": "c70403e1.fef6",
+        "g": "d90db005.43c49",
+        "name": "Tell user we have stopped output",
+        "bot": "a0af63cb.cfd18",
+        "chatId": "",
+        "message": "",
+        "parseMode": "",
+        "x": 580,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "7eac2e98.f92a1",
+        "type": "telegrambot-command",
+        "z": "c70403e1.fef6",
+        "g": "d90db005.43c49",
+        "name": "/warm_up",
+        "bot": "a0af63cb.cfd18",
+        "command": "/warm_up",
+        "commandType": "str",
+        "commandCase": false,
+        "x": 160,
+        "y": 660,
+        "wires": [
+            [
+                "c84aa19c.8a36f8"
+            ]
+        ]
+    },
+    {
+        "id": "c84aa19c.8a36f8",
+        "type": "template",
+        "z": "c70403e1.fef6",
+        "g": "d90db005.43c49",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "plain",
+        "template": "No worries. Im warming the water up for you now. 👍\n\nIf you want an update on the tempurature, just ask for a /water_temperature_status\n\n-- By the way. This doesnt actually do anyhting. Make sure you fix this once you wire it all up!",
+        "output": "str",
+        "x": 320,
+        "y": 660,
+        "wires": [
+            [
+                "b3ce35b8.9039d"
+            ]
+        ]
+    },
+    {
+        "id": "2ac76708.01729",
+        "type": "comment",
+        "z": "c70403e1.fef6",
+        "g": "d90db005.43c49",
+        "name": "TO DO: Actually start the warm program",
+        "info": "",
+        "x": 920,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "31bd66ed.17842a",
+        "type": "telegrambot-notify",
+        "z": "c70403e1.fef6",
+        "g": "a0955a5d.7bc6a",
+        "name": "Tell user we are shutting down",
+        "bot": "a0af63cb.cfd18",
+        "chatId": "",
+        "message": "",
+        "parseMode": "",
+        "x": 1090,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "f54140e1.6a4f08",
+        "type": "telegrambot-command",
+        "z": "c70403e1.fef6",
+        "g": "a0955a5d.7bc6a",
+        "name": "/shut_down",
+        "bot": "a0af63cb.cfd18",
+        "command": "/shut_down",
+        "commandType": "str",
+        "commandCase": false,
+        "x": 150,
+        "y": 1200,
+        "wires": [
+            [
+                "b6ab5272.dd7888"
+            ]
+        ]
+    },
+    {
+        "id": "394a954a.72c522",
+        "type": "template",
+        "z": "c70403e1.fef6",
+        "g": "a0955a5d.7bc6a",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "plain",
+        "template": "Bye bye! Shutting the Pi down now.\n\nPower it back up if you want me to be able to talk again!",
+        "output": "str",
+        "x": 860,
+        "y": 1180,
+        "wires": [
+            [
+                "31bd66ed.17842a"
+            ]
+        ]
+    },
+    {
+        "id": "463077fd.6a2e7",
+        "type": "comment",
+        "z": "c70403e1.fef6",
+        "g": "72b7ae42.0b82d",
+        "name": "TO DO: Actually enable the emergency stop",
+        "info": "",
+        "x": 750,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "c26484e4.d1d038",
+        "type": "delay",
+        "z": "c70403e1.fef6",
+        "g": "a0955a5d.7bc6a",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 860,
+        "y": 1240,
+        "wires": [
+            [
+                "de015364.e3aed8"
+            ]
+        ]
+    },
+    {
+        "id": "b6ab5272.dd7888",
+        "type": "telegrambot-switch",
+        "z": "c70403e1.fef6",
+        "g": "a0955a5d.7bc6a",
+        "name": "Confirm shutdown",
+        "bot": "a0af63cb.cfd18",
+        "chatId": "",
+        "question": "Are you sure you want to shut the Pi down?",
+        "answers": [
+            "Yes",
+            "Cancel - dont shut down"
+        ],
+        "outputs": 3,
+        "autoAnswerCallback": true,
+        "timeoutValue": "20",
+        "timeoutUnits": "s",
+        "x": 350,
+        "y": 1200,
+        "wires": [
+            [
+                "1f9ff3d8.063844"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1f9ff3d8.063844",
+        "type": "telegrambot-switch",
+        "z": "c70403e1.fef6",
+        "g": "a0955a5d.7bc6a",
+        "name": "Double Confirm shutdown",
+        "bot": "a0af63cb.cfd18",
+        "chatId": "",
+        "question": "Are you really really sure you want to shut the Pi down?",
+        "answers": [
+            "Yes Im really sure!! Shut down",
+            "Cancel - dont shut down"
+        ],
+        "outputs": 3,
+        "autoAnswerCallback": true,
+        "timeoutValue": "20",
+        "timeoutUnits": "s",
+        "x": 600,
+        "y": 1200,
+        "wires": [
+            [
+                "394a954a.72c522",
+                "c26484e4.d1d038"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "de015364.e3aed8",
+        "type": "shutdown",
+        "z": "c70403e1.fef6",
+        "g": "a0955a5d.7bc6a",
+        "name": "",
+        "x": 1070,
+        "y": 1240,
+        "wires": []
+    }
+]
