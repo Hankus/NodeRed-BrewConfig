@@ -2,7 +2,11 @@
     "name": "NodeRed-BrewConfig",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-dashboard": "2.26.1",
+        "node-red-contrib-telegrambot-home": "0.5.2",
+        "node-red-contrib-rpi-shutdown": "0.0.2"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows_harrysbrewpi.json",
