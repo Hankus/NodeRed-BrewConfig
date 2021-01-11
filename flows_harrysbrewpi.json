@@ -207,6 +207,49 @@
         "h": 142
     },
     {
+        "id": "5cc5dd43.7d4754",
+        "type": "group",
+        "z": "c70403e1.fef6",
+        "name": "Answer Reboot command ________________________________",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d4f27a55.c406c",
+            "d9654041.bdf358",
+            "db41b550.37f718",
+            "e1cb8594.2fc86",
+            "31ffddb.b0b58a2",
+            "677a907f.940e9",
+            "1bc8a1d6.3b8d3e"
+        ],
+        "x": 54,
+        "y": 1299,
+        "w": 1152,
+        "h": 142
+    },
+    {
+        "id": "a5478298.6399d",
+        "type": "group",
+        "z": "b209822d.9e674",
+        "name": "Tell everyone we are online",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "eee739a7.6a5b58",
+            "7d12a340.e6368c",
+            "18279eff.a00049",
+            "efbf535f.199948",
+            "e2316670.0a0af",
+            "ab115648.2f2c6"
+        ],
+        "x": 74,
+        "y": 191.5,
+        "w": 1452,
+        "h": 97
+    },
+    {
         "id": "a9ab64c9.53007",
         "type": "ui_tab",
         "name": "Home",
@@ -223,7 +266,8 @@
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "edited": true,
+                "reset": false
             },
             "darkTheme": {
                 "default": "#097479",
@@ -529,7 +573,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "plain",
-        "template": "/start - Start conversation with me\n/help - Ask me what I can do\n/warm_up - Ill warm up the water for you while you’re away\n/stop - Emergency stop. will stop all outputs to pumps and heaters\n/open_tunnel - Start ssh tunnel for remote access to node red when away from the home\n/close_all_tunnels - Stop all tunnel connections\n/shut_down - Shut me down so you can properly remove power",
+        "template": "/start - Start conversation with me\n/help - Ask me what I can do\n/warm_up - Ill warm up the water for you while you’re away\n/stop - Emergency stop. will stop all outputs to pumps and heaters\n/open_tunnel - Start ssh tunnel for remote access to node red when away from the home\n/close_all_tunnels - Stop all tunnel connections\n/shut_down - Shut me down so you can properly remove power\n/reboot - Reboot me if something isnt working right",
         "output": "str",
         "x": 300,
         "y": 140,
@@ -1073,5 +1117,270 @@
         "x": 1070,
         "y": 1240,
         "wires": []
+    },
+    {
+        "id": "d4f27a55.c406c",
+        "type": "telegrambot-notify",
+        "z": "c70403e1.fef6",
+        "g": "5cc5dd43.7d4754",
+        "name": "Tell user we are rebooting",
+        "bot": "a0af63cb.cfd18",
+        "chatId": "",
+        "message": "",
+        "parseMode": "",
+        "x": 1070,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "d9654041.bdf358",
+        "type": "telegrambot-command",
+        "z": "c70403e1.fef6",
+        "g": "5cc5dd43.7d4754",
+        "name": "/reboot",
+        "bot": "a0af63cb.cfd18",
+        "command": "/reboot",
+        "commandType": "str",
+        "commandCase": false,
+        "x": 130,
+        "y": 1360,
+        "wires": [
+            [
+                "31ffddb.b0b58a2"
+            ]
+        ]
+    },
+    {
+        "id": "db41b550.37f718",
+        "type": "template",
+        "z": "c70403e1.fef6",
+        "g": "5cc5dd43.7d4754",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "plain",
+        "template": "Bye bye! Rebooting the Pi now.\n\nI should be back in a few minutes!",
+        "output": "str",
+        "x": 860,
+        "y": 1340,
+        "wires": [
+            [
+                "d4f27a55.c406c"
+            ]
+        ]
+    },
+    {
+        "id": "e1cb8594.2fc86",
+        "type": "delay",
+        "z": "c70403e1.fef6",
+        "g": "5cc5dd43.7d4754",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 860,
+        "y": 1400,
+        "wires": [
+            [
+                "1bc8a1d6.3b8d3e"
+            ]
+        ]
+    },
+    {
+        "id": "31ffddb.b0b58a2",
+        "type": "telegrambot-switch",
+        "z": "c70403e1.fef6",
+        "g": "5cc5dd43.7d4754",
+        "name": "Confirm reboot",
+        "bot": "a0af63cb.cfd18",
+        "chatId": "",
+        "question": "Are you sure you want to reboot the Pi?",
+        "answers": [
+            "Yes",
+            "Cancel - dont reboot"
+        ],
+        "outputs": 3,
+        "autoAnswerCallback": true,
+        "timeoutValue": "20",
+        "timeoutUnits": "s",
+        "x": 340,
+        "y": 1360,
+        "wires": [
+            [
+                "677a907f.940e9"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "677a907f.940e9",
+        "type": "telegrambot-switch",
+        "z": "c70403e1.fef6",
+        "g": "5cc5dd43.7d4754",
+        "name": "Double Confirm reboot",
+        "bot": "a0af63cb.cfd18",
+        "chatId": "",
+        "question": "Are you really really sure you want to reboot the Pi?",
+        "answers": [
+            "Yes Im really sure!! Reboot",
+            "Cancel - dont reboot"
+        ],
+        "outputs": 3,
+        "autoAnswerCallback": true,
+        "timeoutValue": "20",
+        "timeoutUnits": "s",
+        "x": 580,
+        "y": 1360,
+        "wires": [
+            [
+                "db41b550.37f718",
+                "e1cb8594.2fc86"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1bc8a1d6.3b8d3e",
+        "type": "restart",
+        "z": "c70403e1.fef6",
+        "g": "5cc5dd43.7d4754",
+        "name": "",
+        "x": 1040,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "eee739a7.6a5b58",
+        "type": "telegrambot-notify",
+        "z": "b209822d.9e674",
+        "g": "a5478298.6399d",
+        "name": "Tell User we are online",
+        "bot": "a0af63cb.cfd18",
+        "chatId": "1476886301",
+        "message": "",
+        "parseMode": "",
+        "x": 1400,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "7d12a340.e6368c",
+        "type": "inject",
+        "z": "b209822d.9e674",
+        "g": "a5478298.6399d",
+        "name": "Trigger Once At Startup",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 240,
+        "wires": [
+            [
+                "18279eff.a00049"
+            ]
+        ]
+    },
+    {
+        "id": "18279eff.a00049",
+        "type": "function",
+        "z": "b209822d.9e674",
+        "g": "a5478298.6399d",
+        "name": "Check if this is the first bootup",
+        "func": "if(flow.get(\"initialised\") === undefined) {\n\n    // store that this has been initialised\n    flow.set(\"initialised\", true);\n    \n    return msg;\n}\n// return null if we have alreay initialised\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 510,
+        "y": 240,
+        "wires": [
+            [
+                "efbf535f.199948"
+            ]
+        ]
+    },
+    {
+        "id": "efbf535f.199948",
+        "type": "exec",
+        "z": "b209822d.9e674",
+        "g": "a5478298.6399d",
+        "command": "hostname -I",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Get the IP address",
+        "x": 790,
+        "y": 240,
+        "wires": [
+            [
+                "ab115648.2f2c6"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "e2316670.0a0af",
+        "type": "template",
+        "z": "b209822d.9e674",
+        "g": "a5478298.6399d",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Hi! Im back online now.\n\nYou can find me at either of these addresses (you need to be on the same wifi as me):\nhttp://harrysbrewpi.local:1880/\nhttp://{{payload}}:1880/\n\nDashboard:\nhttp://harrysbrewpi.local:1880/ui\nhttp://{{payload}}:1880/ui\n\nFeel free to ask for /help",
+        "output": "str",
+        "x": 1200,
+        "y": 240,
+        "wires": [
+            [
+                "eee739a7.6a5b58"
+            ]
+        ]
+    },
+    {
+        "id": "ab115648.2f2c6",
+        "type": "function",
+        "z": "b209822d.9e674",
+        "g": "a5478298.6399d",
+        "name": "Remove line break",
+        "func": "msg.payload = msg.payload.trim();\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1030,
+        "y": 240,
+        "wires": [
+            [
+                "e2316670.0a0af"
+            ]
+        ]
     }
 ]
