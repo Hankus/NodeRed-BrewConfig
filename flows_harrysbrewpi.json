@@ -180,7 +180,7 @@
             "2f984eaf.bf7712"
         ],
         "x": 74,
-        "y": 71.5,
+        "y": 51.5,
         "w": 612,
         "h": 97
     },
@@ -394,7 +394,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 230,
-        "y": 120,
+        "y": 100,
         "wires": [
             [
                 "2f984eaf.bf7712"
@@ -414,7 +414,7 @@
         "oldrc": false,
         "name": "Start Chromium If It Is Not Running",
         "x": 520,
-        "y": 120,
+        "y": 100,
         "wires": [
             [],
             [],
