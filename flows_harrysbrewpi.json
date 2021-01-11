@@ -34,7 +34,7 @@
             "24d98b2.b6993f4"
         ],
         "x": 54,
-        "y": 959,
+        "y": 979,
         "w": 1112,
         "h": 149.5
     },
@@ -711,7 +711,7 @@
         "oldrc": false,
         "name": "Kill SSH",
         "x": 460,
-        "y": 1060,
+        "y": 1080,
         "wires": [
             [
                 "ca9bca9a.5e9c3"
@@ -752,7 +752,7 @@
         "initialize": "",
         "finalize": "",
         "x": 700,
-        "y": 1060,
+        "y": 1080,
         "wires": [
             [
                 "def72da8.aa8c6"
@@ -781,7 +781,7 @@
         "name": "Answer Close all tunnels command ________________________________",
         "info": "",
         "x": 330,
-        "y": 1000,
+        "y": 1020,
         "wires": []
     },
     {
@@ -795,7 +795,7 @@
         "commandType": "re",
         "commandCase": false,
         "x": 210,
-        "y": 1060,
+        "y": 1080,
         "wires": [
             [
                 "b9177371.4ece68"
@@ -813,7 +813,7 @@
         "message": "",
         "parseMode": "",
         "x": 1020,
-        "y": 1060,
+        "y": 1080,
         "wires": []
     },
     {
