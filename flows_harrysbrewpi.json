@@ -3016,7 +3016,7 @@
         "type": "PID",
         "z": "4c2748b.984d3b8",
         "name": "HLT PID",
-        "setpoint": "45",
+        "setpoint": "10",
         "pb": "0",
         "ti": 9999,
         "td": 0,
