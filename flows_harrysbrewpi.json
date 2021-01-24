@@ -2,7 +2,7 @@
     {
         "id": "b209822d.9e674",
         "type": "tab",
-        "label": "Bootup tasks",
+        "label": "Bootup tasks & Globals",
         "disabled": false,
         "info": ""
     },
@@ -14,16 +14,65 @@
         "info": ""
     },
     {
-        "id": "4c0008aa.866518",
+        "id": "fd1f2b7f.0d4d08",
         "type": "tab",
-        "label": "Heatbeat",
+        "label": "PT100 Sensors",
         "disabled": false,
         "info": ""
     },
     {
-        "id": "fd1f2b7f.0d4d08",
+        "id": "72bd38cd.b8a178",
         "type": "tab",
-        "label": "PT100 Sensors",
+        "label": "HLT view controller",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "37de3d6f.58f362",
+        "type": "tab",
+        "label": "MLT view controller",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "5a18ecba.25f6d4",
+        "type": "tab",
+        "label": "BK Element view controller",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "4c2748b.984d3b8",
+        "type": "tab",
+        "label": "Element PID controllers",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b6bdc7e8.c2bbe8",
+        "type": "tab",
+        "label": "Element Output Controllers",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "474c912b.2cb9",
+        "type": "tab",
+        "label": "Checklist",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "858aa20d.74d93",
+        "type": "tab",
+        "label": "Warnings and pump contollers",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "8dd89e26.6d141",
+        "type": "tab",
+        "label": "Timer",
         "disabled": false,
         "info": ""
     },
@@ -35,30 +84,16 @@
         "info": ""
     },
     {
+        "id": "e61b1f1a.55954",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "db2290bc.6bd9c8",
         "type": "tab",
         "label": "GPIO test",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "72bd38cd.b8a178",
-        "type": "tab",
-        "label": "Element view controller",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "4c2748b.984d3b8",
-        "type": "tab",
-        "label": "Element controllers",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "b6bdc7e8.c2bbe8",
-        "type": "tab",
-        "label": "Element Output Controllers",
         "disabled": false,
         "info": ""
     },
@@ -278,12 +313,12 @@
             "label": true
         },
         "nodes": [
-            "40ee18a5.154a38",
-            "2f984eaf.bf7712"
+            "2f984eaf.bf7712",
+            "48bdeac7.e6d764"
         ],
         "x": 74,
         "y": 51.5,
-        "w": 612,
+        "w": 412,
         "h": 97
     },
     {
@@ -340,35 +375,15 @@
         },
         "nodes": [
             "eee739a7.6a5b58",
-            "7d12a340.e6368c",
-            "18279eff.a00049",
             "efbf535f.199948",
             "e2316670.0a0af",
-            "ab115648.2f2c6"
+            "ab115648.2f2c6",
+            "dd1f70b6.6080e"
         ],
         "x": 74,
-        "y": 191.5,
-        "w": 1452,
+        "y": 171.5,
+        "w": 972,
         "h": 97
-    },
-    {
-        "id": "3b1baa9.ceb9956",
-        "type": "group",
-        "z": "db2290bc.6bd9c8",
-        "name": "Pump Control",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "33ada14c.ad7b3e",
-            "87ee17a5.c48eb8",
-            "61547faa.cdd2",
-            "13150dfd.eebf72"
-        ],
-        "x": 94,
-        "y": 279,
-        "w": 512,
-        "h": 162
     },
     {
         "id": "3f74176e.8009c8",
@@ -389,18 +404,88 @@
         "h": 122
     },
     {
-        "id": "a9ab64c9.53007",
-        "type": "ui_tab",
-        "name": "Landing",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": true
+        "id": "6ec6cc41.7154c4",
+        "type": "group",
+        "z": "b209822d.9e674",
+        "name": "Provide heatbeat",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "93f5246c.f907b8",
+            "766a5f5.a3001a",
+            "a97b267c.286028",
+            "82be8459.c3e358"
+        ],
+        "x": 74,
+        "y": 419,
+        "w": 472,
+        "h": 142
+    },
+    {
+        "id": "e7769d56.bbbbb",
+        "type": "group",
+        "z": "b209822d.9e674",
+        "name": "Initialise power button / switches states to off",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ba1a96a.a480468",
+            "bcb30f14.f438e",
+            "c7fb6487.dee108"
+        ],
+        "x": 74,
+        "y": 299,
+        "w": 322,
+        "h": 82
+    },
+    {
+        "id": "55fc7d02.76f0a4",
+        "type": "group",
+        "z": "b209822d.9e674",
+        "name": "Provide bootup trigger",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "abbae2aa.9a409",
+            "1824b7d6.a040d8",
+            "a8aeafa1.3a522"
+        ],
+        "x": 74,
+        "y": 659,
+        "w": 662,
+        "h": 82
+    },
+    {
+        "id": "f2c499c6.7e13e8",
+        "type": "group",
+        "z": "858aa20d.74d93",
+        "name": "Pump Control",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a36494f8.8a1388",
+            "83cee9c2.159be8",
+            "28a66a10.ef6846",
+            "deb8f2eb.c1901",
+            "b9e12ea0.45b98",
+            "43bf9e4a.8923d",
+            "ac9038ad.f15a48",
+            "352afbec.d94f34"
+        ],
+        "x": 114,
+        "y": 219,
+        "w": 472,
+        "h": 242
     },
     {
         "id": "c0391f6c.552ff",
         "type": "ui_base",
         "theme": {
-            "name": "theme-light",
+            "name": "theme-dark",
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
@@ -412,54 +497,56 @@
                 "default": "#097479",
                 "baseColor": "#097479",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "edited": true,
+                "reset": false
             },
             "customTheme": {
                 "name": "Untitled Theme 1",
                 "default": "#4B7930",
                 "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
             },
             "themeState": {
                 "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
+                    "default": "#097479",
+                    "value": "#097479",
                     "edited": false
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
+                    "value": "#097479",
                     "edited": false
                 },
                 "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
                     "value": "#111111",
                     "edited": false
                 },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
                 "widget-backgroundColor": {
-                    "value": "#0094ce",
+                    "value": "#097479",
                     "edited": false
                 },
                 "widget-borderColor": {
-                    "value": "#ffffff",
+                    "value": "#333333",
                     "edited": false
                 },
                 "base-font": {
@@ -483,8 +570,8 @@
             "sizes": {
                 "sx": 48,
                 "sy": 48,
-                "gx": 6,
-                "gy": 6,
+                "gx": 14,
+                "gy": 14,
                 "cx": 6,
                 "cy": 6,
                 "px": 0,
@@ -497,9 +584,9 @@
         "type": "ui_group",
         "name": "Controls",
         "tab": "3f73ea82.bc62e6",
-        "order": 1,
-        "disp": true,
-        "width": "6",
+        "order": 5,
+        "disp": false,
+        "width": "22",
         "collapse": false
     },
     {
@@ -523,9 +610,9 @@
         "type": "ui_group",
         "name": "Charts",
         "tab": "3f73ea82.bc62e6",
-        "order": 1,
+        "order": 7,
         "disp": true,
-        "width": "16",
+        "width": "22",
         "collapse": true
     },
     {
@@ -547,34 +634,71 @@
         "hidden": false
     },
     {
-        "id": "40ee18a5.154a38",
-        "type": "inject",
-        "z": "b209822d.9e674",
-        "g": "1fe8870c.af7949",
-        "name": "Trigger Once At Startup",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "2",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 230,
-        "y": 100,
-        "wires": [
-            [
-                "2f984eaf.bf7712"
-            ]
-        ]
+        "id": "e3312206.7d39b",
+        "type": "ui_group",
+        "name": "HLT",
+        "tab": "3f73ea82.bc62e6",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f3a21dc0.41ad4",
+        "type": "ui_group",
+        "name": "MLT",
+        "tab": "3f73ea82.bc62e6",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "58848435.b40dac",
+        "type": "ui_group",
+        "name": "BK",
+        "tab": "3f73ea82.bc62e6",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b26a00f1.e153f",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "f3a21dc0.41ad4",
+        "order": 2,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "87b9c423.b256e8",
+        "type": "ui_group",
+        "name": "Checklist",
+        "tab": "3f73ea82.bc62e6",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a8850437.d84aa8",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b51f8f14.e5b5",
+        "type": "ui_group",
+        "name": "Timer",
+        "tab": "3f73ea82.bc62e6",
+        "order": 6,
+        "disp": true,
+        "width": "22",
+        "collapse": false
     },
     {
         "id": "2f984eaf.bf7712",
@@ -588,7 +712,7 @@
         "timer": "",
         "oldrc": false,
         "name": "Start Chromium If It Is Not Running",
-        "x": 520,
+        "x": 320,
         "y": 100,
         "wires": [
             [],
@@ -1444,58 +1568,9 @@
         "chatId": "-486488441",
         "message": "",
         "parseMode": "",
-        "x": 1400,
-        "y": 240,
+        "x": 920,
+        "y": 220,
         "wires": []
-    },
-    {
-        "id": "7d12a340.e6368c",
-        "type": "inject",
-        "z": "b209822d.9e674",
-        "g": "a5478298.6399d",
-        "name": "Trigger Once At Startup",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "5",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 230,
-        "y": 240,
-        "wires": [
-            [
-                "18279eff.a00049"
-            ]
-        ]
-    },
-    {
-        "id": "18279eff.a00049",
-        "type": "function",
-        "z": "b209822d.9e674",
-        "g": "a5478298.6399d",
-        "name": "Check if this is the first bootup",
-        "func": "if(flow.get(\"initialised\") === undefined) {\n\n    // store that this has been initialised\n    flow.set(\"initialised\", true);\n    \n    return msg;\n}\n// return null if we have alreay initialised\nreturn;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 510,
-        "y": 240,
-        "wires": [
-            [
-                "efbf535f.199948"
-            ]
-        ]
     },
     {
         "id": "efbf535f.199948",
@@ -1509,8 +1584,8 @@
         "timer": "",
         "oldrc": false,
         "name": "Get the IP address",
-        "x": 790,
-        "y": 240,
+        "x": 350,
+        "y": 220,
         "wires": [
             [
                 "ab115648.2f2c6"
@@ -1531,8 +1606,8 @@
         "syntax": "mustache",
         "template": "Hi! Im back online now.\n\nYou can find me at either of these addresses (you need to be on the same wifi as me):\nhttp://harrysbrewpi.local:1880/\nhttp://{{payload}}:1880/\n\nDashboard:\nhttp://harrysbrewpi.local:1880/ui\nhttp://{{payload}}:1880/ui\n\nFeel free to ask for /help",
         "output": "str",
-        "x": 1200,
-        "y": 240,
+        "x": 720,
+        "y": 220,
         "wires": [
             [
                 "eee739a7.6a5b58"
@@ -1550,8 +1625,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1030,
-        "y": 240,
+        "x": 550,
+        "y": 220,
         "wires": [
             [
                 "e2316670.0a0af"
@@ -1627,77 +1702,6 @@
         ]
     },
     {
-        "id": "33ada14c.ad7b3e",
-        "type": "inject",
-        "z": "db2290bc.6bd9c8",
-        "g": "3b1baa9.ceb9956",
-        "name": "Pump On",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 200,
-        "y": 360,
-        "wires": [
-            [
-                "13150dfd.eebf72"
-            ]
-        ]
-    },
-    {
-        "id": "87ee17a5.c48eb8",
-        "type": "rpi-gpio out",
-        "z": "db2290bc.6bd9c8",
-        "g": "3b1baa9.ceb9956",
-        "name": "Pump",
-        "pin": "11",
-        "set": true,
-        "level": "0",
-        "freq": "",
-        "out": "out",
-        "x": 530,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "61547faa.cdd2",
-        "type": "inject",
-        "z": "db2290bc.6bd9c8",
-        "g": "3b1baa9.ceb9956",
-        "name": "Pump Off",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 200,
-        "y": 400,
-        "wires": [
-            [
-                "13150dfd.eebf72"
-            ]
-        ]
-    },
-    {
         "id": "731e9eaf.6c074",
         "type": "exec",
         "z": "fd1f2b7f.0d4d08",
@@ -1708,8 +1712,8 @@
         "timer": "",
         "oldrc": false,
         "name": "",
-        "x": 500,
-        "y": 280,
+        "x": 460,
+        "y": 140,
         "wires": [
             [
                 "eb826530.6339a8"
@@ -1719,315 +1723,39 @@
         ]
     },
     {
-        "id": "505ffd7b.e3b954",
-        "type": "ui_text",
-        "z": "fd1f2b7f.0d4d08",
-        "group": "599c9f6f.d3c42",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "HLT",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "x": 1350,
-        "y": 260,
-        "wires": []
-    },
-    {
         "id": "eb826530.6339a8",
         "type": "json",
         "z": "fd1f2b7f.0d4d08",
-        "name": "",
+        "name": "Convert to object",
         "property": "payload",
         "action": "obj",
         "pretty": false,
         "x": 770,
-        "y": 280,
+        "y": 140,
         "wires": [
             [
                 "791d02be.92a92c",
-                "41132951.92faa8",
-                "be6919ba.1b34e8"
+                "13480df3.98e9b2",
+                "22cc66b9.6fa50a"
             ]
         ]
-    },
-    {
-        "id": "6ee7ab4b.889ed4",
-        "type": "ui_text",
-        "z": "fd1f2b7f.0d4d08",
-        "group": "599c9f6f.d3c42",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "MLT",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "x": 990,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "806a3c4.70fefc",
-        "type": "ui_text",
-        "z": "fd1f2b7f.0d4d08",
-        "group": "599c9f6f.d3c42",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "BK",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "x": 990,
-        "y": 660,
-        "wires": []
     },
     {
         "id": "791d02be.92a92c",
         "type": "function",
         "z": "fd1f2b7f.0d4d08",
-        "name": "",
+        "name": "Get HLT Temp value",
         "func": "msg.payload = msg.payload.hlt\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 960,
-        "y": 220,
+        "x": 1080,
+        "y": 80,
         "wires": [
             [
-                "505ffd7b.e3b954",
-                "a1e9ea74.21cd98",
                 "fb4d5c6f.c5572"
             ]
-        ]
-    },
-    {
-        "id": "be6919ba.1b34e8",
-        "type": "function",
-        "z": "fd1f2b7f.0d4d08",
-        "name": "",
-        "func": "msg.payload = msg.payload.bk\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 600,
-        "y": 740,
-        "wires": [
-            [
-                "806a3c4.70fefc",
-                "b49fa0f6.a819d"
-            ]
-        ]
-    },
-    {
-        "id": "41132951.92faa8",
-        "type": "function",
-        "z": "fd1f2b7f.0d4d08",
-        "name": "",
-        "func": "msg.payload = msg.payload.mlt\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 820,
-        "y": 560,
-        "wires": [
-            [
-                "6ee7ab4b.889ed4",
-                "8705ef24.a14c1",
-                "193fb580.1c22fb"
-            ]
-        ]
-    },
-    {
-        "id": "abad5811.f3ed98",
-        "type": "ui_chart",
-        "z": "fd1f2b7f.0d4d08",
-        "name": "",
-        "group": "599c9f6f.d3c42",
-        "order": 3,
-        "width": "8",
-        "height": "6",
-        "label": "hlt chart",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "25",
-        "ymax": "55",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#d82c2c",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "x": 1720,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b49fa0f6.a819d",
-        "type": "ui_chart",
-        "z": "fd1f2b7f.0d4d08",
-        "name": "",
-        "group": "c45a83a3.d00908",
-        "order": 5,
-        "width": "8",
-        "height": "6",
-        "label": "bk chart",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "x": 890,
-        "y": 740,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8705ef24.a14c1",
-        "type": "ui_chart",
-        "z": "fd1f2b7f.0d4d08",
-        "name": "",
-        "group": "c45a83a3.d00908",
-        "order": 2,
-        "width": "8",
-        "height": "6",
-        "label": "mlt chart",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "x": 980,
-        "y": 580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "193fb580.1c22fb",
-        "type": "smooth",
-        "z": "fd1f2b7f.0d4d08",
-        "name": "",
-        "property": "payload",
-        "action": "mean",
-        "count": "10",
-        "round": "",
-        "mult": "single",
-        "reduce": false,
-        "x": 1000,
-        "y": 540,
-        "wires": [
-            [
-                "3b9a6bbf.d9b344"
-            ]
-        ]
-    },
-    {
-        "id": "3b9a6bbf.d9b344",
-        "type": "ui_chart",
-        "z": "fd1f2b7f.0d4d08",
-        "name": "",
-        "group": "c45a83a3.d00908",
-        "order": 4,
-        "width": "8",
-        "height": "6",
-        "label": "MLT smooth",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "x": 1170,
-        "y": 540,
-        "wires": [
-            []
         ]
     },
     {
@@ -2187,7 +1915,7 @@
         "type": "rpi-gpio out",
         "z": "bed2c066.9e4d4",
         "name": "Buzzer",
-        "pin": "22",
+        "pin": "38",
         "set": true,
         "level": "1",
         "freq": "",
@@ -2265,45 +1993,13 @@
         ]
     },
     {
-        "id": "13150dfd.eebf72",
-        "type": "ui_switch",
-        "z": "db2290bc.6bd9c8",
-        "g": "3b1baa9.ceb9956",
-        "name": "",
-        "label": "Pump switch",
-        "tooltip": "",
-        "group": "ee877576.e7497",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 390,
-        "y": 320,
-        "wires": [
-            [
-                "87ee17a5.c48eb8"
-            ]
-        ]
-    },
-    {
         "id": "2c0ddb20.797604",
         "type": "ui_button",
         "z": "db2290bc.6bd9c8",
         "g": "3f74176e.8009c8",
         "name": "",
         "group": "ee877576.e7497",
-        "order": 3,
+        "order": 6,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -2761,167 +2457,30 @@
         "id": "7821cacc.968c44",
         "type": "link in",
         "z": "b6bdc7e8.c2bbe8",
-        "name": "HLT Element",
+        "name": "HLT Element Power %",
         "links": [
-            "8ab36a9e.8da5c8",
-            "359e5b33.af2754",
             "9d19b417.2ff2c8",
             "bfadb1f1.cadec"
         ],
-        "x": 130,
+        "x": 160,
         "y": 120,
         "wires": [
             [
-                "978ce145.42976",
                 "ee085d83.81d5c"
             ]
         ],
         "l": true
     },
     {
-        "id": "a1e9ea74.21cd98",
-        "type": "change",
-        "z": "fd1f2b7f.0d4d08",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "temp",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1300,
-        "y": 300,
-        "wires": [
-            [
-                "abad5811.f3ed98"
-            ]
-        ]
-    },
-    {
         "id": "8c0e6674.9c4a98",
         "type": "link out",
         "z": "b6bdc7e8.c2bbe8",
-        "name": "HLT Element output power",
+        "name": "HLT Element output power %",
         "links": [
-            "2d59e69.056b31a"
+            "e4d7502c.87c4"
         ],
-        "x": 680,
+        "x": 690,
         "y": 260,
-        "wires": [],
-        "l": true
-    },
-    {
-        "id": "c6e49801.1e9418",
-        "type": "change",
-        "z": "fd1f2b7f.0d4d08",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "power",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1300,
-        "y": 340,
-        "wires": [
-            [
-                "41729e5b.1f208"
-            ]
-        ]
-    },
-    {
-        "id": "2d59e69.056b31a",
-        "type": "link in",
-        "z": "fd1f2b7f.0d4d08",
-        "name": "HLT Element output power",
-        "links": [
-            "8c0e6674.9c4a98"
-        ],
-        "x": 1050,
-        "y": 340,
-        "wires": [
-            [
-                "c6e49801.1e9418"
-            ]
-        ],
-        "l": true
-    },
-    {
-        "id": "41729e5b.1f208",
-        "type": "range",
-        "z": "fd1f2b7f.0d4d08",
-        "minin": "0",
-        "maxin": "100",
-        "minout": "30",
-        "maxout": "50",
-        "action": "scale",
-        "round": false,
-        "property": "payload",
-        "name": "",
-        "x": 1470,
-        "y": 340,
-        "wires": [
-            [
-                "abad5811.f3ed98"
-            ]
-        ]
-    },
-    {
-        "id": "f36ed21c.b27c3",
-        "type": "inject",
-        "z": "4c0008aa.866518",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "1",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 210,
-        "y": 160,
-        "wires": [
-            [
-                "d583a0c6.8c20b"
-            ]
-        ]
-    },
-    {
-        "id": "d583a0c6.8c20b",
-        "type": "link out",
-        "z": "4c0008aa.866518",
-        "name": "Heatbeat ticker 1s",
-        "links": [
-            "d10d7337.68526",
-            "a566f02f.63e1c"
-        ],
-        "x": 460,
-        "y": 160,
         "wires": [],
         "l": true
     },
@@ -2931,10 +2490,11 @@
         "z": "fd1f2b7f.0d4d08",
         "name": "Heatbeat ticker",
         "links": [
-            "d583a0c6.8c20b"
+            "d583a0c6.8c20b",
+            "766a5f5.a3001a"
         ],
-        "x": 200,
-        "y": 280,
+        "x": 160,
+        "y": 140,
         "wires": [
             [
                 "731e9eaf.6c074"
@@ -2946,11 +2506,11 @@
         "id": "ee085d83.81d5c",
         "type": "change",
         "z": "b6bdc7e8.c2bbe8",
-        "name": "",
+        "name": "Set HLT Power Output",
         "rules": [
             {
                 "t": "set",
-                "p": "hltPower",
+                "p": "HLTPowerOutput",
                 "pt": "flow",
                 "to": "payload",
                 "tot": "msg"
@@ -2961,8 +2521,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 410,
-        "y": 220,
+        "x": 420,
+        "y": 200,
         "wires": [
             []
         ]
@@ -2973,7 +2533,8 @@
         "z": "b6bdc7e8.c2bbe8",
         "name": "Heatbeat ticker 1s",
         "links": [
-            "d583a0c6.8c20b"
+            "d583a0c6.8c20b",
+            "766a5f5.a3001a"
         ],
         "x": 150,
         "y": 260,
@@ -2988,13 +2549,13 @@
         "id": "ee91dc6f.629ae",
         "type": "change",
         "z": "b6bdc7e8.c2bbe8",
-        "name": "",
+        "name": "Get HLT Power Output",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "hltPower",
+                "to": "HLTPowerOutput",
                 "tot": "flow"
             }
         ],
@@ -3003,8 +2564,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 400,
-        "y": 260,
+        "x": 420,
+        "y": 240,
         "wires": [
             [
                 "8c0e6674.9c4a98"
@@ -3037,13 +2598,12 @@
         "id": "9d19b417.2ff2c8",
         "type": "link out",
         "z": "4c2748b.984d3b8",
-        "name": "HLT Element",
+        "name": "HLT Element Power %",
         "links": [
-            "cee9183c.900198",
             "7821cacc.968c44"
         ],
-        "x": 870,
-        "y": 100,
+        "x": 860,
+        "y": 120,
         "wires": [],
         "l": true
     },
@@ -3059,8 +2619,8 @@
         "round": false,
         "property": "payload",
         "name": "",
-        "x": 680,
-        "y": 100,
+        "x": 640,
+        "y": 120,
         "wires": [
             [
                 "9d19b417.2ff2c8"
@@ -3074,10 +2634,11 @@
         "name": "HLT Temperature",
         "links": [
             "fd495fdd.1b2f3",
-            "11d53e33.30f432"
+            "11d53e33.30f432",
+            "d209a449.0ceb98"
         ],
-        "x": 1220,
-        "y": 160,
+        "x": 1310,
+        "y": 80,
         "wires": [],
         "l": true
     },
@@ -3105,13 +2666,15 @@
         "name": "HLT Target Temperature",
         "links": [
             "562f39c5.a3f158",
-            "ed8921b.65038e"
+            "ed8921b.65038e",
+            "ad114e31.7ae09"
         ],
         "x": 180,
         "y": 220,
         "wires": [
             [
-                "5f982b96.87a964"
+                "5f982b96.87a964",
+                "aab5edd.fe2551"
             ]
         ],
         "l": true
@@ -3136,11 +2699,10 @@
         "to": "",
         "reg": false,
         "x": 400,
-        "y": 220,
+        "y": 200,
         "wires": [
             [
-                "e4dea1a5.4f1ed",
-                "aee6984a.086ea8"
+                "e4dea1a5.4f1ed"
             ]
         ]
     },
@@ -3150,104 +2712,10 @@
         "z": "4c2748b.984d3b8",
         "name": "HLT Target temp reading",
         "links": [
-            "960d8634.9aaaf8",
-            "88dcb199.734bb"
+            "86c6a6c3.5010d8"
         ],
-        "x": 615,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "b9bd7279.f5059",
-        "type": "ui_switch",
-        "z": "72bd38cd.b8a178",
-        "name": "",
-        "label": "HLT element switch",
-        "tooltip": "",
-        "group": "ee877576.e7497",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "100",
-        "onvalueType": "num",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "0",
-        "offvalueType": "num",
-        "officon": "",
-        "offcolor": "",
-        "x": 430,
-        "y": 120,
-        "wires": [
-            [
-                "bfadb1f1.cadec"
-            ]
-        ]
-    },
-    {
-        "id": "5417cd81.607584",
-        "type": "inject",
-        "z": "72bd38cd.b8a178",
-        "name": "HLT Element On",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "100",
-        "payloadType": "num",
-        "x": 200,
-        "y": 160,
-        "wires": [
-            [
-                "b9bd7279.f5059"
-            ]
-        ]
-    },
-    {
-        "id": "137f19fe.982266",
-        "type": "inject",
-        "z": "72bd38cd.b8a178",
-        "name": "HLT Element Off",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 200,
-        "y": 200,
-        "wires": [
-            [
-                "b9bd7279.f5059"
-            ]
-        ]
-    },
-    {
-        "id": "bfadb1f1.cadec",
-        "type": "link out",
-        "z": "72bd38cd.b8a178",
-        "name": "HLT Element",
-        "links": [
-            "7821cacc.968c44"
-        ],
-        "x": 670,
-        "y": 120,
+        "x": 730,
+        "y": 340,
         "wires": [],
         "l": true
     },
@@ -3255,21 +2723,21 @@
         "id": "bc4ccc21.8018",
         "type": "ui_slider",
         "z": "72bd38cd.b8a178",
-        "name": "HLT Target temp",
-        "label": "HLT Target temp slider",
+        "name": "HLT Target temp Slider",
+        "label": "Target temp",
         "tooltip": "",
-        "group": "ee877576.e7497",
-        "order": 3,
-        "width": 0,
-        "height": 0,
+        "group": "e3312206.7d39b",
+        "order": 5,
+        "width": "6",
+        "height": "1",
         "passthru": true,
         "outs": "end",
         "topic": "",
-        "min": "40",
+        "min": "20",
         "max": "105",
         "step": 1,
-        "x": 420,
-        "y": 240,
+        "x": 480,
+        "y": 140,
         "wires": [
             [
                 "ed8921b.65038e"
@@ -3280,88 +2748,1975 @@
         "id": "ed8921b.65038e",
         "type": "link out",
         "z": "72bd38cd.b8a178",
-        "name": "HLT Target Temp",
+        "name": "HLT Target Temp Slider output",
         "links": [
             "d7e3e564.f78cc8"
         ],
-        "x": 690,
-        "y": 240,
+        "x": 750,
+        "y": 140,
         "wires": [],
         "l": true
     },
     {
-        "id": "4a7a15f2.91aaec",
-        "type": "ui_text",
-        "z": "72bd38cd.b8a178",
-        "group": "ee877576.e7497",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "name": "HLT Target temp",
-        "label": "HLT Target temp",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 680,
-        "y": 280,
+        "id": "c8d144f3.1e6888",
+        "type": "comment",
+        "z": "b6bdc7e8.c2bbe8",
+        "name": "*** Element disabled for now",
+        "info": "",
+        "x": 450,
+        "y": 80,
         "wires": []
     },
     {
-        "id": "88dcb199.734bb",
-        "type": "link in",
+        "id": "1292ea0e.c00c36",
+        "type": "ui_chart",
         "z": "72bd38cd.b8a178",
         "name": "",
-        "links": [
-            "aee6984a.086ea8"
+        "group": "e3312206.7d39b",
+        "order": 6,
+        "width": "6",
+        "height": "4",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "15",
+        "ymax": "105",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#f20d3b",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
         ],
-        "x": 485,
-        "y": 280,
+        "outputs": 1,
+        "x": 510,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d211dd6.1df4e",
+        "type": "ui_template",
+        "z": "72bd38cd.b8a178",
+        "group": "e3312206.7d39b",
+        "name": "HLT Temperature",
+        "order": 3,
+        "width": "5",
+        "height": "3",
+        "format": "<div style=\"text-align: center;\">\n    <span style=\"font-size: 80px;\" ng-bind-html=\"msg.payload\"></span>\n    <span style=\"font-size: 25px; vertical-align: top;\">°C</span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 370,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2937443d.753a5c",
+        "type": "ui_template",
+        "z": "72bd38cd.b8a178",
+        "group": "e3312206.7d39b",
+        "name": "HLT Title",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "format": "<h1 class=\"vessel-title\">HLT</h1>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 340,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3c029bdb.3ffab4",
+        "type": "ui_level",
+        "z": "72bd38cd.b8a178",
+        "group": "e3312206.7d39b",
+        "order": 4,
+        "width": "1",
+        "height": "3",
+        "name": "HLT Element power level",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": 100,
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "",
+        "layout": "sv",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": true,
+        "tickmode": "off",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 690,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e4d7502c.87c4",
+        "type": "link in",
+        "z": "72bd38cd.b8a178",
+        "name": "HLT Element output power %",
+        "links": [
+            "8c0e6674.9c4a98",
+            "6aa64bcb.dfc7c4"
+        ],
+        "x": 555,
+        "y": 200,
         "wires": [
             [
-                "4a7a15f2.91aaec"
+                "3c029bdb.3ffab4"
             ]
         ]
     },
     {
-        "id": "4ff1813c.e0d99",
-        "type": "ui_gauge",
-        "z": "72bd38cd.b8a178",
-        "name": "",
-        "group": "ee877576.e7497",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "gtype": "donut",
-        "title": "HLT Temp",
-        "label": "°C",
-        "format": "{{value}}",
-        "min": "20",
-        "max": "100",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "50",
-        "seg2": "80",
-        "x": 520,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "11d53e33.30f432",
+        "id": "d209a449.0ceb98",
         "type": "link in",
         "z": "72bd38cd.b8a178",
         "name": "HLT Temerature",
         "links": [
             "fb4d5c6f.c5572"
         ],
-        "x": 280,
-        "y": 460,
+        "x": 100,
+        "y": 220,
         "wires": [
             [
-                "4ff1813c.e0d99"
+                "9d211dd6.1df4e",
+                "82d52916.ebec88"
             ]
         ],
         "l": true
+    },
+    {
+        "id": "82d52916.ebec88",
+        "type": "change",
+        "z": "72bd38cd.b8a178",
+        "name": "Set chart legend for Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "temp",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 240,
+        "wires": [
+            [
+                "1292ea0e.c00c36"
+            ]
+        ]
+    },
+    {
+        "id": "aab5edd.fe2551",
+        "type": "change",
+        "z": "4c2748b.984d3b8",
+        "name": "Set HLT Target Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "HLTTargetTemperature",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e26a1504.ebf608",
+        "type": "link in",
+        "z": "4c2748b.984d3b8",
+        "name": "Heatbeat ticker 1s",
+        "links": [
+            "d583a0c6.8c20b",
+            "766a5f5.a3001a"
+        ],
+        "x": 150,
+        "y": 340,
+        "wires": [
+            [
+                "644ec519.bba66c"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "644ec519.bba66c",
+        "type": "change",
+        "z": "4c2748b.984d3b8",
+        "name": "Get HLT Target Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HLTTargetTemperature",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 300,
+        "wires": [
+            [
+                "aee6984a.086ea8"
+            ]
+        ]
+    },
+    {
+        "id": "86c6a6c3.5010d8",
+        "type": "link in",
+        "z": "72bd38cd.b8a178",
+        "name": "HLT Target temp reading",
+        "links": [
+            "aee6984a.086ea8"
+        ],
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "8383aeea.56e0a"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "8383aeea.56e0a",
+        "type": "change",
+        "z": "72bd38cd.b8a178",
+        "name": "Set chart legend for Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "target",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 360,
+        "wires": [
+            [
+                "1292ea0e.c00c36"
+            ]
+        ]
+    },
+    {
+        "id": "66294e3f.91eeb",
+        "type": "change",
+        "z": "4c2748b.984d3b8",
+        "name": "Get HLT Target Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "HLTTargetTemperature",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 420,
+        "wires": [
+            [
+                "5177e5d6.87767c"
+            ]
+        ]
+    },
+    {
+        "id": "5177e5d6.87767c",
+        "type": "link out",
+        "z": "4c2748b.984d3b8",
+        "name": "HLT Target temp reading inital",
+        "links": [
+            "7d1ab39f.6aa9fc",
+            "cf8d7594.11c1d8"
+        ],
+        "x": 750,
+        "y": 420,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "31c04565.8cc96a",
+        "type": "inject",
+        "z": "4c2748b.984d3b8",
+        "name": "On refresh",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 420,
+        "wires": [
+            [
+                "66294e3f.91eeb"
+            ]
+        ]
+    },
+    {
+        "id": "7d1ab39f.6aa9fc",
+        "type": "link in",
+        "z": "72bd38cd.b8a178",
+        "name": "HLT Target temp reading",
+        "links": [
+            "5177e5d6.87767c"
+        ],
+        "x": 230,
+        "y": 140,
+        "wires": [
+            [
+                "bc4ccc21.8018"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "3106d557.96402a",
+        "type": "ui_template",
+        "z": "37de3d6f.58f362",
+        "group": "f3a21dc0.41ad4",
+        "name": "MLT Title",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "format": "<h1 class=\"vessel-title\">MLT</h1>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 300,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "726f2833.6fd958",
+        "type": "ui_template",
+        "z": "5a18ecba.25f6d4",
+        "group": "58848435.b40dac",
+        "name": "BK Title",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "format": "<h1 class=\"vessel-title\">BK</h1>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 280,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "58061a2a.b1b644",
+        "type": "ui_list",
+        "z": "474c912b.2cb9",
+        "group": "87b9c423.b256e8",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "lineType": "one",
+        "actionType": "check",
+        "allowHTML": false,
+        "outputs": 1,
+        "topic": "",
+        "x": 790,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "207a28c4.e3e498",
+        "type": "function",
+        "z": "474c912b.2cb9",
+        "name": "Map to ui list",
+        "func": "var checklist = msg.payload.map(function(card){\n   return {\n       \"title\": card.name,\n       \"isChecked\": card.closed\n   }; \n});\nreturn {payload: checklist};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 630,
+        "y": 120,
+        "wires": [
+            [
+                "58061a2a.b1b644"
+            ]
+        ]
+    },
+    {
+        "id": "5d5c51fc.6d68a",
+        "type": "link in",
+        "z": "474c912b.2cb9",
+        "name": "Heatbeat ticker 5s",
+        "links": [
+            "261a2775.361898",
+            "82be8459.c3e358"
+        ],
+        "x": 170,
+        "y": 120,
+        "wires": [
+            []
+        ],
+        "l": true
+    },
+    {
+        "id": "8518695c.afea28",
+        "type": "ui_template",
+        "z": "474c912b.2cb9",
+        "group": "87b9c423.b256e8",
+        "name": "Checklist title",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "format": "<h1 class=\"vessel-title\">Checklist</h1>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 380,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "352afbec.d94f34",
+        "type": "rpi-gpio out",
+        "z": "858aa20d.74d93",
+        "g": "f2c499c6.7e13e8",
+        "name": "HL Pump",
+        "pin": "11",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 500,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "a11b0e69.8dac6",
+        "type": "ui_template",
+        "z": "858aa20d.74d93",
+        "group": "ee877576.e7497",
+        "name": "Warning icon",
+        "order": 1,
+        "width": "3",
+        "height": "3",
+        "format": "<span ng-if=\"msg.payload && msg.payload.length\" style=\"margin: 10px auto;\">\n    <i class=\"fa fa-exclamation-triangle\" style=\"font-size: 120px; color: gold;\" aria-hidden=\"true\"></i>        \n</span>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 220,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea16abf.d13d458",
+        "type": "ui_template",
+        "z": "8dd89e26.6d141",
+        "group": "b51f8f14.e5b5",
+        "name": "Timer Title",
+        "order": 1,
+        "width": "8",
+        "height": "1",
+        "format": "<h1 class=\"vessel-title\">Timer</h1>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 270,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3b949333.c7198c",
+        "type": "ui_template",
+        "z": "8dd89e26.6d141",
+        "group": "b51f8f14.e5b5",
+        "name": "Timer countdown",
+        "order": 4,
+        "width": "5",
+        "height": "3",
+        "format": "<div style=\"text-align: center;\">\n    <span style=\"font-size: 80px;\" ng-bind-html=\"msg.payload\">20:00</span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 510,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "959ccf41.bcbbe",
+        "type": "ui_button",
+        "z": "8dd89e26.6d141",
+        "name": "",
+        "group": "b51f8f14.e5b5",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "+5m",
+        "tooltip": "",
+        "color": "{{colour}}",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 210,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "72f6190f.f90b18",
+        "type": "ui_button",
+        "z": "8dd89e26.6d141",
+        "name": "",
+        "group": "b51f8f14.e5b5",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "+10m",
+        "tooltip": "",
+        "color": "{{colour}}",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 210,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "45704aca.4bf344",
+        "type": "ui_button",
+        "z": "8dd89e26.6d141",
+        "name": "",
+        "group": "b51f8f14.e5b5",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "Reset",
+        "tooltip": "",
+        "color": "{{colour}}",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 210,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5631269f.5e5bc8",
+        "type": "ui_button",
+        "z": "8dd89e26.6d141",
+        "name": "",
+        "group": "b51f8f14.e5b5",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "Start/Pause",
+        "tooltip": "",
+        "color": "{{colour}}",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 230,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ad9c074.88e63",
+        "type": "ui_template",
+        "z": "858aa20d.74d93",
+        "group": "ee877576.e7497",
+        "name": "Warning messages",
+        "order": 3,
+        "width": "6",
+        "height": "3",
+        "format": "<div style=\"width:200px;\">\n    <ul>\n        <li ng-repeat=\"warning in msg.payload\">\n            {{warning.text}}\n        </li>\n    </ul>\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 410,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6eebc0ed.dca6a",
+        "type": "inject",
+        "z": "858aa20d.74d93",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"text\":\"THe pumps not on\"}]",
+        "payloadType": "json",
+        "x": 100,
+        "y": 80,
+        "wires": [
+            [
+                "a11b0e69.8dac6",
+                "6ad9c074.88e63"
+            ]
+        ]
+    },
+    {
+        "id": "b62a266c.9438d8",
+        "type": "inject",
+        "z": "e61b1f1a.55954",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2003ace1.457794",
+        "type": "function",
+        "z": "e61b1f1a.55954",
+        "name": "map cards",
+        "func": "var checklist = msg.payload.map(function(card){\n    // figure out if this card is checked off\n    var isChecked = false;\n    if(card.customFieldItems && card.customFieldItems.length) {\n        card.customFieldItems.forEach(function(field){\n            if(field.idCustomField == \"6003c00314add7311db885d5\") {\n                if(field.value && field.value.checked) {\n                    isChecked = (field.value.checked===\"true\");\n                }\n            }\n        });\n    }\n    \n   return {\n       \"id\":card.id,\n       \"title\": card.name,\n       \"isChecked\": isChecked\n   }; \n});\nreturn {payload: checklist};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 610,
+        "y": 440,
+        "wires": [
+            [
+                "9a73dc19.19c73"
+            ]
+        ]
+    },
+    {
+        "id": "9a73dc19.19c73",
+        "type": "ui_template",
+        "z": "e61b1f1a.55954",
+        "group": "87b9c423.b256e8",
+        "name": "",
+        "order": 3,
+        "width": "6",
+        "height": "1",
+        "format": "<ul>\n    <li ng-repeat=\"card in msg.payload track by $index\" style=\"position: relative;\" ng-click=\"send({payload:!card.isChecked,action:'setChecked',card:card.id,orig:msg})\">\n        <i class=\"fa-li fa {{(card.isChecked && card.isChecked=='loading') ? 'fa-spinner fa-spin' : (card.isChecked) ? 'fa-check-square' : 'fa-square'}}\"></i>\n        {{card.title}}\n    </li>\n</ul> ",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 800,
+        "y": 440,
+        "wires": [
+            [
+                "5b83bf6e.c75e"
+            ]
+        ]
+    },
+    {
+        "id": "150761b3.e3a14e",
+        "type": "debug",
+        "z": "e61b1f1a.55954",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 555,
+        "y": 351,
+        "wires": []
+    },
+    {
+        "id": "8b882f91.8438c",
+        "type": "inject",
+        "z": "e61b1f1a.55954",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 225,
+        "y": 331,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7efa133.b9513ec",
+        "type": "inject",
+        "z": "e61b1f1a.55954",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5b83bf6e.c75e",
+        "type": "function",
+        "z": "e61b1f1a.55954",
+        "name": "Handle loading state",
+        "func": "var cardToChange = msg.card;\nvar checklist = msg.orig.payload.map(function(card){\n    if(card.id == cardToChange) {\n        card.isChecked=\"loading\"\n    }\n    return card;\n});\nreturn {payload: checklist};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 820,
+        "y": 360,
+        "wires": [
+            [
+                "9a73dc19.19c73"
+            ]
+        ]
+    },
+    {
+        "id": "c4aa3607.04efb8",
+        "type": "ui_template",
+        "z": "e61b1f1a.55954",
+        "group": "ee877576.e7497",
+        "name": "ON / OFF",
+        "order": 8,
+        "width": "2",
+        "height": "2",
+        "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg)\">\n    <div>\n        <span style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\">\n            ON / OFF\n        </span>\n    </div>\n    <div>\n        <i class=\"fa  {{(msg.payload) ? 'fa-square' : 'fa-square-o'}} fa-2x fa-fw\" style=\"{{(msg.payload) ? 'color: #32ff32;' : ''}}\"></i>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 980,
+        "y": 780,
+        "wires": [
+            [
+                "56b6e0be.699a8"
+            ]
+        ]
+    },
+    {
+        "id": "56b6e0be.699a8",
+        "type": "function",
+        "z": "e61b1f1a.55954",
+        "name": "switch controller",
+        "func": "var originalValue = msg.payload;\n\n// handle command to set value\nif(msg.topic && msg.topic==\"set\") {\n    msg = {payload: originalValue}\n    return msg;\n}\n\n// flip the value\nmsg = {payload: !originalValue}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 840,
+        "wires": [
+            [
+                "c4aa3607.04efb8"
+            ]
+        ]
+    },
+    {
+        "id": "71020fc6.cc1eb",
+        "type": "ui_template",
+        "z": "e61b1f1a.55954",
+        "group": "ee877576.e7497",
+        "name": "Button styles",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n.custom-switch-button {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    cursor: pointer;\n    width: 100%;\n    height: 100%;\n    align-items: center;\n    background-color: var(--nr-dashboard-widgetColor);\n    color: var(--nr-dashboard-widgetTextColor);\n    border-radius: 2px;\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 36px;\n}\n.custom-switch-button:hover {\n    /*background-color: #0b8f95;  */\n    filter: brightness(120%);\n}\n.custom-switch-button:focus {\n    outline: none;\n    border: 0;\n}\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "x": 710,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55d1eae5.745ac4",
+        "type": "function",
+        "z": "e61b1f1a.55954",
+        "name": "switch controller",
+        "func": "var originalValue = msg.payload;\n\n// handle command to set value\nif(msg.topic && msg.topic==\"set\") {\n    msg = {payload: originalValue}\n    return msg;\n}\n\n// flip the value\nmsg = {payload: !originalValue}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 960,
+        "wires": [
+            [
+                "e8233f8a.3aa0b"
+            ]
+        ]
+    },
+    {
+        "id": "e8233f8a.3aa0b",
+        "type": "ui_template",
+        "z": "e61b1f1a.55954",
+        "group": "ee877576.e7497",
+        "name": "POWER",
+        "order": 5,
+        "width": "2",
+        "height": "2",
+        "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg)\">\n    <div>\n        <span style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\">\n            POWER\n        </span>\n    </div>\n    <div>\n        <i class=\"fa  {{(msg.payload) ? 'fa-square' : 'fa-square-o'}} fa-2x fa-fw\" style=\"{{(msg.payload) ? 'color: #32ff32;' : ''}}\"></i>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 980,
+        "y": 900,
+        "wires": [
+            [
+                "55d1eae5.745ac4"
+            ]
+        ]
+    },
+    {
+        "id": "37e58af1.d4f7e6",
+        "type": "function",
+        "z": "e61b1f1a.55954",
+        "name": "switch controller",
+        "func": "var originalValue = msg.payload;\n\n// handle command to set value\nif(msg.topic && msg.topic==\"set\") {\n    msg = {payload: originalValue}\n    return msg;\n}\n\n// flip the value\nmsg = {payload: !originalValue}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 1080,
+        "wires": [
+            [
+                "2dfec1e5.42381e",
+                "24f14dd5.6f8462"
+            ]
+        ]
+    },
+    {
+        "id": "2dfec1e5.42381e",
+        "type": "ui_template",
+        "z": "e61b1f1a.55954",
+        "group": "ee877576.e7497",
+        "name": "Enable power switch",
+        "order": 2,
+        "width": "2",
+        "height": "2",
+        "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg)\">\n    <div>\n        <span style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\">\n            {{(msg.payload) ? 'ENABLED' : 'ENABLE'}}\n        </span>\n    </div>\n        \n    <div>\n        <i class=\"fa  {{(msg.payload) ? 'fa-square' : 'fa-square-o'}} fa-2x fa-fw\" style=\"{{(msg.payload) ? 'color: #32ff32;' : ''}}\"></i>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 1000,
+        "y": 1020,
+        "wires": [
+            [
+                "37e58af1.d4f7e6"
+            ]
+        ]
+    },
+    {
+        "id": "23a1a30d.b4697c",
+        "type": "link in",
+        "z": "e61b1f1a.55954",
+        "name": "Wort pump Input",
+        "links": [
+            "d7b6fa8f.fee968",
+            "24dcaffb.008de",
+            "7f424920.b5ab08",
+            "bcb30f14.f438e",
+            "105b86cd.57c329"
+        ],
+        "x": 835,
+        "y": 840,
+        "wires": [
+            [
+                "56b6e0be.699a8"
+            ]
+        ]
+    },
+    {
+        "id": "8ab6a7b7.4d8eb8",
+        "type": "link in",
+        "z": "e61b1f1a.55954",
+        "name": "Wort pump Input",
+        "links": [
+            "d7b6fa8f.fee968",
+            "24dcaffb.008de",
+            "7f424920.b5ab08",
+            "bcb30f14.f438e",
+            "105b86cd.57c329"
+        ],
+        "x": 835,
+        "y": 960,
+        "wires": [
+            [
+                "55d1eae5.745ac4"
+            ]
+        ]
+    },
+    {
+        "id": "28312703.24bcf8",
+        "type": "link in",
+        "z": "e61b1f1a.55954",
+        "name": "Wort pump Input",
+        "links": [
+            "d7b6fa8f.fee968",
+            "24dcaffb.008de",
+            "7f424920.b5ab08",
+            "bcb30f14.f438e",
+            "105b86cd.57c329"
+        ],
+        "x": 835,
+        "y": 1080,
+        "wires": [
+            [
+                "37e58af1.d4f7e6"
+            ]
+        ]
+    },
+    {
+        "id": "cfc6c770.07c048",
+        "type": "link out",
+        "z": "e61b1f1a.55954",
+        "name": "On/Off switch",
+        "links": [],
+        "x": 1135,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "17dd73e.4d02f8c",
+        "type": "link out",
+        "z": "e61b1f1a.55954",
+        "name": "Power switch",
+        "links": [],
+        "x": 1135,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "24f14dd5.6f8462",
+        "type": "link out",
+        "z": "e61b1f1a.55954",
+        "name": "Enable power switch",
+        "links": [],
+        "x": 1135,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "176e93c2.8d20ac",
+        "type": "function",
+        "z": "72bd38cd.b8a178",
+        "name": "switch controller",
+        "func": "var originalValue = msg.payload;\n\n// handle command to set value\nif(msg.topic && msg.topic==\"set\") {\n    msg = {payload: originalValue}\n    return msg;\n}\n\n// flip the value\nmsg = {payload: !originalValue}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 580,
+        "y": 100,
+        "wires": [
+            [
+                "8308f0e6.93fbf",
+                "162ea1e2.2b8cce"
+            ]
+        ]
+    },
+    {
+        "id": "8308f0e6.93fbf",
+        "type": "ui_template",
+        "z": "72bd38cd.b8a178",
+        "group": "e3312206.7d39b",
+        "name": "HLT Power enabled",
+        "order": 2,
+        "width": "2",
+        "height": "2",
+        "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg)\">\n    <div>\n        <span style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\">\n            {{(msg.payload) ? 'ENABLED' : 'ENABLE'}}\n        </span>\n    </div>\n        \n    <div>\n        <i class=\"fa  {{(msg.payload) ? 'fa-square' : 'fa-square-o'}} fa-2x fa-fw\" style=\"{{(msg.payload) ? 'color: #32ff32;' : ''}}\"></i>\n    </div>\n</div>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 570,
+        "y": 60,
+        "wires": [
+            [
+                "176e93c2.8d20ac"
+            ]
+        ]
+    },
+    {
+        "id": "6586ffe4.5c26a",
+        "type": "link in",
+        "z": "72bd38cd.b8a178",
+        "name": "HLT Power enabled input",
+        "links": [
+            "24dcaffb.008de",
+            "7f424920.b5ab08",
+            "bcb30f14.f438e",
+            "105b86cd.57c329"
+        ],
+        "x": 415,
+        "y": 100,
+        "wires": [
+            [
+                "176e93c2.8d20ac"
+            ]
+        ]
+    },
+    {
+        "id": "162ea1e2.2b8cce",
+        "type": "link out",
+        "z": "72bd38cd.b8a178",
+        "name": "HLT Power enabled switch",
+        "links": [],
+        "x": 735,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "bb08f09e.0ae9b",
+        "type": "ui_template",
+        "z": "37de3d6f.58f362",
+        "group": "f3a21dc0.41ad4",
+        "name": "MLT Temperature",
+        "order": 3,
+        "width": "5",
+        "height": "3",
+        "format": "<div style=\"text-align: center;\">\n    <span style=\"font-size: 80px;\" ng-bind-html=\"msg.payload\"></span>\n    <span style=\"font-size: 25px; vertical-align: top;\">°C</span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 470,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5044c4c3.851ddc",
+        "type": "link in",
+        "z": "37de3d6f.58f362",
+        "name": "HLT Temerature",
+        "links": [
+            "2a5e316.9797cce"
+        ],
+        "x": 180,
+        "y": 140,
+        "wires": [
+            [
+                "bb08f09e.0ae9b"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "13480df3.98e9b2",
+        "type": "function",
+        "z": "fd1f2b7f.0d4d08",
+        "name": "Get MLT Temp value",
+        "func": "msg.payload = msg.payload.mlt\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1080,
+        "y": 140,
+        "wires": [
+            [
+                "2a5e316.9797cce"
+            ]
+        ]
+    },
+    {
+        "id": "22cc66b9.6fa50a",
+        "type": "function",
+        "z": "fd1f2b7f.0d4d08",
+        "name": "Get BK Temp value",
+        "func": "msg.payload = msg.payload.bk\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1070,
+        "y": 200,
+        "wires": [
+            [
+                "46ee54de.b721fc"
+            ]
+        ]
+    },
+    {
+        "id": "2a5e316.9797cce",
+        "type": "link out",
+        "z": "fd1f2b7f.0d4d08",
+        "name": "MLT Temperature",
+        "links": [
+            "5044c4c3.851ddc"
+        ],
+        "x": 1310,
+        "y": 140,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "46ee54de.b721fc",
+        "type": "link out",
+        "z": "fd1f2b7f.0d4d08",
+        "name": "BK Temperature",
+        "links": [
+            "db560479.978cc8"
+        ],
+        "x": 1300,
+        "y": 200,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "cb75c498.9ce358",
+        "type": "ui_template",
+        "z": "b209822d.9e674",
+        "group": "ee877576.e7497",
+        "name": "Global styles for dahsboard",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\nh1.vessel-title {\n    font-size: 2.9em;\n    margin-top: -10px;\n    margin-bottom: -10px;\n}\n    \n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "x": 220,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "93f5246c.f907b8",
+        "type": "inject",
+        "z": "b209822d.9e674",
+        "g": "6ec6cc41.7154c4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 460,
+        "wires": [
+            [
+                "766a5f5.a3001a"
+            ]
+        ]
+    },
+    {
+        "id": "766a5f5.a3001a",
+        "type": "link out",
+        "z": "b209822d.9e674",
+        "g": "6ec6cc41.7154c4",
+        "name": "Heatbeat ticker 1s",
+        "links": [
+            "d10d7337.68526",
+            "a566f02f.63e1c",
+            "e26a1504.ebf608",
+            "ddb28124.54739"
+        ],
+        "x": 430,
+        "y": 460,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "a97b267c.286028",
+        "type": "inject",
+        "z": "b209822d.9e674",
+        "g": "6ec6cc41.7154c4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 520,
+        "wires": [
+            [
+                "82be8459.c3e358"
+            ]
+        ]
+    },
+    {
+        "id": "82be8459.c3e358",
+        "type": "link out",
+        "z": "b209822d.9e674",
+        "g": "6ec6cc41.7154c4",
+        "name": "Heatbeat ticker 5s",
+        "links": [
+            "5d5c51fc.6d68a"
+        ],
+        "x": 430,
+        "y": 520,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "e92dd698.665628",
+        "type": "ui_template",
+        "z": "5a18ecba.25f6d4",
+        "group": "58848435.b40dac",
+        "name": "BK Temperature",
+        "order": 4,
+        "width": "5",
+        "height": "3",
+        "format": "<div style=\"text-align: center;\">\n    <span style=\"font-size: 80px;\" ng-bind-html=\"msg.payload\"></span>\n    <span style=\"font-size: 25px; vertical-align: top;\">°C</span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 380,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d516a24.d30a24",
+        "type": "ui_level",
+        "z": "5a18ecba.25f6d4",
+        "group": "58848435.b40dac",
+        "order": 5,
+        "width": "1",
+        "height": "3",
+        "name": "BK Element power level",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": 100,
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "",
+        "layout": "sv",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": true,
+        "tickmode": "off",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 710,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "8abe6ce3.dcecf",
+        "type": "link in",
+        "z": "5a18ecba.25f6d4",
+        "name": "HLT Element output power %",
+        "links": [],
+        "x": 575,
+        "y": 280,
+        "wires": [
+            [
+                "6d516a24.d30a24"
+            ]
+        ]
+    },
+    {
+        "id": "db560479.978cc8",
+        "type": "link in",
+        "z": "5a18ecba.25f6d4",
+        "name": "BK Temerature",
+        "links": [
+            "46ee54de.b721fc"
+        ],
+        "x": 120,
+        "y": 280,
+        "wires": [
+            [
+                "e92dd698.665628"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "e00e72fc.7e4f3",
+        "type": "function",
+        "z": "5a18ecba.25f6d4",
+        "name": "switch controller",
+        "func": "var originalValue = msg.payload;\n\n// handle command to set value\nif(msg.topic && msg.topic==\"set\") {\n    msg = {payload: originalValue}\n    return msg;\n}\n\n// flip the value\nmsg = {payload: !originalValue}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 120,
+        "wires": [
+            [
+                "3205723b.dabfde",
+                "52db710b.f6c64"
+            ]
+        ]
+    },
+    {
+        "id": "3205723b.dabfde",
+        "type": "ui_template",
+        "z": "5a18ecba.25f6d4",
+        "group": "58848435.b40dac",
+        "name": "BK Power enabled",
+        "order": 2,
+        "width": "2",
+        "height": "2",
+        "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg)\">\n    <div>\n        <span style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\">\n            {{(msg.payload) ? 'ENABLED' : 'ENABLE'}}\n        </span>\n    </div>\n        \n    <div>\n        <i class=\"fa  {{(msg.payload) ? 'fa-square' : 'fa-square-o'}} fa-2x fa-fw\" style=\"{{(msg.payload) ? 'color: #32ff32;' : ''}}\"></i>\n    </div>\n</div>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 550,
+        "y": 80,
+        "wires": [
+            [
+                "e00e72fc.7e4f3"
+            ]
+        ]
+    },
+    {
+        "id": "e57ab86e.fe2888",
+        "type": "link in",
+        "z": "5a18ecba.25f6d4",
+        "name": "BK Power enabled input",
+        "links": [
+            "24dcaffb.008de",
+            "7f424920.b5ab08",
+            "bcb30f14.f438e",
+            "105b86cd.57c329"
+        ],
+        "x": 395,
+        "y": 120,
+        "wires": [
+            [
+                "e00e72fc.7e4f3"
+            ]
+        ]
+    },
+    {
+        "id": "52db710b.f6c64",
+        "type": "link out",
+        "z": "5a18ecba.25f6d4",
+        "name": "BK Power enabled switch",
+        "links": [],
+        "x": 715,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ba1a96a.a480468",
+        "type": "change",
+        "z": "b209822d.9e674",
+        "g": "e7769d56.bbbbb",
+        "name": "Set to off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "set",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 240,
+        "y": 340,
+        "wires": [
+            [
+                "bcb30f14.f438e"
+            ]
+        ]
+    },
+    {
+        "id": "bcb30f14.f438e",
+        "type": "link out",
+        "z": "b209822d.9e674",
+        "g": "e7769d56.bbbbb",
+        "name": "Button initialisation",
+        "links": [
+            "8ab6a7b7.4d8eb8",
+            "ab13d96d.061928",
+            "23a1a30d.b4697c",
+            "727b0eeb.782c3",
+            "28312703.24bcf8",
+            "6586ffe4.5c26a",
+            "e57ab86e.fe2888",
+            "b9e12ea0.45b98",
+            "ac9038ad.f15a48"
+        ],
+        "x": 355,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1824b7d6.a040d8",
+        "type": "inject",
+        "z": "b209822d.9e674",
+        "g": "55fc7d02.76f0a4",
+        "name": "Trigger Once At Startup",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 700,
+        "wires": [
+            [
+                "abbae2aa.9a409"
+            ]
+        ]
+    },
+    {
+        "id": "abbae2aa.9a409",
+        "type": "function",
+        "z": "b209822d.9e674",
+        "g": "55fc7d02.76f0a4",
+        "name": "Check if this is the first bootup",
+        "func": "if(flow.get(\"initialised\") === undefined) {\n\n    // store that this has been initialised\n    flow.set(\"initialised\", true);\n    \n    return msg;\n}\n// return null if we have alreay initialised\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 510,
+        "y": 700,
+        "wires": [
+            [
+                "a8aeafa1.3a522"
+            ]
+        ]
+    },
+    {
+        "id": "a8aeafa1.3a522",
+        "type": "link out",
+        "z": "b209822d.9e674",
+        "g": "55fc7d02.76f0a4",
+        "name": "Inital bootup",
+        "links": [
+            "dd1f70b6.6080e",
+            "c7fb6487.dee108",
+            "48bdeac7.e6d764"
+        ],
+        "x": 695,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "dd1f70b6.6080e",
+        "type": "link in",
+        "z": "b209822d.9e674",
+        "g": "a5478298.6399d",
+        "name": "Initial bootup",
+        "links": [
+            "a8aeafa1.3a522"
+        ],
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "efbf535f.199948"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "c7fb6487.dee108",
+        "type": "link in",
+        "z": "b209822d.9e674",
+        "g": "e7769d56.bbbbb",
+        "name": "Initialise power button / switches states to off",
+        "links": [
+            "a8aeafa1.3a522"
+        ],
+        "x": 115,
+        "y": 340,
+        "wires": [
+            [
+                "ba1a96a.a480468"
+            ]
+        ]
+    },
+    {
+        "id": "48bdeac7.e6d764",
+        "type": "link in",
+        "z": "b209822d.9e674",
+        "g": "1fe8870c.af7949",
+        "name": "Initialise HDMI display",
+        "links": [
+            "a8aeafa1.3a522"
+        ],
+        "x": 115,
+        "y": 100,
+        "wires": [
+            [
+                "2f984eaf.bf7712"
+            ]
+        ]
+    },
+    {
+        "id": "a36494f8.8a1388",
+        "type": "ui_template",
+        "z": "858aa20d.74d93",
+        "g": "f2c499c6.7e13e8",
+        "group": "f3a21dc0.41ad4",
+        "name": "HL PUMP",
+        "order": 4,
+        "width": "3",
+        "height": "2",
+        "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg);\">\n    <div>\n        <span style=\"\">HL PUMP</span>\n    </div>\n    <div>\n        <i class=\"fa fa-cog {{(msg.payload) ? 'fa-spin' : ''}} fa-4x fa-fw\" style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\"></i>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "83cee9c2.159be8"
+            ]
+        ]
+    },
+    {
+        "id": "83cee9c2.159be8",
+        "type": "function",
+        "z": "858aa20d.74d93",
+        "g": "f2c499c6.7e13e8",
+        "name": "switch controller",
+        "func": "var originalValue = msg.payload;\n\n// handle command to set value\nif(msg.topic && msg.topic==\"set\") {\n    msg = {payload: originalValue}\n    return msg;\n}\n\n// flip the value\nmsg = {payload: !originalValue}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 320,
+        "y": 320,
+        "wires": [
+            [
+                "a36494f8.8a1388",
+                "352afbec.d94f34"
+            ]
+        ]
+    },
+    {
+        "id": "28a66a10.ef6846",
+        "type": "ui_template",
+        "z": "858aa20d.74d93",
+        "g": "f2c499c6.7e13e8",
+        "group": "f3a21dc0.41ad4",
+        "name": "WORT PUMP",
+        "order": 5,
+        "width": "3",
+        "height": "2",
+        "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg);\">\n    <div>\n        <span style=\"\">WORT PUMP</span>\n    </div>\n    <div>\n        <i class=\"fa fa-cog {{(msg.payload) ? 'fa-spin' : ''}} fa-4x fa-fw\" style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\"></i>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 310,
+        "y": 360,
+        "wires": [
+            [
+                "deb8f2eb.c1901"
+            ]
+        ]
+    },
+    {
+        "id": "deb8f2eb.c1901",
+        "type": "function",
+        "z": "858aa20d.74d93",
+        "g": "f2c499c6.7e13e8",
+        "name": "switch controller",
+        "func": "var originalValue = msg.payload;\n\n// handle command to set value\nif(msg.topic && msg.topic==\"set\") {\n    msg = {payload: originalValue}\n    return msg;\n}\n\n// flip the value\nmsg = {payload: !originalValue}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 310,
+        "y": 420,
+        "wires": [
+            [
+                "28a66a10.ef6846",
+                "43bf9e4a.8923d"
+            ]
+        ]
+    },
+    {
+        "id": "b9e12ea0.45b98",
+        "type": "link in",
+        "z": "858aa20d.74d93",
+        "g": "f2c499c6.7e13e8",
+        "name": "Wort pump Input",
+        "links": [
+            "d7b6fa8f.fee968",
+            "24dcaffb.008de",
+            "7f424920.b5ab08",
+            "bcb30f14.f438e",
+            "105b86cd.57c329"
+        ],
+        "x": 155,
+        "y": 420,
+        "wires": [
+            [
+                "deb8f2eb.c1901"
+            ]
+        ]
+    },
+    {
+        "id": "43bf9e4a.8923d",
+        "type": "link out",
+        "z": "858aa20d.74d93",
+        "g": "f2c499c6.7e13e8",
+        "name": "Wort Pump switch",
+        "links": [],
+        "x": 455,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "ac9038ad.f15a48",
+        "type": "link in",
+        "z": "858aa20d.74d93",
+        "g": "f2c499c6.7e13e8",
+        "name": "HL pump Input",
+        "links": [
+            "7f424920.b5ab08",
+            "bcb30f14.f438e",
+            "105b86cd.57c329"
+        ],
+        "x": 155,
+        "y": 320,
+        "wires": [
+            [
+                "83cee9c2.159be8"
+            ]
+        ]
+    },
+    {
+        "id": "b06e1c5.327a1e",
+        "type": "ui_button",
+        "z": "858aa20d.74d93",
+        "name": "",
+        "group": "f3a21dc0.41ad4",
+        "order": 6,
+        "width": "6",
+        "height": "2",
+        "passthru": false,
+        "label": "Emergency STOP",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#b32727",
+        "icon": "fa-exclamation-circle",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "set",
+        "x": 230,
+        "y": 500,
+        "wires": [
+            [
+                "105b86cd.57c329"
+            ]
+        ]
+    },
+    {
+        "id": "105b86cd.57c329",
+        "type": "link out",
+        "z": "858aa20d.74d93",
+        "name": "Emergency stop",
+        "links": [
+            "23a1a30d.b4697c",
+            "28312703.24bcf8",
+            "6586ffe4.5c26a",
+            "727b0eeb.782c3",
+            "8ab6a7b7.4d8eb8",
+            "ab13d96d.061928",
+            "e57ab86e.fe2888",
+            "b9e12ea0.45b98",
+            "ac9038ad.f15a48"
+        ],
+        "x": 375,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "8e5baef8.b8b1b",
+        "type": "ui_template",
+        "z": "5a18ecba.25f6d4",
+        "group": "58848435.b40dac",
+        "name": "BK power output settings",
+        "order": 8,
+        "width": "6",
+        "height": "5",
+        "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send({payload: 100})\">\n    <div>\n        <span style=\"{{(msg.payload == 100) ? '' : 'filter:brightness(83%);'}}\">\n            100%\n        </span>\n    </div>\n    <div>\n        <i ng-show=\"msg.payload == 100\" class=\"fa  fa-square fa-2x fa-fw\" style=\"color: #32ff32;\"></i>\n        <i ng-hide=\"msg.payload == 100\" class=\"fa  fa-square-o fa-2x fa-fw\"></i>\n    </div>\n</div>\n<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send({payload: 90})\">\n    <div>\n        <span style=\"{{(msg.payload == 90) ? '' : 'filter:brightness(83%);'}}\">\n            90%\n        </span>\n    </div>\n    <div>\n        <i ng-show=\"msg.payload == 90\" class=\"fa  fa-square fa-2x fa-fw\" style=\"color: #32ff32;\"></i>\n        <i ng-hide=\"msg.payload == 90\" class=\"fa  fa-square-o fa-2x fa-fw\"></i>\n    </div>\n</div>\n\n<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send({payload: 80})\">\n    <div>\n        <span style=\"{{(msg.payload == 80) ? '' : 'filter:brightness(83%);'}}\">\n            80%\n        </span>\n    </div>\n    <div>\n        <i ng-show=\"msg.payload == 80\" class=\"fa  fa-square fa-2x fa-fw\" style=\"color: #32ff32;\"></i>\n        <i ng-hide=\"msg.payload == 80\" class=\"fa  fa-square-o fa-2x fa-fw\"></i>\n    </div>\n</div>\n<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send({payload: 70})\">\n    <div>\n        <span style=\"{{(msg.payload == 70) ? '' : 'filter:brightness(83%);'}}\">\n            70%\n        </span>\n    </div>\n    <div>\n        <i ng-show=\"msg.payload == 70\" class=\"fa  fa-square fa-2x fa-fw\" style=\"color: #32ff32;\"></i>\n        <i ng-hide=\"msg.payload == 70\" class=\"fa  fa-square-o fa-2x fa-fw\"></i>\n    </div>\n</div>\n<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send({payload: 60})\">\n    <div>\n        <span style=\"{{(msg.payload == 60) ? '' : 'filter:brightness(83%);'}}\">\n            60%\n        </span>\n    </div>\n    <div>\n        <i ng-show=\"msg.payload == 60\" class=\"fa  fa-square fa-2x fa-fw\" style=\"color: #32ff32;\"></i>\n        <i ng-hide=\"msg.payload == 60\" class=\"fa  fa-square-o fa-2x fa-fw\"></i>\n    </div>\n</div>\n<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send({payload: '95DEG'})\">\n    <div>\n        <span style=\"{{(msg.payload == '95DEG') ? '' : 'filter:brightness(83%);'}}\">\n            95°C\n        </span>\n    </div>\n    <div>\n        <i ng-show=\"msg.payload == '95DEG'\" class=\"fa  fa-square fa-2x fa-fw\" style=\"color: #32ff32;\"></i>\n        <i ng-hide=\"msg.payload == '95DEG'\" class=\"fa  fa-square-o fa-2x fa-fw\"></i>\n    </div>\n</div>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 390,
+        "y": 380,
+        "wires": [
+            [
+                "7939df5.1b9b62",
+                "b2bac314.a70a7"
+            ]
+        ]
+    },
+    {
+        "id": "7939df5.1b9b62",
+        "type": "function",
+        "z": "5a18ecba.25f6d4",
+        "name": "switch controller",
+        "func": "var originalValue = msg.payload;\n\n// handle command to set value\nif(msg.topic && msg.topic==\"set\") {\n    msg = {payload: originalValue}\n    return msg;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 340,
+        "y": 440,
+        "wires": [
+            [
+                "8e5baef8.b8b1b"
+            ]
+        ]
+    },
+    {
+        "id": "b2bac314.a70a7",
+        "type": "debug",
+        "z": "5a18ecba.25f6d4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 380,
+        "wires": []
     }
 ]
