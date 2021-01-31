@@ -399,7 +399,7 @@
             "2c0ddb20.797604"
         ],
         "x": 84,
-        "y": 139,
+        "y": 159,
         "w": 482,
         "h": 122
     },
@@ -477,9 +477,121 @@
             "352afbec.d94f34"
         ],
         "x": 114,
-        "y": 219,
-        "w": 472,
-        "h": 242
+        "y": 219
+    },
+    {
+        "id": "6217408c.d82dc8",
+        "type": "group",
+        "z": "b6bdc7e8.c2bbe8",
+        "name": "HLT Element",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "978ce145.42976",
+            "7821cacc.968c44",
+            "8c0e6674.9c4a98",
+            "ee085d83.81d5c",
+            "a566f02f.63e1c",
+            "ee91dc6f.629ae",
+            "c8d144f3.1e6888",
+            "dc4c2855.b1879",
+            "cd4ffefe.73f4d8",
+            "c30f3ed8.2aa3a8",
+            "e7b1d178.e841d",
+            "181a8f07.e1d921"
+        ],
+        "x": 34,
+        "y": -1,
+        "w": 1132,
+        "h": 302
+    },
+    {
+        "id": "38735e36.113c8a",
+        "type": "group",
+        "z": "b6bdc7e8.c2bbe8",
+        "name": "BK Element",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "2397a45.037d65c",
+            "3bf642ce.0e5536",
+            "18a70660.3494d2",
+            "45f7b966.06ff2",
+            "fd468832.b66a78",
+            "38d6ec9.c82e994",
+            "1b5f2e1a.39aa52",
+            "9fcd9170.258988",
+            "9e226085.cb8d1",
+            "3d31383b.1cde4",
+            "59be3a6f.ee779c",
+            "ac052a82.75a568"
+        ],
+        "x": 114,
+        "y": 339,
+        "w": 1112,
+        "h": 302
+    },
+    {
+        "id": "91669a1f.42243",
+        "type": "group",
+        "z": "4c2748b.984d3b8",
+        "name": "HLT Power output logic",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9d19b417.2ff2c8",
+            "1997fac1.880f65",
+            "fd495fdd.1b2f3",
+            "d7e3e564.f78cc8",
+            "5f982b96.87a964",
+            "aee6984a.086ea8",
+            "aab5edd.fe2551",
+            "e26a1504.ebf608",
+            "644ec519.bba66c",
+            "66294e3f.91eeb",
+            "5177e5d6.87767c",
+            "31c04565.8cc96a",
+            "e4dea1a5.4f1ed"
+        ],
+        "x": 34,
+        "y": 79,
+        "w": 952,
+        "h": 382
+    },
+    {
+        "id": "57237429.cc77c4",
+        "type": "group",
+        "z": "4c2748b.984d3b8",
+        "name": "BK Power output logic",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f5073530.a91078",
+            "a10dc7fe.540f68",
+            "1342b373.8faa7d",
+            "3268cb38.a5f80c",
+            "a0adf295.bb46a8",
+            "11dafbc1.f9ac7c",
+            "2eccd44d.bb6f04",
+            "af7c007a.b43aa",
+            "a53f1e5b.1bafa8",
+            "e3a23318.981f68",
+            "49faea85.7cd08c",
+            "7e1cfe62.ae3c9",
+            "8cb296f4.3a9c88",
+            "bf530c2b.23c988",
+            "d93179e9.e362d8",
+            "789a8afa.2996bc",
+            "de91c9e1.c6d4f"
+        ],
+        "x": 34,
+        "y": 479,
+        "w": 1232,
+        "h": 382
     },
     {
         "id": "c0391f6c.552ff",
@@ -584,7 +696,7 @@
         "type": "ui_group",
         "name": "Controls",
         "tab": "3f73ea82.bc62e6",
-        "order": 5,
+        "order": 4,
         "disp": false,
         "width": "22",
         "collapse": false
@@ -602,6 +714,7 @@
         "type": "ui_tab",
         "name": "Dashboard",
         "icon": "dashboard",
+        "order": 1,
         "disabled": false,
         "hidden": false
     },
@@ -609,8 +722,8 @@
         "id": "599c9f6f.d3c42",
         "type": "ui_group",
         "name": "Charts",
-        "tab": "3f73ea82.bc62e6",
-        "order": 7,
+        "tab": "a8850437.d84aa8",
+        "order": 3,
         "disp": true,
         "width": "22",
         "collapse": true
@@ -620,7 +733,7 @@
         "type": "ui_group",
         "name": "PID",
         "tab": "80cd4062.93a5",
-        "order": 1,
+        "order": 2,
         "disp": true,
         "width": "8",
         "collapse": false
@@ -630,6 +743,7 @@
         "type": "ui_tab",
         "name": "Home",
         "icon": "dashboard",
+        "order": 3,
         "disabled": false,
         "hidden": false
     },
@@ -676,8 +790,8 @@
         "id": "87b9c423.b256e8",
         "type": "ui_group",
         "name": "Checklist",
-        "tab": "3f73ea82.bc62e6",
-        "order": 4,
+        "tab": "a8850437.d84aa8",
+        "order": 2,
         "disp": false,
         "width": "6",
         "collapse": false
@@ -685,8 +799,9 @@
     {
         "id": "a8850437.d84aa8",
         "type": "ui_tab",
-        "name": "Home",
+        "name": "Testing",
         "icon": "dashboard",
+        "order": 2,
         "disabled": false,
         "hidden": false
     },
@@ -694,8 +809,8 @@
         "id": "b51f8f14.e5b5",
         "type": "ui_group",
         "name": "Timer",
-        "tab": "3f73ea82.bc62e6",
-        "order": 6,
+        "tab": "a8850437.d84aa8",
+        "order": 1,
         "disp": true,
         "width": "22",
         "collapse": false
@@ -1959,7 +2074,7 @@
         "name": "",
         "env": [],
         "x": 440,
-        "y": 220,
+        "y": 240,
         "wires": []
     },
     {
@@ -1985,7 +2100,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 190,
-        "y": 220,
+        "y": 240,
         "wires": [
             [
                 "4f4a658a.6b4aac"
@@ -2012,7 +2127,7 @@
         "payloadType": "str",
         "topic": "",
         "x": 210,
-        "y": 180,
+        "y": 200,
         "wires": [
             [
                 "4f4a658a.6b4aac"
@@ -2150,29 +2265,6 @@
         "wires": [
             [
                 "a823c9cf.2a6178"
-            ]
-        ]
-    },
-    {
-        "id": "e0cb2a8c.4402a8",
-        "type": "PID",
-        "z": "a0771295.bec48",
-        "name": "",
-        "setpoint": "50",
-        "pb": "0",
-        "ti": "24",
-        "td": "6",
-        "integral_default": "0",
-        "smooth_factor": "0",
-        "max_interval": 600,
-        "enable": "1",
-        "disabled_op": "0",
-        "x": 390,
-        "y": 240,
-        "wires": [
-            [
-                "5ec4239b.34e174",
-                "e94f888a.130a88"
             ]
         ]
     },
@@ -2443,13 +2535,14 @@
         "id": "978ce145.42976",
         "type": "rpi-gpio out",
         "z": "b6bdc7e8.c2bbe8",
+        "g": "6217408c.d82dc8",
         "name": "HLT Element out",
         "pin": "37",
         "set": false,
         "level": "0",
         "freq": "",
         "out": "pwm",
-        "x": 550,
+        "x": 1050,
         "y": 120,
         "wires": []
     },
@@ -2457,16 +2550,17 @@
         "id": "7821cacc.968c44",
         "type": "link in",
         "z": "b6bdc7e8.c2bbe8",
+        "g": "6217408c.d82dc8",
         "name": "HLT Element Power %",
         "links": [
-            "9d19b417.2ff2c8",
-            "bfadb1f1.cadec"
+            "9d19b417.2ff2c8"
         ],
         "x": 160,
         "y": 120,
         "wires": [
             [
-                "ee085d83.81d5c"
+                "ee085d83.81d5c",
+                "dc4c2855.b1879"
             ]
         ],
         "l": true
@@ -2475,6 +2569,7 @@
         "id": "8c0e6674.9c4a98",
         "type": "link out",
         "z": "b6bdc7e8.c2bbe8",
+        "g": "6217408c.d82dc8",
         "name": "HLT Element output power %",
         "links": [
             "e4d7502c.87c4"
@@ -2506,6 +2601,7 @@
         "id": "ee085d83.81d5c",
         "type": "change",
         "z": "b6bdc7e8.c2bbe8",
+        "g": "6217408c.d82dc8",
         "name": "Set HLT Power Output",
         "rules": [
             {
@@ -2531,6 +2627,7 @@
         "id": "a566f02f.63e1c",
         "type": "link in",
         "z": "b6bdc7e8.c2bbe8",
+        "g": "6217408c.d82dc8",
         "name": "Heatbeat ticker 1s",
         "links": [
             "d583a0c6.8c20b",
@@ -2549,6 +2646,7 @@
         "id": "ee91dc6f.629ae",
         "type": "change",
         "z": "b6bdc7e8.c2bbe8",
+        "g": "6217408c.d82dc8",
         "name": "Get HLT Power Output",
         "rules": [
             {
@@ -2573,31 +2671,10 @@
         ]
     },
     {
-        "id": "e4dea1a5.4f1ed",
-        "type": "PID",
-        "z": "4c2748b.984d3b8",
-        "name": "HLT PID",
-        "setpoint": "10",
-        "pb": "0",
-        "ti": 9999,
-        "td": 0,
-        "integral_default": 0.5,
-        "smooth_factor": 3,
-        "max_interval": 600,
-        "enable": 1,
-        "disabled_op": 0,
-        "x": 480,
-        "y": 120,
-        "wires": [
-            [
-                "1997fac1.880f65"
-            ]
-        ]
-    },
-    {
         "id": "9d19b417.2ff2c8",
         "type": "link out",
         "z": "4c2748b.984d3b8",
+        "g": "91669a1f.42243",
         "name": "HLT Element Power %",
         "links": [
             "7821cacc.968c44"
@@ -2611,6 +2688,7 @@
         "id": "1997fac1.880f65",
         "type": "range",
         "z": "4c2748b.984d3b8",
+        "g": "91669a1f.42243",
         "minin": "0",
         "maxin": "1",
         "minout": "0",
@@ -2646,6 +2724,7 @@
         "id": "fd495fdd.1b2f3",
         "type": "link in",
         "z": "4c2748b.984d3b8",
+        "g": "91669a1f.42243",
         "name": "HLT Temerature",
         "links": [
             "fb4d5c6f.c5572"
@@ -2663,6 +2742,7 @@
         "id": "d7e3e564.f78cc8",
         "type": "link in",
         "z": "4c2748b.984d3b8",
+        "g": "91669a1f.42243",
         "name": "HLT Target Temperature",
         "links": [
             "562f39c5.a3f158",
@@ -2683,6 +2763,7 @@
         "id": "5f982b96.87a964",
         "type": "change",
         "z": "4c2748b.984d3b8",
+        "g": "91669a1f.42243",
         "name": "",
         "rules": [
             {
@@ -2710,6 +2791,7 @@
         "id": "aee6984a.086ea8",
         "type": "link out",
         "z": "4c2748b.984d3b8",
+        "g": "91669a1f.42243",
         "name": "HLT Target temp reading",
         "links": [
             "86c6a6c3.5010d8"
@@ -2750,7 +2832,8 @@
         "z": "72bd38cd.b8a178",
         "name": "HLT Target Temp Slider output",
         "links": [
-            "d7e3e564.f78cc8"
+            "d7e3e564.f78cc8",
+            "d92574a.2c41d08"
         ],
         "x": 750,
         "y": 140,
@@ -2761,9 +2844,10 @@
         "id": "c8d144f3.1e6888",
         "type": "comment",
         "z": "b6bdc7e8.c2bbe8",
+        "g": "6217408c.d82dc8",
         "name": "*** Element disabled for now",
         "info": "",
-        "x": 450,
+        "x": 920,
         "y": 80,
         "wires": []
     },
@@ -2957,6 +3041,7 @@
         "id": "aab5edd.fe2551",
         "type": "change",
         "z": "4c2748b.984d3b8",
+        "g": "91669a1f.42243",
         "name": "Set HLT Target Temperature",
         "rules": [
             {
@@ -2982,6 +3067,7 @@
         "id": "e26a1504.ebf608",
         "type": "link in",
         "z": "4c2748b.984d3b8",
+        "g": "91669a1f.42243",
         "name": "Heatbeat ticker 1s",
         "links": [
             "d583a0c6.8c20b",
@@ -3000,6 +3086,7 @@
         "id": "644ec519.bba66c",
         "type": "change",
         "z": "4c2748b.984d3b8",
+        "g": "91669a1f.42243",
         "name": "Get HLT Target Temperature",
         "rules": [
             {
@@ -3029,7 +3116,8 @@
         "z": "72bd38cd.b8a178",
         "name": "HLT Target temp reading",
         "links": [
-            "aee6984a.086ea8"
+            "aee6984a.086ea8",
+            "403cb5e3.dd6b6c"
         ],
         "x": 150,
         "y": 360,
@@ -3071,6 +3159,7 @@
         "id": "66294e3f.91eeb",
         "type": "change",
         "z": "4c2748b.984d3b8",
+        "g": "91669a1f.42243",
         "name": "Get HLT Target Temperature",
         "rules": [
             {
@@ -3098,6 +3187,7 @@
         "id": "5177e5d6.87767c",
         "type": "link out",
         "z": "4c2748b.984d3b8",
+        "g": "91669a1f.42243",
         "name": "HLT Target temp reading inital",
         "links": [
             "7d1ab39f.6aa9fc",
@@ -3112,6 +3202,7 @@
         "id": "31c04565.8cc96a",
         "type": "inject",
         "z": "4c2748b.984d3b8",
+        "g": "91669a1f.42243",
         "name": "On refresh",
         "props": [
             {
@@ -3139,7 +3230,8 @@
         "z": "72bd38cd.b8a178",
         "name": "HLT Target temp reading",
         "links": [
-            "5177e5d6.87767c"
+            "5177e5d6.87767c",
+            "f24d2b3c.c6c1e"
         ],
         "x": 230,
         "y": 140,
@@ -3936,7 +4028,9 @@
         "type": "link out",
         "z": "72bd38cd.b8a178",
         "name": "HLT Power enabled switch",
-        "links": [],
+        "links": [
+            "cd4ffefe.73f4d8"
+        ],
         "x": 735,
         "y": 100,
         "wires": []
@@ -4033,7 +4127,8 @@
         "z": "fd1f2b7f.0d4d08",
         "name": "BK Temperature",
         "links": [
-            "db560479.978cc8"
+            "db560479.978cc8",
+            "1342b373.8faa7d"
         ],
         "x": 1300,
         "y": 200,
@@ -4096,7 +4191,8 @@
             "d10d7337.68526",
             "a566f02f.63e1c",
             "e26a1504.ebf608",
-            "ddb28124.54739"
+            "ddb28124.54739",
+            "fd468832.b66a78"
         ],
         "x": 430,
         "y": 460,
@@ -4149,7 +4245,7 @@
         "z": "5a18ecba.25f6d4",
         "group": "58848435.b40dac",
         "name": "BK Temperature",
-        "order": 4,
+        "order": 3,
         "width": "5",
         "height": "3",
         "format": "<div style=\"text-align: center;\">\n    <span style=\"font-size: 80px;\" ng-bind-html=\"msg.payload\"></span>\n    <span style=\"font-size: 25px; vertical-align: top;\">°C</span>\n</div>",
@@ -4157,8 +4253,8 @@
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
-        "x": 380,
-        "y": 280,
+        "x": 420,
+        "y": 180,
         "wires": [
             []
         ]
@@ -4168,7 +4264,7 @@
         "type": "ui_level",
         "z": "5a18ecba.25f6d4",
         "group": "58848435.b40dac",
-        "order": 5,
+        "order": 4,
         "width": "1",
         "height": "3",
         "name": "BK Element power level",
@@ -4201,18 +4297,20 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 710,
-        "y": 280,
+        "x": 750,
+        "y": 180,
         "wires": []
     },
     {
         "id": "8abe6ce3.dcecf",
         "type": "link in",
         "z": "5a18ecba.25f6d4",
-        "name": "HLT Element output power %",
-        "links": [],
-        "x": 575,
-        "y": 280,
+        "name": "BK Element output power %",
+        "links": [
+            "18a70660.3494d2"
+        ],
+        "x": 615,
+        "y": 180,
         "wires": [
             [
                 "6d516a24.d30a24"
@@ -4227,8 +4325,8 @@
         "links": [
             "46ee54de.b721fc"
         ],
-        "x": 120,
-        "y": 280,
+        "x": 180,
+        "y": 180,
         "wires": [
             [
                 "e92dd698.665628"
@@ -4301,7 +4399,9 @@
         "type": "link out",
         "z": "5a18ecba.25f6d4",
         "name": "BK Power enabled switch",
-        "links": [],
+        "links": [
+            "9fcd9170.258988"
+        ],
         "x": 715,
         "y": 120,
         "wires": []
@@ -4356,7 +4456,9 @@
             "6586ffe4.5c26a",
             "e57ab86e.fe2888",
             "b9e12ea0.45b98",
-            "ac9038ad.f15a48"
+            "ac9038ad.f15a48",
+            "f9b87765.90a478",
+            "7be9f663.8e1c8"
         ],
         "x": 355,
         "y": 340,
@@ -4655,68 +4757,1316 @@
             "ab13d96d.061928",
             "e57ab86e.fe2888",
             "b9e12ea0.45b98",
-            "ac9038ad.f15a48"
+            "ac9038ad.f15a48",
+            "f9b87765.90a478",
+            "7be9f663.8e1c8"
         ],
         "x": 375,
         "y": 500,
         "wires": []
     },
     {
-        "id": "8e5baef8.b8b1b",
+        "id": "e0cb2a8c.4402a8",
+        "type": "PID",
+        "z": "a0771295.bec48",
+        "name": "",
+        "setpoint": "50",
+        "pb": "0",
+        "ti": "24",
+        "td": "6",
+        "integral_default": "0",
+        "smooth_factor": "0",
+        "max_interval": 600,
+        "enable": "1",
+        "disabled_op": "0",
+        "x": 390,
+        "y": 240,
+        "wires": [
+            [
+                "5ec4239b.34e174",
+                "e94f888a.130a88"
+            ]
+        ]
+    },
+    {
+        "id": "e4dea1a5.4f1ed",
+        "type": "PID",
+        "z": "4c2748b.984d3b8",
+        "g": "91669a1f.42243",
+        "name": "HLT PID",
+        "setpoint": "10",
+        "pb": "0",
+        "ti": 9999,
+        "td": 0,
+        "integral_default": 0.5,
+        "smooth_factor": 3,
+        "max_interval": 600,
+        "enable": 1,
+        "disabled_op": 0,
+        "x": 480,
+        "y": 120,
+        "wires": [
+            [
+                "1997fac1.880f65"
+            ]
+        ]
+    },
+    {
+        "id": "afeaa1b7.bbca2",
+        "type": "ui_slider",
+        "z": "5a18ecba.25f6d4",
+        "name": "BK Power output Slider",
+        "label": "",
+        "tooltip": "",
+        "group": "58848435.b40dac",
+        "order": 7,
+        "width": "4",
+        "height": "2",
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "min": "60",
+        "max": "100",
+        "step": "5",
+        "x": 510,
+        "y": 560,
+        "wires": [
+            [
+                "845fdb5.5e95d28"
+            ]
+        ]
+    },
+    {
+        "id": "845fdb5.5e95d28",
+        "type": "link out",
+        "z": "5a18ecba.25f6d4",
+        "name": "BK Power Slider output",
+        "links": [
+            "3268cb38.a5f80c"
+        ],
+        "x": 770,
+        "y": 560,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "7b465fdb.b8a98",
+        "type": "link in",
+        "z": "5a18ecba.25f6d4",
+        "name": "BK manual power slider input",
+        "links": [
+            "43b8389.8fc5748"
+        ],
+        "x": 260,
+        "y": 560,
+        "wires": [
+            [
+                "afeaa1b7.bbca2"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "85af9a78.fa792",
+        "type": "function",
+        "z": "5a18ecba.25f6d4",
+        "name": "switch controller",
+        "func": "var originalValue = msg.payload;\n\n// handle command to set value\nif(msg.topic && msg.topic==\"set\") {\n    msg = {payload: originalValue}\n    return msg;\n}\n\n// flip the value\nmsg = {payload: !originalValue}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 420,
+        "y": 320,
+        "wires": [
+            [
+                "ddae5871.a00548",
+                "444afa27.c51efc",
+                "6f605276.d9c18c"
+            ]
+        ]
+    },
+    {
+        "id": "ddae5871.a00548",
         "type": "ui_template",
         "z": "5a18ecba.25f6d4",
         "group": "58848435.b40dac",
-        "name": "BK power output settings",
-        "order": 8,
+        "name": "BK 95Deg hold button",
+        "order": 5,
         "width": "6",
-        "height": "5",
-        "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send({payload: 100})\">\n    <div>\n        <span style=\"{{(msg.payload == 100) ? '' : 'filter:brightness(83%);'}}\">\n            100%\n        </span>\n    </div>\n    <div>\n        <i ng-show=\"msg.payload == 100\" class=\"fa  fa-square fa-2x fa-fw\" style=\"color: #32ff32;\"></i>\n        <i ng-hide=\"msg.payload == 100\" class=\"fa  fa-square-o fa-2x fa-fw\"></i>\n    </div>\n</div>\n<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send({payload: 90})\">\n    <div>\n        <span style=\"{{(msg.payload == 90) ? '' : 'filter:brightness(83%);'}}\">\n            90%\n        </span>\n    </div>\n    <div>\n        <i ng-show=\"msg.payload == 90\" class=\"fa  fa-square fa-2x fa-fw\" style=\"color: #32ff32;\"></i>\n        <i ng-hide=\"msg.payload == 90\" class=\"fa  fa-square-o fa-2x fa-fw\"></i>\n    </div>\n</div>\n\n<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send({payload: 80})\">\n    <div>\n        <span style=\"{{(msg.payload == 80) ? '' : 'filter:brightness(83%);'}}\">\n            80%\n        </span>\n    </div>\n    <div>\n        <i ng-show=\"msg.payload == 80\" class=\"fa  fa-square fa-2x fa-fw\" style=\"color: #32ff32;\"></i>\n        <i ng-hide=\"msg.payload == 80\" class=\"fa  fa-square-o fa-2x fa-fw\"></i>\n    </div>\n</div>\n<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send({payload: 70})\">\n    <div>\n        <span style=\"{{(msg.payload == 70) ? '' : 'filter:brightness(83%);'}}\">\n            70%\n        </span>\n    </div>\n    <div>\n        <i ng-show=\"msg.payload == 70\" class=\"fa  fa-square fa-2x fa-fw\" style=\"color: #32ff32;\"></i>\n        <i ng-hide=\"msg.payload == 70\" class=\"fa  fa-square-o fa-2x fa-fw\"></i>\n    </div>\n</div>\n<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send({payload: 60})\">\n    <div>\n        <span style=\"{{(msg.payload == 60) ? '' : 'filter:brightness(83%);'}}\">\n            60%\n        </span>\n    </div>\n    <div>\n        <i ng-show=\"msg.payload == 60\" class=\"fa  fa-square fa-2x fa-fw\" style=\"color: #32ff32;\"></i>\n        <i ng-hide=\"msg.payload == 60\" class=\"fa  fa-square-o fa-2x fa-fw\"></i>\n    </div>\n</div>\n<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send({payload: '95DEG'})\">\n    <div>\n        <span style=\"{{(msg.payload == '95DEG') ? '' : 'filter:brightness(83%);'}}\">\n            95°C\n        </span>\n    </div>\n    <div>\n        <i ng-show=\"msg.payload == '95DEG'\" class=\"fa  fa-square fa-2x fa-fw\" style=\"color: #32ff32;\"></i>\n        <i ng-hide=\"msg.payload == '95DEG'\" class=\"fa  fa-square-o fa-2x fa-fw\"></i>\n    </div>\n</div>",
+        "height": "2",
+        "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg)\">\n    <div>\n        <span style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\">\n            Hold at 95°C\n        </span>\n    </div>\n        \n    <div>\n        <i class=\"fa  {{(msg.payload) ? 'fa-square' : 'fa-square-o'}} fa-2x fa-fw\" style=\"{{(msg.payload) ? 'color: #32ff32;' : ''}}\"></i>\n    </div>\n</div>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 420,
+        "y": 260,
+        "wires": [
+            [
+                "85af9a78.fa792"
+            ]
+        ]
+    },
+    {
+        "id": "f9b87765.90a478",
+        "type": "link in",
+        "z": "5a18ecba.25f6d4",
+        "name": "BK 95Deg hold input",
+        "links": [
+            "105b86cd.57c329",
+            "bcb30f14.f438e",
+            "a9085db8.cd9918"
+        ],
+        "x": 255,
+        "y": 320,
+        "wires": [
+            [
+                "85af9a78.fa792"
+            ]
+        ]
+    },
+    {
+        "id": "444afa27.c51efc",
+        "type": "link out",
+        "z": "5a18ecba.25f6d4",
+        "name": "BK 95Deg button",
+        "links": [
+            "bf530c2b.23c988"
+        ],
+        "x": 615,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "56aae3df.9b6a3c",
+        "type": "function",
+        "z": "5a18ecba.25f6d4",
+        "name": "switch controller",
+        "func": "var originalValue = msg.payload;\n\n// handle command to set value\nif(msg.topic && msg.topic==\"set\") {\n    msg = {payload: originalValue}\n    return msg;\n}\n\n// flip the value\nmsg = {payload: !originalValue}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 400,
+        "y": 460,
+        "wires": [
+            [
+                "2135e055.95f7d8",
+                "6c9c3b3.5df7244",
+                "5b628b3c.c2747c"
+            ]
+        ]
+    },
+    {
+        "id": "2135e055.95f7d8",
+        "type": "ui_template",
+        "z": "5a18ecba.25f6d4",
+        "group": "58848435.b40dac",
+        "name": "BK Manual power output button",
+        "order": 6,
+        "width": "2",
+        "height": "2",
+        "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg)\">\n    <div>\n        <span style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\">\n            Manual\n        </span>\n    </div>\n        \n    <div>\n        <i class=\"fa  {{(msg.payload) ? 'fa-square' : 'fa-square-o'}} fa-2x fa-fw\" style=\"{{(msg.payload) ? 'color: #32ff32;' : ''}}\"></i>\n    </div>\n</div>",
         "storeOutMessages": false,
         "fwdInMessages": false,
         "resendOnRefresh": false,
         "templateScope": "local",
         "x": 390,
-        "y": 380,
+        "y": 400,
         "wires": [
             [
-                "7939df5.1b9b62",
-                "b2bac314.a70a7"
+                "56aae3df.9b6a3c"
             ]
         ]
     },
     {
-        "id": "7939df5.1b9b62",
-        "type": "function",
+        "id": "7be9f663.8e1c8",
+        "type": "link in",
         "z": "5a18ecba.25f6d4",
-        "name": "switch controller",
-        "func": "var originalValue = msg.payload;\n\n// handle command to set value\nif(msg.topic && msg.topic==\"set\") {\n    msg = {payload: originalValue}\n    return msg;\n}\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 340,
-        "y": 440,
+        "name": "BK manual power switch Input",
+        "links": [
+            "105b86cd.57c329",
+            "2207075f.8da55",
+            "bcb30f14.f438e"
+        ],
+        "x": 235,
+        "y": 460,
         "wires": [
             [
-                "8e5baef8.b8b1b"
+                "56aae3df.9b6a3c"
             ]
         ]
     },
     {
-        "id": "b2bac314.a70a7",
-        "type": "debug",
+        "id": "6c9c3b3.5df7244",
+        "type": "link out",
         "z": "5a18ecba.25f6d4",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 610,
-        "y": 380,
+        "name": "BK manual power switch output",
+        "links": [
+            "e3a23318.981f68"
+        ],
+        "x": 595,
+        "y": 420,
         "wires": []
+    },
+    {
+        "id": "6f605276.d9c18c",
+        "type": "switch",
+        "z": "5a18ecba.25f6d4",
+        "name": "If on",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 650,
+        "y": 320,
+        "wires": [
+            [
+                "f8cd0e78.ad6a18"
+            ]
+        ]
+    },
+    {
+        "id": "f8cd0e78.ad6a18",
+        "type": "change",
+        "z": "5a18ecba.25f6d4",
+        "name": "Turn off manual power button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "set",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 320,
+        "wires": [
+            [
+                "2207075f.8da55"
+            ]
+        ]
+    },
+    {
+        "id": "2207075f.8da55",
+        "type": "link out",
+        "z": "5a18ecba.25f6d4",
+        "name": "Turn off BK manual power button",
+        "links": [
+            "7be9f663.8e1c8"
+        ],
+        "x": 1015,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "5b628b3c.c2747c",
+        "type": "switch",
+        "z": "5a18ecba.25f6d4",
+        "name": "On of Off?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 650,
+        "y": 460,
+        "wires": [
+            [
+                "3a446838.006938",
+                "b155af3f.f8a0a8"
+            ],
+            [
+                "d4a97bc3.1dd98"
+            ]
+        ]
+    },
+    {
+        "id": "3a446838.006938",
+        "type": "change",
+        "z": "5a18ecba.25f6d4",
+        "name": "Turn off 95Deg button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "set",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 420,
+        "wires": [
+            [
+                "a9085db8.cd9918"
+            ]
+        ]
+    },
+    {
+        "id": "a9085db8.cd9918",
+        "type": "link out",
+        "z": "5a18ecba.25f6d4",
+        "name": "Turn off BK 95Deg button",
+        "links": [
+            "f9b87765.90a478"
+        ],
+        "x": 1075,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "b155af3f.f8a0a8",
+        "type": "change",
+        "z": "5a18ecba.25f6d4",
+        "name": "Enable slider",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 460,
+        "wires": [
+            [
+                "43b8389.8fc5748"
+            ]
+        ]
+    },
+    {
+        "id": "d4a97bc3.1dd98",
+        "type": "change",
+        "z": "5a18ecba.25f6d4",
+        "name": "Disable slider",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900,
+        "y": 500,
+        "wires": [
+            [
+                "43b8389.8fc5748"
+            ]
+        ]
+    },
+    {
+        "id": "43b8389.8fc5748",
+        "type": "link out",
+        "z": "5a18ecba.25f6d4",
+        "name": "BK power slider",
+        "links": [
+            "7b465fdb.b8a98"
+        ],
+        "x": 1035,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "2397a45.037d65c",
+        "type": "rpi-gpio out",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "38735e36.113c8a",
+        "name": "BK Element out",
+        "pin": "7",
+        "set": false,
+        "level": "0",
+        "freq": "",
+        "out": "pwm",
+        "x": 1120,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "3bf642ce.0e5536",
+        "type": "link in",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "38735e36.113c8a",
+        "name": "BK Element Power %",
+        "links": [
+            "f5073530.a91078"
+        ],
+        "x": 240,
+        "y": 460,
+        "wires": [
+            [
+                "45f7b966.06ff2",
+                "ac052a82.75a568"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "18a70660.3494d2",
+        "type": "link out",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "38735e36.113c8a",
+        "name": "BK Element output power %",
+        "links": [
+            "8abe6ce3.dcecf"
+        ],
+        "x": 760,
+        "y": 600,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "45f7b966.06ff2",
+        "type": "change",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "38735e36.113c8a",
+        "name": "Set BK Power Output",
+        "rules": [
+            {
+                "t": "set",
+                "p": "BKPowerOutput",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd468832.b66a78",
+        "type": "link in",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "38735e36.113c8a",
+        "name": "Heatbeat ticker 1s",
+        "links": [
+            "d583a0c6.8c20b",
+            "766a5f5.a3001a"
+        ],
+        "x": 230,
+        "y": 600,
+        "wires": [
+            [
+                "38d6ec9.c82e994"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "38d6ec9.c82e994",
+        "type": "change",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "38735e36.113c8a",
+        "name": "Get BK Power Output",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "BKPowerOutput",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 580,
+        "wires": [
+            [
+                "18a70660.3494d2"
+            ]
+        ]
+    },
+    {
+        "id": "1b5f2e1a.39aa52",
+        "type": "comment",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "38735e36.113c8a",
+        "name": "*** Element disabled for now",
+        "info": "",
+        "x": 1020,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "f5073530.a91078",
+        "type": "link out",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "BK Element Power %",
+        "links": [
+            "3bf642ce.0e5536"
+        ],
+        "x": 1140,
+        "y": 680,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "a10dc7fe.540f68",
+        "type": "range",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "minin": "0",
+        "maxin": "1",
+        "minout": "0",
+        "maxout": "100",
+        "action": "scale",
+        "round": false,
+        "property": "payload",
+        "name": "",
+        "x": 640,
+        "y": 600,
+        "wires": [
+            [
+                "af7c007a.b43aa"
+            ]
+        ]
+    },
+    {
+        "id": "1342b373.8faa7d",
+        "type": "link in",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "BK Temerature",
+        "links": [
+            "46ee54de.b721fc"
+        ],
+        "x": 160,
+        "y": 600,
+        "wires": [
+            [
+                "11dafbc1.f9ac7c"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "3268cb38.a5f80c",
+        "type": "link in",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "BK manual slider",
+        "links": [
+            "845fdb5.5e95d28"
+        ],
+        "x": 160,
+        "y": 740,
+        "wires": [
+            [
+                "a53f1e5b.1bafa8"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "a0adf295.bb46a8",
+        "type": "inject",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "On refresh, Set target temp 95Deg",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "setpoint",
+        "payload": "95",
+        "payloadType": "num",
+        "x": 220,
+        "y": 660,
+        "wires": [
+            [
+                "11dafbc1.f9ac7c"
+            ]
+        ]
+    },
+    {
+        "id": "11dafbc1.f9ac7c",
+        "type": "PID",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "BK PID",
+        "setpoint": "10",
+        "pb": "0",
+        "ti": 9999,
+        "td": 0,
+        "integral_default": 0.5,
+        "smooth_factor": 3,
+        "max_interval": 600,
+        "enable": 1,
+        "disabled_op": 0,
+        "x": 480,
+        "y": 600,
+        "wires": [
+            [
+                "a10dc7fe.540f68"
+            ]
+        ]
+    },
+    {
+        "id": "2eccd44d.bb6f04",
+        "type": "inject",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "On refresh set to zero",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 580,
+        "y": 680,
+        "wires": [
+            [
+                "f5073530.a91078"
+            ]
+        ]
+    },
+    {
+        "id": "af7c007a.b43aa",
+        "type": "gate",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "PID control gate",
+        "controlTopic": "control",
+        "defaultState": "closed",
+        "openCmd": "open",
+        "closeCmd": "close",
+        "toggleCmd": "toggle",
+        "defaultCmd": "default",
+        "statusCmd": "status",
+        "persist": false,
+        "x": 900,
+        "y": 600,
+        "wires": [
+            [
+                "f5073530.a91078"
+            ]
+        ]
+    },
+    {
+        "id": "a53f1e5b.1bafa8",
+        "type": "gate",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "Manual control gate",
+        "controlTopic": "control",
+        "defaultState": "closed",
+        "openCmd": "open",
+        "closeCmd": "close",
+        "toggleCmd": "toggle",
+        "defaultCmd": "default",
+        "statusCmd": "status",
+        "persist": false,
+        "x": 920,
+        "y": 740,
+        "wires": [
+            [
+                "f5073530.a91078"
+            ]
+        ]
+    },
+    {
+        "id": "e3a23318.981f68",
+        "type": "link in",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "BK manual control enable",
+        "links": [
+            "6c9c3b3.5df7244"
+        ],
+        "x": 190,
+        "y": 800,
+        "wires": [
+            [
+                "49faea85.7cd08c"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "49faea85.7cd08c",
+        "type": "switch",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "Is it manual control?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 440,
+        "y": 800,
+        "wires": [
+            [
+                "7e1cfe62.ae3c9"
+            ],
+            [
+                "8cb296f4.3a9c88"
+            ]
+        ]
+    },
+    {
+        "id": "7e1cfe62.ae3c9",
+        "type": "change",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "Open the gate",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "open",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "control",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 780,
+        "wires": [
+            [
+                "a53f1e5b.1bafa8"
+            ]
+        ]
+    },
+    {
+        "id": "8cb296f4.3a9c88",
+        "type": "change",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "close the gate",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "close",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "control",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 820,
+        "wires": [
+            [
+                "a53f1e5b.1bafa8"
+            ]
+        ]
+    },
+    {
+        "id": "bf530c2b.23c988",
+        "type": "link in",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "BK PID control enable",
+        "links": [
+            "444afa27.c51efc"
+        ],
+        "x": 240,
+        "y": 540,
+        "wires": [
+            [
+                "d93179e9.e362d8"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "d93179e9.e362d8",
+        "type": "switch",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "Is it manual control?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 460,
+        "y": 540,
+        "wires": [
+            [
+                "789a8afa.2996bc"
+            ],
+            [
+                "de91c9e1.c6d4f"
+            ]
+        ]
+    },
+    {
+        "id": "789a8afa.2996bc",
+        "type": "change",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "Open the gate",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "open",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "control",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 520,
+        "wires": [
+            [
+                "af7c007a.b43aa"
+            ]
+        ]
+    },
+    {
+        "id": "de91c9e1.c6d4f",
+        "type": "change",
+        "z": "4c2748b.984d3b8",
+        "g": "57237429.cc77c4",
+        "name": "close the gate",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "close",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "control",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 560,
+        "wires": [
+            [
+                "af7c007a.b43aa"
+            ]
+        ]
+    },
+    {
+        "id": "dc4c2855.b1879",
+        "type": "gate",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "6217408c.d82dc8",
+        "name": "HLT element enabled gate",
+        "controlTopic": "control",
+        "defaultState": "open",
+        "openCmd": "open",
+        "closeCmd": "close",
+        "toggleCmd": "toggle",
+        "defaultCmd": "default",
+        "statusCmd": "status",
+        "persist": false,
+        "x": 780,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd4ffefe.73f4d8",
+        "type": "link in",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "6217408c.d82dc8",
+        "name": "HLT element enable",
+        "links": [
+            "162ea1e2.2b8cce"
+        ],
+        "x": 150,
+        "y": 60,
+        "wires": [
+            [
+                "c30f3ed8.2aa3a8"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "c30f3ed8.2aa3a8",
+        "type": "switch",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "6217408c.d82dc8",
+        "name": "Is it enabled?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 340,
+        "y": 60,
+        "wires": [
+            [
+                "181a8f07.e1d921"
+            ],
+            [
+                "e7b1d178.e841d"
+            ]
+        ]
+    },
+    {
+        "id": "181a8f07.e1d921",
+        "type": "change",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "6217408c.d82dc8",
+        "name": "Open the gate",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "open",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "control",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 40,
+        "wires": [
+            [
+                "dc4c2855.b1879"
+            ]
+        ]
+    },
+    {
+        "id": "e7b1d178.e841d",
+        "type": "change",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "6217408c.d82dc8",
+        "name": "close the gate",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "close",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "control",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 80,
+        "wires": [
+            [
+                "dc4c2855.b1879"
+            ]
+        ]
+    },
+    {
+        "id": "9fcd9170.258988",
+        "type": "link in",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "38735e36.113c8a",
+        "name": "BK element enable",
+        "links": [
+            "52db710b.f6c64"
+        ],
+        "x": 230,
+        "y": 400,
+        "wires": [
+            [
+                "9e226085.cb8d1"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "9e226085.cb8d1",
+        "type": "switch",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "38735e36.113c8a",
+        "name": "Is it enabled?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 420,
+        "y": 400,
+        "wires": [
+            [
+                "3d31383b.1cde4"
+            ],
+            [
+                "59be3a6f.ee779c"
+            ]
+        ]
+    },
+    {
+        "id": "3d31383b.1cde4",
+        "type": "change",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "38735e36.113c8a",
+        "name": "Open the gate",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "open",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "control",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 380,
+        "wires": [
+            [
+                "ac052a82.75a568"
+            ]
+        ]
+    },
+    {
+        "id": "59be3a6f.ee779c",
+        "type": "change",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "38735e36.113c8a",
+        "name": "close the gate",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "close",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "control",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 420,
+        "wires": [
+            [
+                "ac052a82.75a568"
+            ]
+        ]
+    },
+    {
+        "id": "ac052a82.75a568",
+        "type": "gate",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "38735e36.113c8a",
+        "name": "BK element enabled gate",
+        "controlTopic": "control",
+        "defaultState": "open",
+        "openCmd": "open",
+        "closeCmd": "close",
+        "toggleCmd": "toggle",
+        "defaultCmd": "default",
+        "statusCmd": "status",
+        "persist": false,
+        "x": 830,
+        "y": 460,
+        "wires": [
+            []
+        ]
     }
 ]
