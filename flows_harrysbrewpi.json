@@ -456,7 +456,7 @@
         "x": 74,
         "y": 659,
         "w": 662,
-        "h": 82
+        "h": 142
     },
     {
         "id": "f2c499c6.7e13e8",
@@ -472,12 +472,14 @@
             "28a66a10.ef6846",
             "deb8f2eb.c1901",
             "b9e12ea0.45b98",
-            "43bf9e4a.8923d",
             "ac9038ad.f15a48",
-            "352afbec.d94f34"
+            "352afbec.d94f34",
+            "3172ef7b.85c0f"
         ],
         "x": 114,
-        "y": 219
+        "y": 219,
+        "w": 492,
+        "h": 242
     },
     {
         "id": "6217408c.d82dc8",
@@ -494,17 +496,18 @@
             "ee085d83.81d5c",
             "a566f02f.63e1c",
             "ee91dc6f.629ae",
-            "c8d144f3.1e6888",
             "dc4c2855.b1879",
             "cd4ffefe.73f4d8",
             "c30f3ed8.2aa3a8",
             "e7b1d178.e841d",
-            "181a8f07.e1d921"
+            "181a8f07.e1d921",
+            "8f338b83.cfdd18",
+            "b41b22b1.fd8de"
         ],
-        "x": 34,
-        "y": -1,
-        "w": 1132,
-        "h": 302
+        "x": 54,
+        "y": 79,
+        "w": 1752,
+        "h": 222
     },
     {
         "id": "38735e36.113c8a",
@@ -521,17 +524,18 @@
             "45f7b966.06ff2",
             "fd468832.b66a78",
             "38d6ec9.c82e994",
-            "1b5f2e1a.39aa52",
             "9fcd9170.258988",
             "9e226085.cb8d1",
             "3d31383b.1cde4",
             "59be3a6f.ee779c",
-            "ac052a82.75a568"
+            "ac052a82.75a568",
+            "220d97a3.29d778",
+            "347e81f7.d003be"
         ],
         "x": 114,
-        "y": 339,
-        "w": 1112,
-        "h": 302
+        "y": 419,
+        "w": 1692,
+        "h": 242
     },
     {
         "id": "91669a1f.42243",
@@ -695,7 +699,7 @@
         "id": "ee877576.e7497",
         "type": "ui_group",
         "name": "Controls",
-        "tab": "3f73ea82.bc62e6",
+        "tab": "a8850437.d84aa8",
         "order": 4,
         "disp": false,
         "width": "22",
@@ -813,6 +817,16 @@
         "order": 1,
         "disp": true,
         "width": "22",
+        "collapse": false
+    },
+    {
+        "id": "cca3095.3aed4f8",
+        "type": "ui_group",
+        "name": "Messages",
+        "tab": "3f73ea82.bc62e6",
+        "order": 4,
+        "disp": false,
+        "width": "20",
         "collapse": false
     },
     {
@@ -1749,74 +1763,6 @@
         ]
     },
     {
-        "id": "89c202f7.bc993",
-        "type": "inject",
-        "z": "db2290bc.6bd9c8",
-        "name": "LED On",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 190,
-        "y": 80,
-        "wires": [
-            [
-                "41f38206.1473ac"
-            ]
-        ]
-    },
-    {
-        "id": "41f38206.1473ac",
-        "type": "rpi-gpio out",
-        "z": "db2290bc.6bd9c8",
-        "name": "Red LED",
-        "pin": "13",
-        "set": true,
-        "level": "0",
-        "freq": "",
-        "out": "out",
-        "x": 390,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "b93b0cbb.2e4618",
-        "type": "inject",
-        "z": "db2290bc.6bd9c8",
-        "name": "LED Off",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 190,
-        "y": 120,
-        "wires": [
-            [
-                "41f38206.1473ac"
-            ]
-        ]
-    },
-    {
         "id": "731e9eaf.6c074",
         "type": "exec",
         "z": "fd1f2b7f.0d4d08",
@@ -2540,10 +2486,10 @@
         "pin": "37",
         "set": false,
         "level": "0",
-        "freq": "",
+        "freq": "1",
         "out": "pwm",
-        "x": 1050,
-        "y": 120,
+        "x": 1310,
+        "y": 200,
         "wires": []
     },
     {
@@ -2555,11 +2501,10 @@
         "links": [
             "9d19b417.2ff2c8"
         ],
-        "x": 160,
-        "y": 120,
+        "x": 180,
+        "y": 200,
         "wires": [
             [
-                "ee085d83.81d5c",
                 "dc4c2855.b1879"
             ]
         ],
@@ -2574,7 +2519,7 @@
         "links": [
             "e4d7502c.87c4"
         ],
-        "x": 690,
+        "x": 1650,
         "y": 260,
         "wires": [],
         "l": true
@@ -2617,10 +2562,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
+        "x": 1080,
         "y": 200,
         "wires": [
-            []
+            [
+                "978ce145.42976"
+            ]
         ]
     },
     {
@@ -2633,7 +2580,7 @@
             "d583a0c6.8c20b",
             "766a5f5.a3001a"
         ],
-        "x": 150,
+        "x": 790,
         "y": 260,
         "wires": [
             [
@@ -2662,11 +2609,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
+        "x": 1080,
         "y": 240,
         "wires": [
             [
-                "8c0e6674.9c4a98"
+                "b41b22b1.fd8de"
             ]
         ]
     },
@@ -2715,7 +2662,7 @@
             "11d53e33.30f432",
             "d209a449.0ceb98"
         ],
-        "x": 1310,
+        "x": 1490,
         "y": 80,
         "wires": [],
         "l": true
@@ -2839,17 +2786,6 @@
         "y": 140,
         "wires": [],
         "l": true
-    },
-    {
-        "id": "c8d144f3.1e6888",
-        "type": "comment",
-        "z": "b6bdc7e8.c2bbe8",
-        "g": "6217408c.d82dc8",
-        "name": "*** Element disabled for now",
-        "info": "",
-        "x": 920,
-        "y": 80,
-        "wires": []
     },
     {
         "id": "1292ea0e.c00c36",
@@ -4094,7 +4030,7 @@
         "links": [
             "5044c4c3.851ddc"
         ],
-        "x": 1310,
+        "x": 1470,
         "y": 140,
         "wires": [],
         "l": true
@@ -4118,17 +4054,17 @@
         "type": "ui_template",
         "z": "b209822d.9e674",
         "group": "ee877576.e7497",
-        "name": "Global styles for dahsboard",
+        "name": "Global styles for dashboard",
         "order": 7,
         "width": 0,
         "height": 0,
-        "format": "<style>\nh1.vessel-title {\n    font-size: 2.9em;\n    margin-top: -10px;\n    margin-bottom: -10px;\n}\n    \n</style>",
+        "format": "<style>\n@media only screen and (min-width: 1800px) {\n    .masonry-container {\n        margin-top: 205px;\n        transform: scale(1.7); \n    }\n    \n}\nh1.vessel-title {\n    font-size: 2.9em;\n    margin-top: -10px;\n    margin-bottom: -10px;\n}\n    \n.custom-switch-button {\n    overflow: hidden;\n}\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "global",
-        "x": 220,
-        "y": 620,
+        "x": 200,
+        "y": 600,
         "wires": [
             []
         ]
@@ -4275,7 +4211,7 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 750,
+        "x": 810,
         "y": 180,
         "wires": []
     },
@@ -4468,7 +4404,7 @@
         "y": 700,
         "wires": [
             [
-                "abbae2aa.9a409"
+                "a8aeafa1.3a522"
             ]
         ]
     },
@@ -4484,11 +4420,9 @@
         "initialize": "",
         "finalize": "",
         "x": 510,
-        "y": 700,
+        "y": 760,
         "wires": [
-            [
-                "a8aeafa1.3a522"
-            ]
+            []
         ]
     },
     {
@@ -4500,7 +4434,8 @@
         "links": [
             "dd1f70b6.6080e",
             "c7fb6487.dee108",
-            "48bdeac7.e6d764"
+            "48bdeac7.e6d764",
+            "e23ea888.37bf78"
         ],
         "x": 695,
         "y": 700,
@@ -4640,7 +4575,7 @@
         "wires": [
             [
                 "28a66a10.ef6846",
-                "43bf9e4a.8923d"
+                "3172ef7b.85c0f"
             ]
         ]
     },
@@ -4664,17 +4599,6 @@
                 "deb8f2eb.c1901"
             ]
         ]
-    },
-    {
-        "id": "43bf9e4a.8923d",
-        "type": "link out",
-        "z": "858aa20d.74d93",
-        "g": "f2c499c6.7e13e8",
-        "name": "Wort Pump switch",
-        "links": [],
-        "x": 455,
-        "y": 420,
-        "wires": []
     },
     {
         "id": "ac9038ad.f15a48",
@@ -5215,13 +5139,13 @@
         "z": "b6bdc7e8.c2bbe8",
         "g": "38735e36.113c8a",
         "name": "BK Element out",
-        "pin": "7",
+        "pin": "35",
         "set": false,
         "level": "0",
-        "freq": "",
+        "freq": "1",
         "out": "pwm",
-        "x": 1120,
-        "y": 460,
+        "x": 1320,
+        "y": 540,
         "wires": []
     },
     {
@@ -5234,10 +5158,9 @@
             "f5073530.a91078"
         ],
         "x": 240,
-        "y": 460,
+        "y": 540,
         "wires": [
             [
-                "45f7b966.06ff2",
                 "ac052a82.75a568"
             ]
         ],
@@ -5252,7 +5175,7 @@
         "links": [
             "8abe6ce3.dcecf"
         ],
-        "x": 760,
+        "x": 1660,
         "y": 600,
         "wires": [],
         "l": true
@@ -5277,10 +5200,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 500,
+        "x": 1100,
         "y": 540,
         "wires": [
-            []
+            [
+                "2397a45.037d65c"
+            ]
         ]
     },
     {
@@ -5293,8 +5218,8 @@
             "d583a0c6.8c20b",
             "766a5f5.a3001a"
         ],
-        "x": 230,
-        "y": 600,
+        "x": 770,
+        "y": 620,
         "wires": [
             [
                 "38d6ec9.c82e994"
@@ -5322,24 +5247,13 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 500,
+        "x": 1100,
         "y": 580,
         "wires": [
             [
-                "18a70660.3494d2"
+                "347e81f7.d003be"
             ]
         ]
-    },
-    {
-        "id": "1b5f2e1a.39aa52",
-        "type": "comment",
-        "z": "b6bdc7e8.c2bbe8",
-        "g": "38735e36.113c8a",
-        "name": "*** Element disabled for now",
-        "info": "",
-        "x": 1020,
-        "y": 420,
-        "wires": []
     },
     {
         "id": "f5073530.a91078",
@@ -5785,10 +5699,12 @@
         "defaultCmd": "default",
         "statusCmd": "status",
         "persist": false,
-        "x": 780,
-        "y": 120,
+        "x": 800,
+        "y": 200,
         "wires": [
-            []
+            [
+                "ee085d83.81d5c"
+            ]
         ]
     },
     {
@@ -5800,8 +5716,8 @@
         "links": [
             "162ea1e2.2b8cce"
         ],
-        "x": 150,
-        "y": 60,
+        "x": 170,
+        "y": 140,
         "wires": [
             [
                 "c30f3ed8.2aa3a8"
@@ -5828,8 +5744,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 340,
-        "y": 60,
+        "x": 360,
+        "y": 140,
         "wires": [
             [
                 "181a8f07.e1d921"
@@ -5866,8 +5782,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 40,
+        "x": 540,
+        "y": 120,
         "wires": [
             [
                 "dc4c2855.b1879"
@@ -5901,11 +5817,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 80,
+        "x": 540,
+        "y": 160,
         "wires": [
             [
-                "dc4c2855.b1879"
+                "dc4c2855.b1879",
+                "8f338b83.cfdd18"
             ]
         ]
     },
@@ -5919,7 +5836,7 @@
             "52db710b.f6c64"
         ],
         "x": 230,
-        "y": 400,
+        "y": 480,
         "wires": [
             [
                 "9e226085.cb8d1"
@@ -5947,7 +5864,7 @@
         "repair": false,
         "outputs": 2,
         "x": 420,
-        "y": 400,
+        "y": 480,
         "wires": [
             [
                 "3d31383b.1cde4"
@@ -5985,7 +5902,7 @@
         "to": "",
         "reg": false,
         "x": 600,
-        "y": 380,
+        "y": 460,
         "wires": [
             [
                 "ac052a82.75a568"
@@ -6020,10 +5937,11 @@
         "to": "",
         "reg": false,
         "x": 600,
-        "y": 420,
+        "y": 500,
         "wires": [
             [
-                "ac052a82.75a568"
+                "ac052a82.75a568",
+                "220d97a3.29d778"
             ]
         ]
     },
@@ -6042,7 +5960,184 @@
         "statusCmd": "status",
         "persist": false,
         "x": 830,
-        "y": 460,
+        "y": 540,
+        "wires": [
+            [
+                "45f7b966.06ff2"
+            ]
+        ]
+    },
+    {
+        "id": "3172ef7b.85c0f",
+        "type": "rpi-gpio out",
+        "z": "858aa20d.74d93",
+        "g": "f2c499c6.7e13e8",
+        "name": "Wort Pump",
+        "pin": "13",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 510,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "8f338b83.cfdd18",
+        "type": "change",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "6217408c.d82dc8",
+        "name": "Turn off element",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 800,
+        "y": 160,
+        "wires": [
+            [
+                "ee085d83.81d5c"
+            ]
+        ]
+    },
+    {
+        "id": "220d97a3.29d778",
+        "type": "change",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "38735e36.113c8a",
+        "name": "Turn off element",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 500,
+        "wires": [
+            [
+                "45f7b966.06ff2"
+            ]
+        ]
+    },
+    {
+        "id": "b41b22b1.fd8de",
+        "type": "function",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "6217408c.d82dc8",
+        "name": "convert false value to zero",
+        "func": "if(msg.payload === false) {\n    msg.payload = 0;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1370,
+        "y": 260,
+        "wires": [
+            [
+                "8c0e6674.9c4a98"
+            ]
+        ]
+    },
+    {
+        "id": "347e81f7.d003be",
+        "type": "function",
+        "z": "b6bdc7e8.c2bbe8",
+        "g": "38735e36.113c8a",
+        "name": "convert false value to zero",
+        "func": "if(msg.payload === false) {\n    msg.payload = 0;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1380,
+        "y": 600,
+        "wires": [
+            [
+                "18a70660.3494d2"
+            ]
+        ]
+    },
+    {
+        "id": "e23ea888.37bf78",
+        "type": "link in",
+        "z": "5a18ecba.25f6d4",
+        "name": "",
+        "links": [
+            "a8aeafa1.3a522"
+        ],
+        "x": 175,
+        "y": 520,
+        "wires": [
+            [
+                "61aaf0e1.29ec7"
+            ]
+        ]
+    },
+    {
+        "id": "61aaf0e1.29ec7",
+        "type": "change",
+        "z": "5a18ecba.25f6d4",
+        "name": "default to 60%",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "60",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 520,
+        "wires": [
+            [
+                "afeaa1b7.bbca2"
+            ]
+        ]
+    },
+    {
+        "id": "32761e77.6051f2",
+        "type": "inject",
+        "z": "e61b1f1a.55954",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Add hops - 5min",
+        "payloadType": "str",
+        "x": 290,
+        "y": 80,
         "wires": [
             []
         ]
