@@ -171,9 +171,7 @@
             "24d98b2.b6993f4"
         ],
         "x": 54,
-        "y": 979,
-        "w": 1112,
-        "h": 149.5
+        "y": 979
     },
     {
         "id": "8999c1e2.ee75b",
@@ -195,9 +193,7 @@
             "68efbb04.cab494"
         ],
         "x": 54,
-        "y": 199,
-        "w": 632,
-        "h": 142
+        "y": 199
     },
     {
         "id": "5d240556.262b84",
@@ -219,9 +215,7 @@
             "854cf920.80e668"
         ],
         "x": 54,
-        "y": 39,
-        "w": 592,
-        "h": 142
+        "y": 39
     },
     {
         "id": "fa9d12fd.befec8",
@@ -249,9 +243,7 @@
             "19e89484.507533"
         ],
         "x": 54,
-        "y": 719,
-        "w": 1512,
-        "h": 229.5
+        "y": 719
     },
     {
         "id": "72b7ae42.0b82d",
@@ -275,9 +267,7 @@
             "463077fd.6a2e7"
         ],
         "x": 54,
-        "y": 359,
-        "w": 892,
-        "h": 182
+        "y": 359
     },
     {
         "id": "d90db005.43c49",
@@ -300,9 +290,7 @@
             "2ac76708.01729"
         ],
         "x": 54,
-        "y": 559,
-        "w": 1052,
-        "h": 142
+        "y": 559
     },
     {
         "id": "1fe8870c.af7949",
@@ -317,9 +305,7 @@
             "48bdeac7.e6d764"
         ],
         "x": 74,
-        "y": 51.5,
-        "w": 412,
-        "h": 97
+        "y": 51.5
     },
     {
         "id": "a0955a5d.7bc6a",
@@ -339,9 +325,7 @@
             "de015364.e3aed8"
         ],
         "x": 54,
-        "y": 1139,
-        "w": 1192,
-        "h": 142
+        "y": 1139
     },
     {
         "id": "5cc5dd43.7d4754",
@@ -361,9 +345,7 @@
             "1bc8a1d6.3b8d3e"
         ],
         "x": 54,
-        "y": 1299,
-        "w": 1152,
-        "h": 142
+        "y": 1299
     },
     {
         "id": "a5478298.6399d",
@@ -381,9 +363,7 @@
             "dd1f70b6.6080e"
         ],
         "x": 74,
-        "y": 171.5,
-        "w": 972,
-        "h": 97
+        "y": 171.5
     },
     {
         "id": "3f74176e.8009c8",
@@ -399,9 +379,7 @@
             "2c0ddb20.797604"
         ],
         "x": 84,
-        "y": 159,
-        "w": 482,
-        "h": 122
+        "y": 159
     },
     {
         "id": "6ec6cc41.7154c4",
@@ -418,9 +396,7 @@
             "82be8459.c3e358"
         ],
         "x": 74,
-        "y": 419,
-        "w": 472,
-        "h": 142
+        "y": 419
     },
     {
         "id": "e7769d56.bbbbb",
@@ -436,9 +412,7 @@
             "c7fb6487.dee108"
         ],
         "x": 74,
-        "y": 299,
-        "w": 322,
-        "h": 82
+        "y": 299
     },
     {
         "id": "55fc7d02.76f0a4",
@@ -454,9 +428,7 @@
             "a8aeafa1.3a522"
         ],
         "x": 74,
-        "y": 659,
-        "w": 662,
-        "h": 142
+        "y": 659
     },
     {
         "id": "f2c499c6.7e13e8",
@@ -477,9 +449,7 @@
             "3172ef7b.85c0f"
         ],
         "x": 114,
-        "y": 219,
-        "w": 492,
-        "h": 242
+        "y": 219
     },
     {
         "id": "6217408c.d82dc8",
@@ -505,9 +475,7 @@
             "b41b22b1.fd8de"
         ],
         "x": 54,
-        "y": 79,
-        "w": 1752,
-        "h": 222
+        "y": 79
     },
     {
         "id": "38735e36.113c8a",
@@ -533,9 +501,7 @@
             "347e81f7.d003be"
         ],
         "x": 114,
-        "y": 419,
-        "w": 1692,
-        "h": 242
+        "y": 419
     },
     {
         "id": "91669a1f.42243",
@@ -561,9 +527,7 @@
             "e4dea1a5.4f1ed"
         ],
         "x": 34,
-        "y": 79,
-        "w": 952,
-        "h": 382
+        "y": 79
     },
     {
         "id": "57237429.cc77c4",
@@ -593,9 +557,7 @@
             "de91c9e1.c6d4f"
         ],
         "x": 34,
-        "y": 479,
-        "w": 1232,
-        "h": 382
+        "y": 479
     },
     {
         "id": "c0391f6c.552ff",
@@ -1815,7 +1777,7 @@
         "y": 80,
         "wires": [
             [
-                "fb4d5c6f.c5572"
+                "3eb5719d.0216de"
             ]
         ]
     },
@@ -2486,7 +2448,7 @@
         "pin": "37",
         "set": false,
         "level": "0",
-        "freq": "1",
+        "freq": "0.5",
         "out": "pwm",
         "x": 1310,
         "y": 200,
@@ -2662,7 +2624,7 @@
             "11d53e33.30f432",
             "d209a449.0ceb98"
         ],
-        "x": 1490,
+        "x": 1710,
         "y": 80,
         "wires": [],
         "l": true
@@ -3908,7 +3870,7 @@
         "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg)\">\n    <div>\n        <span style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\">\n            {{(msg.payload) ? 'ENABLED' : 'ENABLE'}}\n        </span>\n    </div>\n        \n    <div>\n        <i class=\"fa  {{(msg.payload) ? 'fa-square' : 'fa-square-o'}} fa-2x fa-fw\" style=\"{{(msg.payload) ? 'color: #32ff32;' : ''}}\"></i>\n    </div>\n</div>",
         "storeOutMessages": false,
         "fwdInMessages": false,
-        "resendOnRefresh": false,
+        "resendOnRefresh": true,
         "templateScope": "local",
         "x": 570,
         "y": 60,
@@ -4000,7 +3962,7 @@
         "y": 140,
         "wires": [
             [
-                "2a5e316.9797cce"
+                "3de3ae01.9a84b2"
             ]
         ]
     },
@@ -4018,7 +3980,7 @@
         "y": 200,
         "wires": [
             [
-                "46ee54de.b721fc"
+                "d9f3db58.58ebf"
             ]
         ]
     },
@@ -4030,7 +3992,7 @@
         "links": [
             "5044c4c3.851ddc"
         ],
-        "x": 1470,
+        "x": 1710,
         "y": 140,
         "wires": [],
         "l": true
@@ -4044,7 +4006,7 @@
             "db560479.978cc8",
             "1342b373.8faa7d"
         ],
-        "x": 1300,
+        "x": 1700,
         "y": 200,
         "wires": [],
         "l": true
@@ -4279,7 +4241,7 @@
         "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg)\">\n    <div>\n        <span style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\">\n            {{(msg.payload) ? 'ENABLED' : 'ENABLE'}}\n        </span>\n    </div>\n        \n    <div>\n        <i class=\"fa  {{(msg.payload) ? 'fa-square' : 'fa-square-o'}} fa-2x fa-fw\" style=\"{{(msg.payload) ? 'color: #32ff32;' : ''}}\"></i>\n    </div>\n</div>",
         "storeOutMessages": false,
         "fwdInMessages": false,
-        "resendOnRefresh": false,
+        "resendOnRefresh": true,
         "templateScope": "local",
         "x": 550,
         "y": 80,
@@ -4800,7 +4762,7 @@
         "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg)\">\n    <div>\n        <span style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\">\n            Hold at 95°C\n        </span>\n    </div>\n        \n    <div>\n        <i class=\"fa  {{(msg.payload) ? 'fa-square' : 'fa-square-o'}} fa-2x fa-fw\" style=\"{{(msg.payload) ? 'color: #32ff32;' : ''}}\"></i>\n    </div>\n</div>",
         "storeOutMessages": false,
         "fwdInMessages": false,
-        "resendOnRefresh": false,
+        "resendOnRefresh": true,
         "templateScope": "local",
         "x": 420,
         "y": 260,
@@ -4872,7 +4834,7 @@
         "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg)\">\n    <div>\n        <span style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\">\n            Manual\n        </span>\n    </div>\n        \n    <div>\n        <i class=\"fa  {{(msg.payload) ? 'fa-square' : 'fa-square-o'}} fa-2x fa-fw\" style=\"{{(msg.payload) ? 'color: #32ff32;' : ''}}\"></i>\n    </div>\n</div>",
         "storeOutMessages": false,
         "fwdInMessages": false,
-        "resendOnRefresh": false,
+        "resendOnRefresh": true,
         "templateScope": "local",
         "x": 390,
         "y": 400,
@@ -5142,7 +5104,7 @@
         "pin": "35",
         "set": false,
         "level": "0",
-        "freq": "1",
+        "freq": "0.5",
         "out": "pwm",
         "x": 1320,
         "y": 540,
@@ -6140,6 +6102,114 @@
         "y": 80,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "3de3ae01.9a84b2",
+        "type": "function",
+        "z": "fd1f2b7f.0d4d08",
+        "name": "Calibrate Sensor",
+        "func": "msg.payload=msg.payload+2\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1290,
+        "y": 140,
+        "wires": [
+            [
+                "b82fe209.2ca49"
+            ]
+        ]
+    },
+    {
+        "id": "3eb5719d.0216de",
+        "type": "function",
+        "z": "fd1f2b7f.0d4d08",
+        "name": "Calibrate Sensor",
+        "func": "msg.payload=msg.payload+1.5\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1290,
+        "y": 80,
+        "wires": [
+            [
+                "1c570dd9.2e1042"
+            ]
+        ]
+    },
+    {
+        "id": "d9f3db58.58ebf",
+        "type": "function",
+        "z": "fd1f2b7f.0d4d08",
+        "name": "Calibrate Sensor",
+        "func": "msg.payload=msg.payload+3\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1290,
+        "y": 200,
+        "wires": [
+            [
+                "5c1a8d1b.618ea4"
+            ]
+        ]
+    },
+    {
+        "id": "1c570dd9.2e1042",
+        "type": "function",
+        "z": "fd1f2b7f.0d4d08",
+        "name": "Spike adjustment",
+        "func": "var temp=msg.payload\n\n// discard the value if its too big or small\nif(temp>120 || temp<0){\n    return;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1490,
+        "y": 80,
+        "wires": [
+            [
+                "fb4d5c6f.c5572"
+            ]
+        ]
+    },
+    {
+        "id": "b82fe209.2ca49",
+        "type": "function",
+        "z": "fd1f2b7f.0d4d08",
+        "name": "Spike adjustment",
+        "func": "var temp=msg.payload\n\n// discard the value if its too big or small\nif(temp>120 || temp<0){\n    return;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1490,
+        "y": 140,
+        "wires": [
+            [
+                "2a5e316.9797cce"
+            ]
+        ]
+    },
+    {
+        "id": "5c1a8d1b.618ea4",
+        "type": "function",
+        "z": "fd1f2b7f.0d4d08",
+        "name": "Spike adjustment",
+        "func": "var temp=msg.payload\n\n// discard the value if its too big or small\nif(temp>120 || temp<0){\n    return;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1490,
+        "y": 200,
+        "wires": [
+            [
+                "46ee54de.b721fc"
+            ]
         ]
     }
 ]
