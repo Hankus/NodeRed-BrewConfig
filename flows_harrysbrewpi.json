@@ -98,9 +98,9 @@
         "info": ""
     },
     {
-        "id": "e9f0b9c.d17dc48",
+        "id": "c89ecd9f.5f6b7",
         "type": "tab",
-        "label": "Flow 3",
+        "label": "Boil Timer",
         "disabled": false,
         "info": ""
     },
@@ -327,7 +327,9 @@
             "48bdeac7.e6d764"
         ],
         "x": 74,
-        "y": 51.5
+        "y": 51.5,
+        "w": 412,
+        "h": 97
     },
     {
         "id": "a0955a5d.7bc6a",
@@ -389,7 +391,9 @@
             "dd1f70b6.6080e"
         ],
         "x": 74,
-        "y": 171.5
+        "y": 171.5,
+        "w": 972,
+        "h": 97
     },
     {
         "id": "3f74176e.8009c8",
@@ -405,7 +409,9 @@
             "2c0ddb20.797604"
         ],
         "x": 84,
-        "y": 159
+        "y": 159,
+        "w": 482,
+        "h": 122
     },
     {
         "id": "6ec6cc41.7154c4",
@@ -422,7 +428,9 @@
             "82be8459.c3e358"
         ],
         "x": 74,
-        "y": 419
+        "y": 419,
+        "w": 472,
+        "h": 142
     },
     {
         "id": "e7769d56.bbbbb",
@@ -438,7 +446,9 @@
             "c7fb6487.dee108"
         ],
         "x": 74,
-        "y": 299
+        "y": 299,
+        "w": 322,
+        "h": 82
     },
     {
         "id": "55fc7d02.76f0a4",
@@ -454,7 +464,9 @@
             "a8aeafa1.3a522"
         ],
         "x": 74,
-        "y": 659
+        "y": 659,
+        "w": 662,
+        "h": 142
     },
     {
         "id": "f2c499c6.7e13e8",
@@ -503,7 +515,9 @@
             "b41b22b1.fd8de"
         ],
         "x": 54,
-        "y": 79
+        "y": 79,
+        "w": 1752,
+        "h": 222
     },
     {
         "id": "38735e36.113c8a",
@@ -529,7 +543,9 @@
             "347e81f7.d003be"
         ],
         "x": 114,
-        "y": 419
+        "y": 419,
+        "w": 1692,
+        "h": 242
     },
     {
         "id": "91669a1f.42243",
@@ -555,7 +571,9 @@
             "e4dea1a5.4f1ed"
         ],
         "x": 34,
-        "y": 79
+        "y": 79,
+        "w": 952,
+        "h": 382
     },
     {
         "id": "57237429.cc77c4",
@@ -585,7 +603,9 @@
             "de91c9e1.c6d4f"
         ],
         "x": 34,
-        "y": 479
+        "y": 479,
+        "w": 1232,
+        "h": 382
     },
     {
         "id": "c0391f6c.552ff",
@@ -4098,7 +4118,8 @@
             "a566f02f.63e1c",
             "e26a1504.ebf608",
             "ddb28124.54739",
-            "fd468832.b66a78"
+            "fd468832.b66a78",
+            "c3c238b.7e830c8"
         ],
         "x": 430,
         "y": 460,
@@ -6503,6 +6524,165 @@
             [
                 "b06e1c5.327a1e"
             ]
+        ]
+    },
+    {
+        "id": "f98e36e2.4a77c8",
+        "type": "inject",
+        "z": "c89ecd9f.5f6b7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 80,
+        "wires": [
+            [
+                "676153d5.50719c"
+            ]
+        ]
+    },
+    {
+        "id": "676153d5.50719c",
+        "type": "template",
+        "z": "c89ecd9f.5f6b7",
+        "name": "Create boil timer prompts",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "[\n    {\n        \"timeFromFinish\": 60,\n        \"messages\": [\"Boil timer started\"],\n        \"buzzer\": \"singleChirp\"\n    },\n    {\n        \"timeFromFinish\": 30,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\"\n    },\n    {\n        \"timeFromFinish\": 20,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\"\n    },\n    {\n        \"timeFromFinish\": 15,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\"\n    },\n    {\n        \"timeFromFinish\": 10,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\"\n    },\n    {\n        \"timeFromFinish\": 5,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\"\n    },\n    {\n        \"timeFromFinish\": 0,\n        \"messages\": [\n            \"Boil timer finished\",\n            \"Hops addition?\n        \"],\n        \"buzzer\": \"tripleChirp\"\n    }\n]",
+        "output": "json",
+        "x": 710,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c3c238b.7e830c8",
+        "type": "link in",
+        "z": "c89ecd9f.5f6b7",
+        "name": "Heartbeat ticker 1s",
+        "links": [
+            "766a5f5.a3001a"
+        ],
+        "x": 210,
+        "y": 320,
+        "wires": [
+            [
+                "4e911871.fe6dd8"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "f097d8be.9b9ed8",
+        "type": "inject",
+        "z": "c89ecd9f.5f6b7",
+        "name": "Start countdown",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 200,
+        "wires": [
+            [
+                "4ae86730.793c48"
+            ]
+        ]
+    },
+    {
+        "id": "4ae86730.793c48",
+        "type": "change",
+        "z": "c89ecd9f.5f6b7",
+        "name": "set flow timer data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "countdownIsActive",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "timerStartedAt",
+                "pt": "flow",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4e911871.fe6dd8",
+        "type": "switch",
+        "z": "c89ecd9f.5f6b7",
+        "name": "Check if timer is active",
+        "property": "countdownIsActive",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 470,
+        "y": 320,
+        "wires": [
+            [
+                "28e67e7e.40d652"
+            ]
+        ]
+    },
+    {
+        "id": "28e67e7e.40d652",
+        "type": "function",
+        "z": "c89ecd9f.5f6b7",
+        "name": "Calculate time remaining",
+        "func": "const timerStartedAt = flow.get(\"timerStartedAt\");\nconst now = msg.payload;\n\nlet timeRemaining = timerStartedAt - now;\n\nmsg.payload = timeRemaining;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 730,
+        "y": 320,
+        "wires": [
+            []
         ]
     }
 ]
