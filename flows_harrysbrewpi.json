@@ -56,44 +56,9 @@
         "info": ""
     },
     {
-        "id": "474c912b.2cb9",
-        "type": "tab",
-        "label": "Checklist",
-        "disabled": false,
-        "info": ""
-    },
-    {
         "id": "858aa20d.74d93",
         "type": "tab",
         "label": "Warnings and pump contollers",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "8dd89e26.6d141",
-        "type": "tab",
-        "label": "Timer",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "a0771295.bec48",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "e61b1f1a.55954",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "db2290bc.6bd9c8",
-        "type": "tab",
-        "label": "GPIO test",
         "disabled": false,
         "info": ""
     },
@@ -105,28 +70,11 @@
         "info": ""
     },
     {
-        "id": "bed2c066.9e4d4",
-        "type": "subflow",
-        "name": "Double chirp buzzer",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 40,
-                "y": 40,
-                "wires": [
-                    {
-                        "id": "5f1ad99e.733a18"
-                    },
-                    {
-                        "id": "2db072c7.23309e"
-                    }
-                ]
-            }
-        ],
-        "out": [],
-        "env": [],
-        "color": "#DDAA99"
+        "id": "db2290bc.6bd9c8",
+        "type": "tab",
+        "label": "Buzzer",
+        "disabled": false,
+        "info": ""
     },
     {
         "id": "b4973237.46ab6",
@@ -278,13 +226,12 @@
             "d3d5ceab.85a72",
             "40a24888.9072a8",
             "9711b5d7.3215d",
-            "3738d33c.cb5054",
-            "463077fd.6a2e7"
+            "3738d33c.cb5054"
         ],
         "x": 54,
-        "y": 379,
-        "w": 892,
-        "h": 182
+        "y": 359,
+        "w": 692,
+        "h": 202
     },
     {
         "id": "d90db005.43c49",
@@ -304,14 +251,12 @@
             "b3ce35b8.9039d",
             "7eac2e98.f92a1",
             "c84aa19c.8a36f8",
-            "2ac76708.01729",
             "fbe32cd9.51c8a8",
-            "363ac57b.fbf872",
-            "4cf7830a.68285c"
+            "363ac57b.fbf872"
         ],
         "x": 54,
         "y": 1459,
-        "w": 1052,
+        "w": 712,
         "h": 182
     },
     {
@@ -394,24 +339,6 @@
         "y": 171.5,
         "w": 972,
         "h": 97
-    },
-    {
-        "id": "3f74176e.8009c8",
-        "type": "group",
-        "z": "db2290bc.6bd9c8",
-        "name": "Buzzer",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "4f4a658a.6b4aac",
-            "6b95fe22.614ae",
-            "2c0ddb20.797604"
-        ],
-        "x": 84,
-        "y": 159,
-        "w": 482,
-        "h": 122
     },
     {
         "id": "6ec6cc41.7154c4",
@@ -568,12 +495,14 @@
             "66294e3f.91eeb",
             "5177e5d6.87767c",
             "31c04565.8cc96a",
-            "e4dea1a5.4f1ed"
+            "e4dea1a5.4f1ed",
+            "251407f9.634768",
+            "7ae7c684.a2c3c8"
         ],
         "x": 34,
         "y": 79,
-        "w": 952,
-        "h": 382
+        "w": 1532,
+        "h": 302
     },
     {
         "id": "57237429.cc77c4",
@@ -606,6 +535,25 @@
         "y": 479,
         "w": 1232,
         "h": 382
+    },
+    {
+        "id": "8ddeb699.35fac8",
+        "type": "group",
+        "z": "c70403e1.fef6",
+        "name": "Tell the user the temps",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1cb2b83f.94c",
+            "88f585ec.5cd0b8",
+            "4aa9ecc2.3d12ac",
+            "1760c75d.604561"
+        ],
+        "x": 74,
+        "y": 1719,
+        "w": 852,
+        "h": 82
     },
     {
         "id": "c0391f6c.552ff",
@@ -840,6 +788,61 @@
         "collapse": false
     },
     {
+        "id": "5a9150c4.c23f2",
+        "type": "ui_group",
+        "name": "Process step",
+        "tab": "b62baa58.798ff8",
+        "order": 2,
+        "disp": false,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "c3ff1105.bcfb7",
+        "type": "ui_group",
+        "name": "Timer",
+        "tab": "a8850437.d84aa8",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "59c32b82.008a54",
+        "type": "ui_group",
+        "name": "Brew steps",
+        "tab": "b62baa58.798ff8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b62baa58.798ff8",
+        "type": "ui_tab",
+        "name": "List",
+        "icon": "dashboard"
+    },
+    {
+        "id": "b2d7a975.393248",
+        "type": "ui_group",
+        "name": "Boil Timer",
+        "tab": "3f73ea82.bc62e6",
+        "order": 5,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "11f1d15d.e1881f",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "b2d7a975.393248",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
         "id": "2f984eaf.bf7712",
         "type": "exec",
         "z": "b209822d.9e674",
@@ -991,7 +994,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "plain",
-        "template": "Hey! Im Harrys brew bot! I can help you by running commands when you are away from home. I can also give you updates on how things are going.\n\nHave fun! 👍\n\nAsk for /help to see what I can do.",
+        "template": "Hey! Im Harrys brew bot! I can help you by running commands from telegram. I can also give you updates on how things are going.\n\nHave fun! 👍\n\nAsk for /help to see what I can do.",
         "output": "str",
         "x": 300,
         "y": 300,
@@ -1011,7 +1014,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "plain",
-        "template": "/start - Start conversation with me\n/help - Ask me what I can do\n/warm_up - Ill warm up the water for you while you’re away\n/stop - Emergency stop. will stop all outputs to pumps and heaters\n/open_tunnel - Start ssh tunnel for remote access to node red when away from the home\n/close_all_tunnels - Stop all tunnel connections\n/shut_down - Shut me down so you can properly remove power\n/reboot - Reboot me if something isnt working right",
+        "template": "/start - Start conversation with me\n/help - Ask me what I can do\n/temps - Ill tell you what the current temperatures are\n/warm_up - Ill warm up the water for you while you’re away\n/stop - Emergency stop. will stop all outputs to pumps and heaters\n/open_tunnel - Start ssh tunnel for remote access to node red when away from the home\n/close_all_tunnels - Stop all tunnel connections\n/shut_down - Shut me down so you can properly remove power\n/reboot - Reboot me if something isnt working right",
         "output": "str",
         "x": 300,
         "y": 140,
@@ -1262,7 +1265,7 @@
         "name": "Answer Stop command ________________________________",
         "info": "",
         "x": 300,
-        "y": 420,
+        "y": 400,
         "wires": []
     },
     {
@@ -1276,7 +1279,7 @@
         "message": "",
         "parseMode": "",
         "x": 580,
-        "y": 480,
+        "y": 460,
         "wires": []
     },
     {
@@ -1290,7 +1293,7 @@
         "commandType": "re",
         "commandCase": false,
         "x": 150,
-        "y": 480,
+        "y": 460,
         "wires": [
             [
                 "9711b5d7.3215d",
@@ -1311,7 +1314,7 @@
         "template": "Outputs have been stopped. 🛑\n\nTo reset the outputs, do it at the brew dashboard.\n\nHope everything is ok!",
         "output": "str",
         "x": 320,
-        "y": 480,
+        "y": 460,
         "wires": [
             [
                 "d3d5ceab.85a72"
@@ -1397,17 +1400,6 @@
         ]
     },
     {
-        "id": "2ac76708.01729",
-        "type": "comment",
-        "z": "c70403e1.fef6",
-        "g": "d90db005.43c49",
-        "name": "TO DO: Actually start the warm program",
-        "info": "",
-        "x": 920,
-        "y": 1500,
-        "wires": []
-    },
-    {
         "id": "31bd66ed.17842a",
         "type": "telegrambot-notify",
         "z": "c70403e1.fef6",
@@ -1458,17 +1450,6 @@
                 "31bd66ed.17842a"
             ]
         ]
-    },
-    {
-        "id": "463077fd.6a2e7",
-        "type": "comment",
-        "z": "c70403e1.fef6",
-        "g": "72b7ae42.0b82d",
-        "name": "TO DO: Actually enable the emergency stop",
-        "info": "",
-        "x": 750,
-        "y": 420,
-        "wires": []
     },
     {
         "id": "c26484e4.d1d038",
@@ -1833,267 +1814,6 @@
         ]
     },
     {
-        "id": "5f1ad99e.733a18",
-        "type": "delay",
-        "z": "bed2c066.9e4d4",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "50",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 190,
-        "y": 80,
-        "wires": [
-            [
-                "af1445cd.189e48",
-                "f0af4c6.8990cb"
-            ]
-        ]
-    },
-    {
-        "id": "af1445cd.189e48",
-        "type": "change",
-        "z": "bed2c066.9e4d4",
-        "name": "Buzz off",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 480,
-        "y": 80,
-        "wires": [
-            [
-                "2d11f118.ffc45e"
-            ]
-        ]
-    },
-    {
-        "id": "f0af4c6.8990cb",
-        "type": "delay",
-        "z": "bed2c066.9e4d4",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "100",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 370,
-        "y": 120,
-        "wires": [
-            [
-                "de934177.ceffe",
-                "77eba34d.6d105c"
-            ]
-        ]
-    },
-    {
-        "id": "de934177.ceffe",
-        "type": "change",
-        "z": "bed2c066.9e4d4",
-        "name": "Buzz on",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "false",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 600,
-        "y": 120,
-        "wires": [
-            [
-                "2d11f118.ffc45e"
-            ]
-        ]
-    },
-    {
-        "id": "77eba34d.6d105c",
-        "type": "delay",
-        "z": "bed2c066.9e4d4",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "50",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 550,
-        "y": 160,
-        "wires": [
-            [
-                "459b93da.80aeec"
-            ]
-        ]
-    },
-    {
-        "id": "459b93da.80aeec",
-        "type": "change",
-        "z": "bed2c066.9e4d4",
-        "name": "Buzz off",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 720,
-        "y": 160,
-        "wires": [
-            [
-                "2d11f118.ffc45e"
-            ]
-        ]
-    },
-    {
-        "id": "2d11f118.ffc45e",
-        "type": "rpi-gpio out",
-        "z": "bed2c066.9e4d4",
-        "name": "Buzzer",
-        "pin": "38",
-        "set": true,
-        "level": "1",
-        "freq": "",
-        "out": "out",
-        "x": 870,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "2db072c7.23309e",
-        "type": "change",
-        "z": "bed2c066.9e4d4",
-        "name": "Buzz on",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "false",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 380,
-        "y": 40,
-        "wires": [
-            [
-                "2d11f118.ffc45e"
-            ]
-        ]
-    },
-    {
-        "id": "4f4a658a.6b4aac",
-        "type": "subflow:bed2c066.9e4d4",
-        "z": "db2290bc.6bd9c8",
-        "g": "3f74176e.8009c8",
-        "name": "",
-        "env": [],
-        "x": 440,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "6b95fe22.614ae",
-        "type": "inject",
-        "z": "db2290bc.6bd9c8",
-        "g": "3f74176e.8009c8",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 190,
-        "y": 240,
-        "wires": [
-            [
-                "4f4a658a.6b4aac"
-            ]
-        ]
-    },
-    {
-        "id": "2c0ddb20.797604",
-        "type": "ui_button",
-        "z": "db2290bc.6bd9c8",
-        "g": "3f74176e.8009c8",
-        "name": "",
-        "group": "ee877576.e7497",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Activate Buzzer",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "x": 210,
-        "y": 200,
-        "wires": [
-            [
-                "4f4a658a.6b4aac"
-            ]
-        ]
-    },
-    {
         "id": "7fe4b5c3.32e58c",
         "type": "function",
         "z": "b4973237.46ab6",
@@ -2224,269 +1944,6 @@
         "wires": [
             [
                 "a823c9cf.2a6178"
-            ]
-        ]
-    },
-    {
-        "id": "f70949c8.aab988",
-        "type": "change",
-        "z": "a0771295.bec48",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "op",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 629.5,
-        "y": 315,
-        "wires": [
-            [
-                "9f58a52d.076dd"
-            ]
-        ]
-    },
-    {
-        "id": "2792f805.066c78",
-        "type": "inject",
-        "z": "a0771295.bec48",
-        "name": "Setpoint 30",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "topic": "setpoint",
-        "payload": "30",
-        "payloadType": "num",
-        "x": 132,
-        "y": 263,
-        "wires": [
-            [
-                "e0cb2a8c.4402a8"
-            ]
-        ]
-    },
-    {
-        "id": "1bf3ce16.c3ae02",
-        "type": "inject",
-        "z": "a0771295.bec48",
-        "name": "Setpoint 80",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "topic": "setpoint",
-        "payload": "80",
-        "payloadType": "num",
-        "x": 130.5,
-        "y": 312,
-        "wires": [
-            [
-                "e0cb2a8c.4402a8"
-            ]
-        ]
-    },
-    {
-        "id": "f69bbf05.bdd49",
-        "type": "inject",
-        "z": "a0771295.bec48",
-        "name": "enable",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "topic": "enable",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 123,
-        "y": 148,
-        "wires": [
-            [
-                "e0cb2a8c.4402a8"
-            ]
-        ]
-    },
-    {
-        "id": "143523b2.2f165c",
-        "type": "inject",
-        "z": "a0771295.bec48",
-        "name": "disable",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "topic": "enable",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 123.5,
-        "y": 198,
-        "wires": [
-            [
-                "e0cb2a8c.4402a8"
-            ]
-        ]
-    },
-    {
-        "id": "5ec4239b.34e174",
-        "type": "subflow:b4973237.46ab6",
-        "z": "a0771295.bec48",
-        "name": "",
-        "env": [],
-        "x": 393,
-        "y": 167,
-        "wires": [
-            [
-                "de738fc5.75e4c8",
-                "e0cb2a8c.4402a8"
-            ]
-        ]
-    },
-    {
-        "id": "de738fc5.75e4c8",
-        "type": "change",
-        "z": "a0771295.bec48",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "pv",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 614,
-        "y": 166,
-        "wires": [
-            [
-                "9f58a52d.076dd"
-            ]
-        ]
-    },
-    {
-        "id": "e94f888a.130a88",
-        "type": "range",
-        "z": "a0771295.bec48",
-        "minin": "0",
-        "maxin": "1",
-        "minout": "0",
-        "maxout": "25",
-        "action": "scale",
-        "round": false,
-        "property": "payload",
-        "name": "Scale power",
-        "x": 455,
-        "y": 315,
-        "wires": [
-            [
-                "f70949c8.aab988"
-            ]
-        ]
-    },
-    {
-        "id": "9f58a52d.076dd",
-        "type": "ui_chart",
-        "z": "a0771295.bec48",
-        "name": "",
-        "group": "599c9f6f.d3c42",
-        "order": 1,
-        "width": "6",
-        "height": "6",
-        "label": "chart",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "100",
-        "removeOlder": "3",
-        "removeOlderPoints": "",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#cf0005",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "x": 819,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bef0a1f8.2e2cf",
-        "type": "inject",
-        "z": "a0771295.bec48",
-        "name": "Clear chart on deploy",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "",
-        "topic": "",
-        "payload": "{\"data\":[]}",
-        "payloadType": "json",
-        "x": 380,
-        "y": 383,
-        "wires": [
-            [
-                "9079ffaf.4a096"
-            ]
-        ]
-    },
-    {
-        "id": "9079ffaf.4a096",
-        "type": "change",
-        "z": "a0771295.bec48",
-        "name": "",
-        "rules": [
-            {
-                "t": "move",
-                "p": "payload.data",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 616,
-        "y": 383,
-        "wires": [
-            [
-                "9f58a52d.076dd"
             ]
         ]
     },
@@ -2806,7 +2263,7 @@
         "z": "72bd38cd.b8a178",
         "name": "",
         "group": "e3312206.7d39b",
-        "order": 6,
+        "order": 7,
         "width": "6",
         "height": "4",
         "label": "",
@@ -2836,8 +2293,8 @@
             "#c5b0d5"
         ],
         "outputs": 1,
-        "x": 510,
-        "y": 300,
+        "x": 550,
+        "y": 340,
         "wires": [
             []
         ]
@@ -2856,8 +2313,8 @@
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
-        "x": 370,
-        "y": 200,
+        "x": 410,
+        "y": 240,
         "wires": [
             []
         ]
@@ -2920,8 +2377,8 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 690,
-        "y": 200,
+        "x": 730,
+        "y": 220,
         "wires": []
     },
     {
@@ -2933,8 +2390,8 @@
             "8c0e6674.9c4a98",
             "6aa64bcb.dfc7c4"
         ],
-        "x": 555,
-        "y": 200,
+        "x": 595,
+        "y": 220,
         "wires": [
             [
                 "3c029bdb.3ffab4"
@@ -2949,8 +2406,8 @@
         "links": [
             "fb4d5c6f.c5572"
         ],
-        "x": 100,
-        "y": 220,
+        "x": 140,
+        "y": 260,
         "wires": [
             [
                 "9d211dd6.1df4e",
@@ -2978,8 +2435,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
-        "y": 240,
+        "x": 460,
+        "y": 280,
         "wires": [
             [
                 "1292ea0e.c00c36"
@@ -3009,7 +2466,9 @@
         "x": 440,
         "y": 260,
         "wires": [
-            []
+            [
+                "251407f9.634768"
+            ]
         ]
     },
     {
@@ -3068,8 +2527,8 @@
             "aee6984a.086ea8",
             "403cb5e3.dd6b6c"
         ],
-        "x": 150,
-        "y": 360,
+        "x": 190,
+        "y": 400,
         "wires": [
             [
                 "8383aeea.56e0a"
@@ -3096,8 +2555,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
-        "y": 360,
+        "x": 460,
+        "y": 400,
         "wires": [
             [
                 "1292ea0e.c00c36"
@@ -3124,8 +2583,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 440,
-        "y": 420,
+        "x": 1100,
+        "y": 220,
         "wires": [
             [
                 "5177e5d6.87767c"
@@ -3142,8 +2601,8 @@
             "7d1ab39f.6aa9fc",
             "cf8d7594.11c1d8"
         ],
-        "x": 750,
-        "y": 420,
+        "x": 1410,
+        "y": 220,
         "wires": [],
         "l": true
     },
@@ -3165,8 +2624,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 170,
-        "y": 420,
+        "x": 830,
+        "y": 220,
         "wires": [
             [
                 "66294e3f.91eeb"
@@ -3186,7 +2645,8 @@
         "y": 140,
         "wires": [
             [
-                "bc4ccc21.8018"
+                "bc4ccc21.8018",
+                "8d2a3c4c.292a7"
             ]
         ],
         "l": true
@@ -3232,58 +2692,6 @@
         ]
     },
     {
-        "id": "207a28c4.e3e498",
-        "type": "function",
-        "z": "474c912b.2cb9",
-        "name": "Map to ui list",
-        "func": "var checklist = msg.payload.map(function(card){\n   return {\n       \"title\": card.name,\n       \"isChecked\": card.closed\n   }; \n});\nreturn {payload: checklist};",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 610,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5d5c51fc.6d68a",
-        "type": "link in",
-        "z": "474c912b.2cb9",
-        "name": "Heatbeat ticker 5s",
-        "links": [
-            "261a2775.361898",
-            "82be8459.c3e358"
-        ],
-        "x": 170,
-        "y": 120,
-        "wires": [
-            []
-        ],
-        "l": true
-    },
-    {
-        "id": "8518695c.afea28",
-        "type": "ui_template",
-        "z": "474c912b.2cb9",
-        "group": "87b9c423.b256e8",
-        "name": "Checklist title",
-        "order": 1,
-        "width": "6",
-        "height": "1",
-        "format": "<h1 class=\"vessel-title\">Checklist</h1>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "x": 380,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "352afbec.d94f34",
         "type": "rpi-gpio out",
         "z": "858aa20d.74d93",
@@ -3314,142 +2722,6 @@
         "templateScope": "local",
         "x": 220,
         "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ea16abf.d13d458",
-        "type": "ui_template",
-        "z": "8dd89e26.6d141",
-        "group": "b51f8f14.e5b5",
-        "name": "Timer Title",
-        "order": 1,
-        "width": "8",
-        "height": "1",
-        "format": "<h1 class=\"vessel-title\">Timer</h1>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "x": 270,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3b949333.c7198c",
-        "type": "ui_template",
-        "z": "8dd89e26.6d141",
-        "group": "b51f8f14.e5b5",
-        "name": "Timer countdown",
-        "order": 4,
-        "width": "5",
-        "height": "3",
-        "format": "<div style=\"text-align: center;\">\n    <span style=\"font-size: 80px;\" ng-bind-html=\"msg.payload\">20:00</span>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "x": 510,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "959ccf41.bcbbe",
-        "type": "ui_button",
-        "z": "8dd89e26.6d141",
-        "name": "",
-        "group": "b51f8f14.e5b5",
-        "order": 2,
-        "width": "2",
-        "height": "1",
-        "passthru": false,
-        "label": "+5m",
-        "tooltip": "",
-        "color": "{{colour}}",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "x": 210,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "72f6190f.f90b18",
-        "type": "ui_button",
-        "z": "8dd89e26.6d141",
-        "name": "",
-        "group": "b51f8f14.e5b5",
-        "order": 2,
-        "width": "2",
-        "height": "1",
-        "passthru": false,
-        "label": "+10m",
-        "tooltip": "",
-        "color": "{{colour}}",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "x": 210,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "45704aca.4bf344",
-        "type": "ui_button",
-        "z": "8dd89e26.6d141",
-        "name": "",
-        "group": "b51f8f14.e5b5",
-        "order": 2,
-        "width": "2",
-        "height": "1",
-        "passthru": false,
-        "label": "Reset",
-        "tooltip": "",
-        "color": "{{colour}}",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "x": 210,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5631269f.5e5bc8",
-        "type": "ui_button",
-        "z": "8dd89e26.6d141",
-        "name": "",
-        "group": "b51f8f14.e5b5",
-        "order": 2,
-        "width": "2",
-        "height": "1",
-        "passthru": false,
-        "label": "Start/Pause",
-        "tooltip": "",
-        "color": "{{colour}}",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "x": 230,
-        "y": 320,
         "wires": [
             []
         ]
@@ -3503,392 +2775,6 @@
                 "6ad9c074.88e63"
             ]
         ]
-    },
-    {
-        "id": "b62a266c.9438d8",
-        "type": "inject",
-        "z": "e61b1f1a.55954",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 150,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2003ace1.457794",
-        "type": "function",
-        "z": "e61b1f1a.55954",
-        "name": "map cards",
-        "func": "var checklist = msg.payload.map(function(card){\n    // figure out if this card is checked off\n    var isChecked = false;\n    if(card.customFieldItems && card.customFieldItems.length) {\n        card.customFieldItems.forEach(function(field){\n            if(field.idCustomField == \"6003c00314add7311db885d5\") {\n                if(field.value && field.value.checked) {\n                    isChecked = (field.value.checked===\"true\");\n                }\n            }\n        });\n    }\n    \n   return {\n       \"id\":card.id,\n       \"title\": card.name,\n       \"isChecked\": isChecked\n   }; \n});\nreturn {payload: checklist};",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 610,
-        "y": 440,
-        "wires": [
-            [
-                "9a73dc19.19c73"
-            ]
-        ]
-    },
-    {
-        "id": "9a73dc19.19c73",
-        "type": "ui_template",
-        "z": "e61b1f1a.55954",
-        "group": "87b9c423.b256e8",
-        "name": "",
-        "order": 3,
-        "width": "6",
-        "height": "1",
-        "format": "<ul>\n    <li ng-repeat=\"card in msg.payload track by $index\" style=\"position: relative;\" ng-click=\"send({payload:!card.isChecked,action:'setChecked',card:card.id,orig:msg})\">\n        <i class=\"fa-li fa {{(card.isChecked && card.isChecked=='loading') ? 'fa-spinner fa-spin' : (card.isChecked) ? 'fa-check-square' : 'fa-square'}}\"></i>\n        {{card.title}}\n    </li>\n</ul> ",
-        "storeOutMessages": false,
-        "fwdInMessages": false,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "x": 800,
-        "y": 440,
-        "wires": [
-            [
-                "5b83bf6e.c75e"
-            ]
-        ]
-    },
-    {
-        "id": "150761b3.e3a14e",
-        "type": "debug",
-        "z": "e61b1f1a.55954",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 555,
-        "y": 351,
-        "wires": []
-    },
-    {
-        "id": "8b882f91.8438c",
-        "type": "inject",
-        "z": "e61b1f1a.55954",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 225,
-        "y": 331,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7efa133.b9513ec",
-        "type": "inject",
-        "z": "e61b1f1a.55954",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 220,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5b83bf6e.c75e",
-        "type": "function",
-        "z": "e61b1f1a.55954",
-        "name": "Handle loading state",
-        "func": "var cardToChange = msg.card;\nvar checklist = msg.orig.payload.map(function(card){\n    if(card.id == cardToChange) {\n        card.isChecked=\"loading\"\n    }\n    return card;\n});\nreturn {payload: checklist};",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 820,
-        "y": 360,
-        "wires": [
-            [
-                "9a73dc19.19c73"
-            ]
-        ]
-    },
-    {
-        "id": "c4aa3607.04efb8",
-        "type": "ui_template",
-        "z": "e61b1f1a.55954",
-        "group": "ee877576.e7497",
-        "name": "ON / OFF",
-        "order": 8,
-        "width": "2",
-        "height": "2",
-        "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg)\">\n    <div>\n        <span style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\">\n            ON / OFF\n        </span>\n    </div>\n    <div>\n        <i class=\"fa  {{(msg.payload) ? 'fa-square' : 'fa-square-o'}} fa-2x fa-fw\" style=\"{{(msg.payload) ? 'color: #32ff32;' : ''}}\"></i>\n    </div>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "x": 980,
-        "y": 780,
-        "wires": [
-            [
-                "56b6e0be.699a8"
-            ]
-        ]
-    },
-    {
-        "id": "56b6e0be.699a8",
-        "type": "function",
-        "z": "e61b1f1a.55954",
-        "name": "switch controller",
-        "func": "var originalValue = msg.payload;\n\n// handle command to set value\nif(msg.topic && msg.topic==\"set\") {\n    msg = {payload: originalValue}\n    return msg;\n}\n\n// flip the value\nmsg = {payload: !originalValue}\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1000,
-        "y": 840,
-        "wires": [
-            [
-                "c4aa3607.04efb8"
-            ]
-        ]
-    },
-    {
-        "id": "71020fc6.cc1eb",
-        "type": "ui_template",
-        "z": "e61b1f1a.55954",
-        "group": "ee877576.e7497",
-        "name": "Button styles",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "format": "<style>\n.custom-switch-button {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    cursor: pointer;\n    width: 100%;\n    height: 100%;\n    align-items: center;\n    background-color: var(--nr-dashboard-widgetColor);\n    color: var(--nr-dashboard-widgetTextColor);\n    border-radius: 2px;\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 36px;\n}\n.custom-switch-button:hover {\n    /*background-color: #0b8f95;  */\n    filter: brightness(120%);\n}\n.custom-switch-button:focus {\n    outline: none;\n    border: 0;\n}\n</style>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "global",
-        "x": 710,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "55d1eae5.745ac4",
-        "type": "function",
-        "z": "e61b1f1a.55954",
-        "name": "switch controller",
-        "func": "var originalValue = msg.payload;\n\n// handle command to set value\nif(msg.topic && msg.topic==\"set\") {\n    msg = {payload: originalValue}\n    return msg;\n}\n\n// flip the value\nmsg = {payload: !originalValue}\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1000,
-        "y": 960,
-        "wires": [
-            [
-                "e8233f8a.3aa0b"
-            ]
-        ]
-    },
-    {
-        "id": "e8233f8a.3aa0b",
-        "type": "ui_template",
-        "z": "e61b1f1a.55954",
-        "group": "ee877576.e7497",
-        "name": "POWER",
-        "order": 5,
-        "width": "2",
-        "height": "2",
-        "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg)\">\n    <div>\n        <span style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\">\n            POWER\n        </span>\n    </div>\n    <div>\n        <i class=\"fa  {{(msg.payload) ? 'fa-square' : 'fa-square-o'}} fa-2x fa-fw\" style=\"{{(msg.payload) ? 'color: #32ff32;' : ''}}\"></i>\n    </div>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "x": 980,
-        "y": 900,
-        "wires": [
-            [
-                "55d1eae5.745ac4"
-            ]
-        ]
-    },
-    {
-        "id": "37e58af1.d4f7e6",
-        "type": "function",
-        "z": "e61b1f1a.55954",
-        "name": "switch controller",
-        "func": "var originalValue = msg.payload;\n\n// handle command to set value\nif(msg.topic && msg.topic==\"set\") {\n    msg = {payload: originalValue}\n    return msg;\n}\n\n// flip the value\nmsg = {payload: !originalValue}\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1000,
-        "y": 1080,
-        "wires": [
-            [
-                "2dfec1e5.42381e",
-                "24f14dd5.6f8462"
-            ]
-        ]
-    },
-    {
-        "id": "2dfec1e5.42381e",
-        "type": "ui_template",
-        "z": "e61b1f1a.55954",
-        "group": "ee877576.e7497",
-        "name": "Enable power switch",
-        "order": 2,
-        "width": "2",
-        "height": "2",
-        "format": "<div md-ink-ripple class=\"custom-switch-button\" ng-click=\"send(msg)\">\n    <div>\n        <span style=\"{{(msg.payload) ? '' : 'filter:brightness(83%);'}}\">\n            {{(msg.payload) ? 'ENABLED' : 'ENABLE'}}\n        </span>\n    </div>\n        \n    <div>\n        <i class=\"fa  {{(msg.payload) ? 'fa-square' : 'fa-square-o'}} fa-2x fa-fw\" style=\"{{(msg.payload) ? 'color: #32ff32;' : ''}}\"></i>\n    </div>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "x": 1000,
-        "y": 1020,
-        "wires": [
-            [
-                "37e58af1.d4f7e6"
-            ]
-        ]
-    },
-    {
-        "id": "23a1a30d.b4697c",
-        "type": "link in",
-        "z": "e61b1f1a.55954",
-        "name": "Wort pump Input",
-        "links": [
-            "d7b6fa8f.fee968",
-            "24dcaffb.008de",
-            "7f424920.b5ab08",
-            "bcb30f14.f438e",
-            "105b86cd.57c329"
-        ],
-        "x": 835,
-        "y": 840,
-        "wires": [
-            [
-                "56b6e0be.699a8"
-            ]
-        ]
-    },
-    {
-        "id": "8ab6a7b7.4d8eb8",
-        "type": "link in",
-        "z": "e61b1f1a.55954",
-        "name": "Wort pump Input",
-        "links": [
-            "d7b6fa8f.fee968",
-            "24dcaffb.008de",
-            "7f424920.b5ab08",
-            "bcb30f14.f438e",
-            "105b86cd.57c329"
-        ],
-        "x": 835,
-        "y": 960,
-        "wires": [
-            [
-                "55d1eae5.745ac4"
-            ]
-        ]
-    },
-    {
-        "id": "28312703.24bcf8",
-        "type": "link in",
-        "z": "e61b1f1a.55954",
-        "name": "Wort pump Input",
-        "links": [
-            "d7b6fa8f.fee968",
-            "24dcaffb.008de",
-            "7f424920.b5ab08",
-            "bcb30f14.f438e",
-            "105b86cd.57c329"
-        ],
-        "x": 835,
-        "y": 1080,
-        "wires": [
-            [
-                "37e58af1.d4f7e6"
-            ]
-        ]
-    },
-    {
-        "id": "cfc6c770.07c048",
-        "type": "link out",
-        "z": "e61b1f1a.55954",
-        "name": "On/Off switch",
-        "links": [],
-        "x": 1135,
-        "y": 840,
-        "wires": []
-    },
-    {
-        "id": "17dd73e.4d02f8c",
-        "type": "link out",
-        "z": "e61b1f1a.55954",
-        "name": "Power switch",
-        "links": [],
-        "x": 1135,
-        "y": 960,
-        "wires": []
-    },
-    {
-        "id": "24f14dd5.6f8462",
-        "type": "link out",
-        "z": "e61b1f1a.55954",
-        "name": "Enable power switch",
-        "links": [],
-        "x": 1135,
-        "y": 1080,
-        "wires": []
     },
     {
         "id": "176e93c2.8d20ac",
@@ -4070,7 +2956,7 @@
         "order": 7,
         "width": 0,
         "height": 0,
-        "format": "<style>\n@media only screen and (min-width: 1800px) {\n    .masonry-container {\n        margin-top: 205px;\n        transform: scale(1.7); \n    }\n    \n}\nh1.vessel-title {\n    font-size: 2.9em;\n    margin-top: -10px;\n    margin-bottom: -10px;\n}\n    \n.custom-switch-button {\n    overflow: hidden;\n}\n</style>",
+        "format": "<style>\n@media only screen and (min-width: 1800px) {\n    .masonry-container {\n        margin-top: 115px;\n        transform: scale(1.4); \n    }\n    \n}\nh1.vessel-title {\n    font-size: 2.9em;\n    margin-top: -10px;\n    margin-bottom: -10px;\n}\n    \n.custom-switch-button {\n    overflow: hidden;\n}\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -4648,7 +3534,7 @@
         "payload": "false",
         "payloadType": "bool",
         "topic": "set",
-        "x": 230,
+        "x": 350,
         "y": 500,
         "wires": [
             [
@@ -4674,32 +3560,9 @@
             "f9b87765.90a478",
             "7be9f663.8e1c8"
         ],
-        "x": 375,
+        "x": 495,
         "y": 500,
         "wires": []
-    },
-    {
-        "id": "e0cb2a8c.4402a8",
-        "type": "PID",
-        "z": "a0771295.bec48",
-        "name": "",
-        "setpoint": "50",
-        "pb": "0",
-        "ti": "24",
-        "td": "6",
-        "integral_default": "0",
-        "smooth_factor": "0",
-        "max_interval": 600,
-        "enable": "1",
-        "disabled_op": "0",
-        "x": 390,
-        "y": 240,
-        "wires": [
-            [
-                "5ec4239b.34e174",
-                "e94f888a.130a88"
-            ]
-        ]
     },
     {
         "id": "e4dea1a5.4f1ed",
@@ -6131,29 +4994,6 @@
         ]
     },
     {
-        "id": "32761e77.6051f2",
-        "type": "inject",
-        "z": "e61b1f1a.55954",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Add hops - 5min",
-        "payloadType": "str",
-        "x": 290,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "3de3ae01.9a84b2",
         "type": "function",
         "z": "fd1f2b7f.0d4d08",
@@ -6365,33 +5205,15 @@
         "y": 1540,
         "wires": [
             [
-                "fbe32cd9.51c8a8",
-                "4cf7830a.68285c"
+                "fbe32cd9.51c8a8"
             ]
         ]
-    },
-    {
-        "id": "4cf7830a.68285c",
-        "type": "debug",
-        "z": "c70403e1.fef6",
-        "g": "d90db005.43c49",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 660,
-        "y": 1500,
-        "wires": []
     },
     {
         "id": "1760c75d.604561",
         "type": "telegrambot-command",
         "z": "c70403e1.fef6",
+        "g": "8ddeb699.35fac8",
         "name": "/temps",
         "bot": "a0af63cb.cfd18",
         "command": "\\/*temps",
@@ -6401,8 +5223,7 @@
         "y": 1760,
         "wires": [
             [
-                "4aa9ecc2.3d12ac",
-                "736adea6.36a26"
+                "4aa9ecc2.3d12ac"
             ]
         ]
     },
@@ -6410,6 +5231,7 @@
         "id": "4aa9ecc2.3d12ac",
         "type": "change",
         "z": "c70403e1.fef6",
+        "g": "8ddeb699.35fac8",
         "name": "Get temperatures ",
         "rules": [
             {
@@ -6429,8 +5251,7 @@
         "y": 1760,
         "wires": [
             [
-                "88f585ec.5cd0b8",
-                "736adea6.36a26"
+                "88f585ec.5cd0b8"
             ]
         ]
     },
@@ -6438,6 +5259,7 @@
         "id": "88f585ec.5cd0b8",
         "type": "template",
         "z": "c70403e1.fef6",
+        "g": "8ddeb699.35fac8",
         "name": "",
         "field": "payload",
         "fieldType": "msg",
@@ -6457,6 +5279,7 @@
         "id": "1cb2b83f.94c",
         "type": "telegrambot-notify",
         "z": "c70403e1.fef6",
+        "g": "8ddeb699.35fac8",
         "name": "Tell users the temperatures",
         "bot": "a0af63cb.cfd18",
         "chatId": "",
@@ -6464,23 +5287,6 @@
         "parseMode": "",
         "x": 780,
         "y": 1760,
-        "wires": []
-    },
-    {
-        "id": "736adea6.36a26",
-        "type": "debug",
-        "z": "c70403e1.fef6",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 510,
-        "y": 1860,
         "wires": []
     },
     {
@@ -6518,7 +5324,7 @@
         "links": [
             "3738d33c.cb5054"
         ],
-        "x": 75,
+        "x": 195,
         "y": 500,
         "wires": [
             [
@@ -6527,49 +5333,22 @@
         ]
     },
     {
-        "id": "f98e36e2.4a77c8",
-        "type": "inject",
-        "z": "c89ecd9f.5f6b7",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 240,
-        "y": 80,
-        "wires": [
-            [
-                "676153d5.50719c"
-            ]
-        ]
-    },
-    {
         "id": "676153d5.50719c",
         "type": "template",
         "z": "c89ecd9f.5f6b7",
         "name": "Create boil timer prompts",
-        "field": "payload",
+        "field": "boilSteps",
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
-        "template": "[\n    {\n        \"timeFromFinish\": 60,\n        \"messages\": [\"Boil timer started\"],\n        \"buzzer\": \"singleChirp\"\n    },\n    {\n        \"timeFromFinish\": 30,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\"\n    },\n    {\n        \"timeFromFinish\": 20,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\"\n    },\n    {\n        \"timeFromFinish\": 15,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\"\n    },\n    {\n        \"timeFromFinish\": 10,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\"\n    },\n    {\n        \"timeFromFinish\": 5,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\"\n    },\n    {\n        \"timeFromFinish\": 0,\n        \"messages\": [\n            \"Boil timer finished\",\n            \"Hops addition?\n        \"],\n        \"buzzer\": \"tripleChirp\"\n    }\n]",
+        "template": "[\n    {\n        \"timeFromFinish\": 60,\n        \"messages\": [\"Boil timer started\"],\n        \"buzzer\": \"singleChirp\",\n        \"processed\": false\n    },\n    {\n        \"timeFromFinish\": 30,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\",\n        \"processed\": false\n    },\n    {\n        \"timeFromFinish\": 20,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\",\n        \"processed\": false\n    },\n    {\n        \"timeFromFinish\": 15,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\",\n        \"processed\": false\n    },\n    {\n        \"timeFromFinish\": 10,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\",\n        \"processed\": false\n    },\n    {\n        \"timeFromFinish\": 5,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\",\n        \"processed\": false\n    },\n    {\n        \"timeFromFinish\": 0,\n        \"messages\": [\n            \"Boil timer finished\",\n            \"Hops addition?\"\n        ],\n        \"buzzer\": \"tripleChirp\",\n        \"processed\": false\n    }\n]",
         "output": "json",
-        "x": 710,
-        "y": 100,
+        "x": 510,
+        "y": 160,
         "wires": [
-            []
+            [
+                "905cb2d8.2b501"
+            ]
         ]
     },
     {
@@ -6584,7 +5363,7 @@
         "y": 320,
         "wires": [
             [
-                "4e911871.fe6dd8"
+                "80a6efa4.5487"
             ]
         ],
         "l": true
@@ -6593,7 +5372,7 @@
         "id": "f097d8be.9b9ed8",
         "type": "inject",
         "z": "c89ecd9f.5f6b7",
-        "name": "Start countdown",
+        "name": "Start / reset countdown",
         "props": [
             {
                 "p": "payload"
@@ -6606,33 +5385,162 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 220,
-        "y": 200,
+        "x": 240,
+        "y": 160,
         "wires": [
             [
-                "4ae86730.793c48"
+                "676153d5.50719c"
             ]
         ]
     },
     {
-        "id": "4ae86730.793c48",
+        "id": "80a6efa4.5487",
+        "type": "function",
+        "z": "c89ecd9f.5f6b7",
+        "name": "get time remainig",
+        "func": "\nconst timerEndTime = flow.get(\"timerEndTime\");\nconst now = msg.payload\n\nif (timerEndTime === undefined || timerEndTime < now) {\n    return { payload: 0};\n}\n\nconst remainingTime = timerEndTime - now;\n\nmsg = {payload: remainingTime}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 470,
+        "y": 320,
+        "wires": [
+            [
+                "cb3cb15c.cf0b9",
+                "b8d5ca1c.02c5f8"
+            ]
+        ]
+    },
+    {
+        "id": "8bfd3cfb.0da51",
+        "type": "function",
+        "z": "c89ecd9f.5f6b7",
+        "name": "Set timer expiry time",
+        "func": "if(msg.topic === \"cancel\") {\n    flow.set(\"timerEndTime\", undefined);\n    return;\n}\n\nconst now = msg.payload;\n\nconst timerLength = 60;// * 60; //minutes\n\nconst timerEndTime = now + (timerLength * 1000)\n\nflow.set(\"timerEndTime\", timerEndTime);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1020,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "94db7521.453068",
+        "type": "ui_template",
+        "z": "c89ecd9f.5f6b7",
+        "group": "b2d7a975.393248",
+        "name": "Timer",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\" style=\"font-size: 80px;\"></div>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 890,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6b7a796e.78e818",
+        "type": "ui_button",
+        "z": "c89ecd9f.5f6b7",
+        "name": "",
+        "group": "b2d7a975.393248",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "Start / Reset",
+        "tooltip": "",
+        "color": "{{colour}}",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "",
+        "x": 210,
+        "y": 200,
+        "wires": [
+            [
+                "676153d5.50719c"
+            ]
+        ]
+    },
+    {
+        "id": "8d89bff3.9f348",
+        "type": "comment",
+        "z": "c89ecd9f.5f6b7",
+        "name": "Start / reset button _________________________________________",
+        "info": "",
+        "x": 350,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ccff50e5.0cb55",
+        "type": "comment",
+        "z": "c89ecd9f.5f6b7",
+        "name": "Show time remaining _________________________________________",
+        "info": "",
+        "x": 360,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c24c8bb1.75ba98",
+        "type": "comment",
+        "z": "c89ecd9f.5f6b7",
+        "name": "Boil countdown messages _________________________________________",
+        "info": "",
+        "x": 580,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "b8d5ca1c.02c5f8",
+        "type": "function",
+        "z": "c89ecd9f.5f6b7",
+        "name": "Boil StepsProcess controller",
+        "func": "// check if the timer is running.\nconst timerEndTime = flow.get(\"timerEndTime\");\nif (timerEndTime === undefined) {\n    // if its not running, dont do anything.\n    return;\n}\n\n// get the boilsteps\nconst boilSteps = flow.get(\"boilSteps\");\nconst remainingTime = msg.payload / 1000; // / 60; //converted to minutes\n\n// if they dont exist, dont do anything.\nif(boilSteps === undefined) {\n    return [null, null]\n}\n\nlet steps = [];\nlet outputMessages = null;\nlet outputSound = null;\nlet boilStepsHaveBeenChanged = false;\n\n// filter over steps that have not been processed\nsteps = boilSteps.filter(function(value){\n    return value.processed === false\n}).map(function (value) {\n    /*\n    Example payload:\n    {\n        \"timeFromFinish\": 30,\n        \"messages\": [\"Hops addition?\"],\n        \"buzzer\": \"doubleChirp\",\n        \"processed\": false\n    }, \n    */\n\n    if(value.timeFromFinish >= remainingTime){\n        // the timer has just ticked over this time.\n        // We need to take action\n        \n        // output some messages to the user\n        outputMessages = {payload: value.messages};\n        \n        // make a sound if required\n        if(value.buzzer) {\n            outputSound = {payload: value.buzzer}\n        }\n        \n        // mark the step as processed\n        value.processed = true;\n        \n        // set the flag so we save our changes later.\n        boilStepsHaveBeenChanged = true\n    }\n    return value;\n});\n\n// if we changed any values, save the \n// boilsteps to persist these changes\nif(boilStepsHaveBeenChanged) {\n    flow.set(\"boilSteps\", boilSteps);\n}\n\nreturn [outputMessages, outputSound];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 720,
+        "y": 500,
+        "wires": [
+            [
+                "a9b82288.e044e"
+            ],
+            [
+                "acbcbd91.c728c"
+            ]
+        ],
+        "outputLabels": [
+            "Boil messages",
+            "Buzzer commands"
+        ]
+    },
+    {
+        "id": "905cb2d8.2b501",
         "type": "change",
         "z": "c89ecd9f.5f6b7",
-        "name": "set flow timer data",
+        "name": "Store in flow.boilSteps",
         "rules": [
             {
                 "t": "set",
-                "p": "countdownIsActive",
+                "p": "boilSteps",
                 "pt": "flow",
-                "to": "true",
-                "tot": "bool"
-            },
-            {
-                "t": "set",
-                "p": "timerStartedAt",
-                "pt": "flow",
-                "to": "",
-                "tot": "date"
+                "to": "boilSteps",
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -6640,49 +5548,967 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 450,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4e911871.fe6dd8",
-        "type": "switch",
-        "z": "c89ecd9f.5f6b7",
-        "name": "Check if timer is active",
-        "property": "countdownIsActive",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "true"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 470,
-        "y": 320,
+        "x": 780,
+        "y": 160,
         "wires": [
             [
-                "28e67e7e.40d652"
+                "8bfd3cfb.0da51"
             ]
         ]
     },
     {
-        "id": "28e67e7e.40d652",
+        "id": "cb3cb15c.cf0b9",
         "type": "function",
         "z": "c89ecd9f.5f6b7",
-        "name": "Calculate time remaining",
-        "func": "const timerStartedAt = flow.get(\"timerStartedAt\");\nconst now = msg.payload;\n\nlet timeRemaining = timerStartedAt - now;\n\nmsg.payload = timeRemaining;\n\nreturn msg;",
+        "name": "Format for view",
+        "func": "msg.payload = new Date(msg.payload).toISOString().substr(14, 5);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 730,
+        "x": 700,
         "y": 320,
         "wires": [
+            [
+                "94db7521.453068"
+            ]
+        ]
+    },
+    {
+        "id": "9872e6c1.087868",
+        "type": "ui_button",
+        "z": "c89ecd9f.5f6b7",
+        "name": "",
+        "group": "b2d7a975.393248",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "Cancel",
+        "tooltip": "",
+        "color": "{{colour}}",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "cancel",
+        "x": 200,
+        "y": 240,
+        "wires": [
+            [
+                "8bfd3cfb.0da51"
+            ]
+        ]
+    },
+    {
+        "id": "a9b82288.e044e",
+        "type": "ui_template",
+        "z": "c89ecd9f.5f6b7",
+        "group": "b2d7a975.393248",
+        "name": "Boil messages",
+        "order": 6,
+        "width": "6",
+        "height": "3",
+        "format": "<div>\n    <ul>\n        <li ng-repeat=\"message in msg.payload\">\n            {{message}}\n        </li>\n    </ul>\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 1000,
+        "y": 480,
+        "wires": [
             []
+        ]
+    },
+    {
+        "id": "b17d481f.cd5a98",
+        "type": "delay",
+        "z": "db2290bc.6bd9c8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 610,
+        "y": 340,
+        "wires": [
+            [
+                "de772309.8988d"
+            ]
+        ]
+    },
+    {
+        "id": "de772309.8988d",
+        "type": "change",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzz off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 340,
+        "wires": [
+            [
+                "674dcb69.221984"
+            ]
+        ]
+    },
+    {
+        "id": "674dcb69.221984",
+        "type": "rpi-gpio out",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzzer",
+        "pin": "38",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "x": 1010,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "9bab937.7fe237",
+        "type": "change",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzz on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 300,
+        "wires": [
+            [
+                "674dcb69.221984"
+            ]
+        ]
+    },
+    {
+        "id": "601b5e1b.c6c01",
+        "type": "link in",
+        "z": "db2290bc.6bd9c8",
+        "name": "Single chrip buzzer",
+        "links": [
+            "7d33c2b5.3cb54c"
+        ],
+        "x": 230,
+        "y": 300,
+        "wires": [
+            [
+                "e5e6dd17.49a88"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "e5e6dd17.49a88",
+        "type": "function",
+        "z": "db2290bc.6bd9c8",
+        "name": "Single Chirp",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [
+                "9bab937.7fe237",
+                "b17d481f.cd5a98"
+            ]
+        ]
+    },
+    {
+        "id": "4cc732f7.d0b8ac",
+        "type": "delay",
+        "z": "db2290bc.6bd9c8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 610,
+        "y": 540,
+        "wires": [
+            [
+                "5ed1af2a.8568b",
+                "869788bd.bec4f8"
+            ]
+        ]
+    },
+    {
+        "id": "86e4e5d9.4a8e38",
+        "type": "delay",
+        "z": "db2290bc.6bd9c8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 610,
+        "y": 500,
+        "wires": [
+            [
+                "e724ec7e.de2ae",
+                "4cc732f7.d0b8ac"
+            ]
+        ]
+    },
+    {
+        "id": "5ed1af2a.8568b",
+        "type": "change",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzz on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 540,
+        "wires": [
+            [
+                "62b28535.a988cc"
+            ]
+        ]
+    },
+    {
+        "id": "869788bd.bec4f8",
+        "type": "delay",
+        "z": "db2290bc.6bd9c8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 610,
+        "y": 580,
+        "wires": [
+            [
+                "2308e2be.319a8e"
+            ]
+        ]
+    },
+    {
+        "id": "e724ec7e.de2ae",
+        "type": "change",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzz off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 500,
+        "wires": [
+            [
+                "62b28535.a988cc"
+            ]
+        ]
+    },
+    {
+        "id": "1f1008fe.27a9a7",
+        "type": "function",
+        "z": "db2290bc.6bd9c8",
+        "name": "Double Chirp",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 460,
+        "wires": [
+            [
+                "78640074.442a5",
+                "86e4e5d9.4a8e38"
+            ]
+        ]
+    },
+    {
+        "id": "62b28535.a988cc",
+        "type": "rpi-gpio out",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzzer",
+        "pin": "38",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "x": 1010,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "2308e2be.319a8e",
+        "type": "change",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzz off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 580,
+        "wires": [
+            [
+                "62b28535.a988cc"
+            ]
+        ]
+    },
+    {
+        "id": "78640074.442a5",
+        "type": "change",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzz on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 460,
+        "wires": [
+            [
+                "62b28535.a988cc"
+            ]
+        ]
+    },
+    {
+        "id": "174b254c.93b0cb",
+        "type": "link in",
+        "z": "db2290bc.6bd9c8",
+        "name": "Double chrip buzzer",
+        "links": [
+            "69f3f21d.c70bec"
+        ],
+        "x": 230,
+        "y": 460,
+        "wires": [
+            [
+                "1f1008fe.27a9a7"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "cc09a4.423f866",
+        "type": "delay",
+        "z": "db2290bc.6bd9c8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 610,
+        "y": 800,
+        "wires": [
+            [
+                "d820ef63.1cec2",
+                "2554972a.9f9418"
+            ]
+        ]
+    },
+    {
+        "id": "699654fc.b9514c",
+        "type": "delay",
+        "z": "db2290bc.6bd9c8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 610,
+        "y": 760,
+        "wires": [
+            [
+                "977b98d4.87c0b8",
+                "cc09a4.423f866"
+            ]
+        ]
+    },
+    {
+        "id": "d820ef63.1cec2",
+        "type": "change",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzz on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 800,
+        "wires": [
+            [
+                "b3e6d966.1b13d8"
+            ]
+        ]
+    },
+    {
+        "id": "2554972a.9f9418",
+        "type": "delay",
+        "z": "db2290bc.6bd9c8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 610,
+        "y": 840,
+        "wires": [
+            [
+                "456548c2.ae18c8",
+                "a76b148.f724ae8"
+            ]
+        ]
+    },
+    {
+        "id": "977b98d4.87c0b8",
+        "type": "change",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzz off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 760,
+        "wires": [
+            [
+                "b3e6d966.1b13d8"
+            ]
+        ]
+    },
+    {
+        "id": "967a3c49.145ac",
+        "type": "function",
+        "z": "db2290bc.6bd9c8",
+        "name": "Triple Chirp",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 720,
+        "wires": [
+            [
+                "bbf0fc9b.2a3bd",
+                "699654fc.b9514c"
+            ]
+        ]
+    },
+    {
+        "id": "b3e6d966.1b13d8",
+        "type": "rpi-gpio out",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzzer",
+        "pin": "38",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "x": 1010,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "456548c2.ae18c8",
+        "type": "change",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzz off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 840,
+        "wires": [
+            [
+                "b3e6d966.1b13d8"
+            ]
+        ]
+    },
+    {
+        "id": "bbf0fc9b.2a3bd",
+        "type": "change",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzz on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 720,
+        "wires": [
+            [
+                "b3e6d966.1b13d8"
+            ]
+        ]
+    },
+    {
+        "id": "b81f386c.7b2ae8",
+        "type": "link in",
+        "z": "db2290bc.6bd9c8",
+        "name": "Triple chrip buzzer",
+        "links": [
+            "4e9cd786.ee1fa8"
+        ],
+        "x": 230,
+        "y": 720,
+        "wires": [
+            [
+                "967a3c49.145ac"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "a76b148.f724ae8",
+        "type": "delay",
+        "z": "db2290bc.6bd9c8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 610,
+        "y": 880,
+        "wires": [
+            [
+                "51357551.ff69ac",
+                "f3ebf780.0aaf58"
+            ]
+        ]
+    },
+    {
+        "id": "f3ebf780.0aaf58",
+        "type": "delay",
+        "z": "db2290bc.6bd9c8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 610,
+        "y": 920,
+        "wires": [
+            [
+                "f2d56aa0.249e78"
+            ]
+        ]
+    },
+    {
+        "id": "51357551.ff69ac",
+        "type": "change",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzz on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 880,
+        "wires": [
+            [
+                "b3e6d966.1b13d8"
+            ]
+        ]
+    },
+    {
+        "id": "f2d56aa0.249e78",
+        "type": "change",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzz off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 920,
+        "wires": [
+            [
+                "b3e6d966.1b13d8"
+            ]
+        ]
+    },
+    {
+        "id": "262146e6.df96ea",
+        "type": "link in",
+        "z": "db2290bc.6bd9c8",
+        "name": "Buzzer string command",
+        "links": [
+            "acbcbd91.c728c"
+        ],
+        "x": 250,
+        "y": 100,
+        "wires": [
+            [
+                "e27a166e.02b468"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "e27a166e.02b468",
+        "type": "switch",
+        "z": "db2290bc.6bd9c8",
+        "name": "Map command to buzzer control",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "singleChirp",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "doubleChirp",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "tripleChirp",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 640,
+        "y": 100,
+        "wires": [
+            [
+                "7d33c2b5.3cb54c"
+            ],
+            [
+                "69f3f21d.c70bec"
+            ],
+            [
+                "4e9cd786.ee1fa8"
+            ]
+        ]
+    },
+    {
+        "id": "69f3f21d.c70bec",
+        "type": "link out",
+        "z": "db2290bc.6bd9c8",
+        "name": "Double chirp buzzer",
+        "links": [
+            "174b254c.93b0cb"
+        ],
+        "x": 960,
+        "y": 120,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "4e9cd786.ee1fa8",
+        "type": "link out",
+        "z": "db2290bc.6bd9c8",
+        "name": "Triple chirp buzzer",
+        "links": [
+            "b81f386c.7b2ae8"
+        ],
+        "x": 950,
+        "y": 160,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "7d33c2b5.3cb54c",
+        "type": "link out",
+        "z": "db2290bc.6bd9c8",
+        "name": "Single chirp buzzer",
+        "links": [
+            "601b5e1b.c6c01"
+        ],
+        "x": 950,
+        "y": 80,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "acbcbd91.c728c",
+        "type": "link out",
+        "z": "c89ecd9f.5f6b7",
+        "name": "Buzzer",
+        "links": [
+            "262146e6.df96ea"
+        ],
+        "x": 970,
+        "y": 520,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "2415defd.9d50a2",
+        "type": "ui_template",
+        "z": "c89ecd9f.5f6b7",
+        "group": "b2d7a975.393248",
+        "name": "Boil Timer title",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "format": "<h1 class=\"vessel-title\">Boil Timer</h1>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 220,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d2a3c4c.292a7",
+        "type": "ui_numeric",
+        "z": "72bd38cd.b8a178",
+        "name": "HLT Target temp input",
+        "label": "Target temp",
+        "tooltip": "",
+        "group": "e3312206.7d39b",
+        "order": 6,
+        "width": "6",
+        "height": "1",
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "format": "{{value}}",
+        "min": "40",
+        "max": "105",
+        "step": 1,
+        "x": 480,
+        "y": 180,
+        "wires": [
+            [
+                "ed8921b.65038e"
+            ]
+        ]
+    },
+    {
+        "id": "251407f9.634768",
+        "type": "delay",
+        "z": "4c2748b.984d3b8",
+        "g": "91669a1f.42243",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "5",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 700,
+        "y": 260,
+        "wires": [
+            [
+                "7ae7c684.a2c3c8"
+            ]
+        ]
+    },
+    {
+        "id": "7ae7c684.a2c3c8",
+        "type": "delay",
+        "z": "4c2748b.984d3b8",
+        "g": "91669a1f.42243",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "2",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 880,
+        "y": 260,
+        "wires": [
+            [
+                "66294e3f.91eeb"
+            ]
         ]
     }
 ]
